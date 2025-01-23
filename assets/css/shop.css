@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    min-height: 100vh;
+    font-family: "Inter", serif;
+}
+header {
+    height: 40px;
+    padding: 15px 60px 0 60px;
+}
+header .left {
+    color: #fff; 
+    font-size: .8rem;
+}
+header .left p {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+header .left a {
+    color: rgb(205, 2, 2);
+    letter-spacing: 1px;
+    padding-left: 5px;
+    transition: .3s ease;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown i {
+    color: #fff;
+}
+header .dropdown .text {
+    color: #fff;
+    cursor: pointer;
+    font-size: .8rem;
+    transition: .2s;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    font-size: .8rem;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    top: 30px;
+    right: 0px;
+}
+.dropdown-content a {
+    padding: 8px 12px;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    transition: .2s;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition-delay: 10s;
+}
+header .dropdown i:hover {
+    color: #848484;
+}
+header .text:hover  {
+    color: #848484;
+}
+header .dropdown a:hover {
+    color: #afafaf;
+}
+/* nav */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+.hero-section .section-top {
+    padding: 0 60px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 1px 1px 1px 1px #e7e7e7;
+}
+.hero-section .section-top p a {
+    text-decoration: none;
+    font-size: 3rem;
+    color: #000000;
+    font-weight: 900;
+}
+.hero-section .section-top a span{
+    color: rgb(205, 2, 2);
+    font-size: 3.5rem;
+}
+.hero-section .section-top .menu-search a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: .2s ease;
+}
+.hero-section .section-top .menu-search a:hover {
+    color: rgb(160, 0, 0);
+}
+.hero-section .section-top .icon i {
+    color: #000000;
+    font-size: 1.3rem;
+}
+.hero-section .section-top .icon span {
+    background-color: rgb(205, 2, 2);
+    color: #fff;
+}
+
+/* Hero-Shop */
+.hero-shop {
+    height: 60vh;
+    margin-top: 80px;
+}
+.hero-shop .links {
+    margin-top: 100px;
+    color: #EFEFEF;
+}
+.hero-shop .links a {
+    color: #d1d1d1;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .3s ease;
+}
+.hero-shop .links a:hover {
+    color: rgb(205, 2, 2);
+}
+hr {
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #c2c2c2;
+}
+/* section-1*/
+.section-one {
+    margin: 100px 60px 90px 60px;
+}
+.section-one .top p {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.section-one .link {
+    position: relative;
+    display: inline-block;
+}
+.section-one .link::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1;
+    transition: 0.3s ease-in-out;
+}
+.section-one:hover {
+    cursor: pointer;
+}
+.section-one .link:hover::after {
+    background-color: rgb(0, 0, 0,0.5);
+}
+.section-one .link .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    color: #d1d1d1;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+    z-index: 2;
+}
+.section-one .link:hover .icon {
+    opacity: 1;
+}
+.section-one .link:hover img {
+    transform: scale(1.12);
+
+}
+.section-one .link a img {
+    width: 120px;
+    border-radius: 50%;
+    display: block;
+    transition: 0.3s ease-in;
+}
+.section-one .text {
+    letter-spacing: 1px;
+}
+.section-one .text h6 {
+    font-weight: 700;
+}
+.section-one .text p {
+    font-size: .9rem;
+}
+/* Products */
+/* Left */
+.products {
+    margin: 50px 50px;
+}
+.products .left .type {
+    margin-top: 20px;
+}
+.products .left .type p {
+    background-color: #EFEFEF;
+    padding: 15px;
+    height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.products .left .type .form-check:hover .form-check-input:checked {
+    background-color: rgb(205, 2, 2);
+    border-color: rgb(205, 2, 2);
+}
+.products .left .type .form-check-label {
+    font-size: 1rem;
+}
+.products .left .type .form-check label span {
+    padding-left: 7px;
+}
+.products .left .type .form-check-label {
+    transition: .3s ease;
+}
+.products .left .type .form-check:hover .form-check-label,
+.products .left .type .form-check:hover .form-check-input {
+    color: rgb(205, 2, 2);
+}
+/* Right */
+/* topp */
+.products .right .topp {
+    padding: 15px 30px;
+    background-color: #000000;
+    border: 1px solid #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.products .right .icons a {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+.products .right .icons a:hover {
+    color: rgb(205, 2, 2);
+    transform: scale(1.2); 
+}
+.products .right .form-check-label {
+    font-size: 1rem; 
+    color: #fff;
+    transition: color 0.3s;
+}
+.products .right .form-check-input {
+    width: 18px;
+    height: 18px;
+    accent-color: rgb(205, 2, 2); /* checkbox */
+}
+.products .right .form-check:hover .form-check-input:checked {
+    background-color: rgb(205, 2, 2);
+    border-color: rgb(205, 2, 2);
+}
+.products .right .form-check-label:hover {
+    color: rgb(205, 2, 2);
+}
+.products .right .dropdown-toggle {
+    font-size: 1rem;
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.products .right .dropdown-toggle:hover {
+    color: rgb(205, 2, 2);
+}
+.products .right .dropdown-menu {
+border-radius: 8px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.products .right .dropdown-item {
+font-size: 0.95rem;
+transition: background-color 0.3s, color 0.3s;
+}
+
+.products .right .dropdown-item:hover {
+background-color: rgb(205, 2, 2);
+color: #fff;
+}
+.products .right .topp {
+animation: fadeIn 1s ease-in-out;
+}
+@keyframes fadeIn {
+from {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+/* section-4 */
+.section-four {
+    /* margin: 100px 60px 0 60px; */
+}
+.section-four img {
+    width: 94%;
+}
+.section-four .product {
+    position: relative;
+    transition: 3s ease;
+}
+/* None */
+.section-four .product button {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: 74px;
+    width: 94%;
+    padding: 10px;
+    border: none;
+    font-size: .8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: none;
+    transition: .2s ease;
+}
+.section-four .product .icons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #000000;
+    right: 30px;
+    bottom: 130px;
+    display: none;
+}
+.section-four .product .icons i {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 18px;
+    transition: .2s ease;
+}
+.section-four .product:hover {
+    cursor: pointer;
+}
+.section-four .product .icons i:hover {
+    background-color: rgb(205, 2, 2);
+    color: white;
+}
+.section-four .product button:hover {
+    background-color: rgb(205, 2, 2);
+    color: white;
+}
+.section-four .product:hover button {
+    display: block;
+}
+.section-four .product:hover .icons {
+    display: flex;
+}
+.section-four .product:hover .heart {
+    display: none;
+}
+.section-four .top .text a:hover {
+    color: rgb(205, 2, 2);
+}
+/* .section-four .hover-image{
+    transition: opacity 2s ease-in-out;
+}
+.section-four .hover-image:hover {
+    content: attr(data-hover);
+} */
+
+.hover-image {
+    transition: opacity 2s ease;
+}
+.hover-image:hover{
+    content: url('../images/01-450x572.jpg'); 
+}
+
+/* ------------ */
+.section-four .text {
+    color: #000000;
+}
+.section-four .text p {
+    font-size: 3rem;
+    letter-spacing: 5px;
+    line-height: 1.3;
+}
+.section-four .text a {
+    color: #000000;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.section-four .product {
+    position: relative;
+}
+.section-four .product a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.section-four .product a p {
+    margin-top: 10px;
+}
+.section-four .product .price span {
+    font-weight: 700;
+}
+.section-four .product .price del {
+    color: rgb(199, 198, 198);
+}
+.section-four .product .position,
+.position-r,
+.pt {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #f2f2f2;
+    background-color: #848484;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 1px;
+}
+.section-four .product .pt {
+    left: 70px;
+}
+.section-four .product .position-r {
+    background-color: rgb(205, 2, 2);
+}
+.heart {
+    position: absolute;
+    background-color: rgb(245, 245, 245);
+    right: 30px;
+    bottom: 80px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+
+}
+.heart i {
+    font-size: 20px;
+}
+/* pagination */
+.pagination {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 20px 0;
+    gap: 10px;
+}
+.pagination .page-item {
+    display: inline-block;
+}
+.pagination .page-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff; 
+    background-color: #000000; 
+    border: 1px solid #dee2e6;
+    padding: 10px 15px;
+    border-radius: 4px; 
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.pagination .page-link:hover {
+    background-color: rgb(205, 2, 2); 
+    color: #fff;
+    transform: scale(1.1); 
+}
+.pagination .page-item.active .page-link {
+    background-color: rgb(205, 2, 2);
+    color: #fff;
+    border-color: rgb(205, 2, 2);
+    font-weight: bold;
+}
+.pagination .page-link[aria-label="Previous"],
+.pagination .page-link[aria-label="Next"] {
+    font-size: 1.2rem; 
+    padding: 10px;
+}
+/* footer */
+footer {
+    padding-top: 70px;
+}
+footer .container {
+    gap: 6rem;
+}
+footer .one img {
+    width: 150px;
+}
+footer h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+footer a {
+    color: #afafaf;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .4s ease;
+}
+footer p {
+    color: #afafaf;
+}
+footer .icons i {
+    font-size: 1.5rem;
+    color: #afafaf;
+    transition: .4s ease;
+}
+footer .sub .input {
+    padding: 12px 26px;
+    background-color: #ededed;
+    border: none;
+}
+footer input::placeholder {
+    color: #afafaf;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+footer input:focus {
+    outline: none;
+}
+footer .sub button {
+    padding: 12px 10px;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s ease;
+}
+footer a:hover,
+footer .icons i:hover {
+    color: rgb(205, 2, 2);
+}
+footer .sub button:hover {
+    background-color: rgb(205, 2, 2);
+    border: none;
+}

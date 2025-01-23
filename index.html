@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Nooni</title>
+    <!-- Fontawesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- AnimationCss -->
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- globalCss -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <!-- MasterCss -->
+    <link rel="stylesheet" href="./assets/css/master.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header d-flex justify-content-between align-items-center">
+        <div class="left d-flex justify-content-between gap-4">
+            <div class="line d-flex justify-content-center align-items-center gap-2">
+                <a href="#">english</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="drop-down d-flex flex-column">
+                    <a href="#">Français</a>
+                    <a href="#">DEUTSCH</a>
+                </div>
+            </div>
+            <div class="line d-flex justify-content-center align-items-center gap-2">
+                <a href="#">usd</a>
+                <i class="fa-solid fa-angle-down"></i>
+                <div class="drop-down-r d-flex flex-column">
+                    <a href="#">usd</a>
+                    <a href="#">eur</a>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <p>Up to 40% off Best-Selling Furniture. <span>Shop Now</span></p>
+        </div>
+        <div class="right">
+            <div class="icon d-flex gap-2 d-sm-none d-md-none d-lg-block">
+                <button type="button" class="btn position-relative">
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                    <div class="hide d-flex flex-column gap-3">
+                        <input type="text" placeholder="Username or email address*">
+                        <input type="password" placeholder="Password*">
+                        <div class="line d-flex justify-content-center align-items-center">
+                            <a href="#">sign in</a>
+                            <div class="check d-flex gap-1">
+                                <input type="checkbox" id="profile" name="profile" value="profile">
+                                <label for="profile">Remember Me</label>
+                            </div>
+                        </div>
+                    </div>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <a href="#"><i class="fa-regular fa-heart"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                        99+
+                    </span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                        22+
+                    </span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- <header class="d-flex bg-black justify-content-between align-items-center">
+            <div class="left d-flex">
+                <p>Up to 40% off Best-Selling Furniture.</p>
+                <a href="#">SHOP NOW</a>
+            </div>
+            <div class="right">
+                <div class="dropdown d-flex justify-content-center gap-2">
+                    <p class="text">ENGLISH</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content">
+                        <a href="#">Français</a>
+                        <a href="#">DEUTSCH</a>
+                    </div>
+                </div>
+                <div class="dropdown d-flex justify-content-between gap-2">
+                    <p class="text">USD</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content">
+                    <a href="#">USD</a>
+                    <a href="#">EUR</a>
+                    </div>
+                </div>
+            </div>
+    </header> -->
+    <!-- End header -->
+    
+    <!-- hero Section -->
+    <div class="hero-section">
+        <div class="section-top col-lg-12 d-flex justify-content-between align-items-center d-sm-none d-md-flex d-lg-flex">
+            <!-- left -->
+            <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
+            <!-- center -->
+            <div class="menu-search d-flex justify-content-between gap-5 ms-md-5">
+                <a href="#">Home</a>
+                <a href="./shop.html">Shop</a>
+                <a href="./product.html">Product</a>
+                <a href="./blog.html">Blog</a>
+                <a href="./about.html">About Us</a>
+                <a href="./contact.html">Contact Us</a>
+            </div>  
+            <!-- right -->
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <div class="offcanvas offcanvas-end d-flex flex-column" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">
+                        Search for products (0)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body d-flex justify-content-center gap-2">
+                    <input type="text" placeholder="Search for products...">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- section bottom -->
+        <div class="section-bottom d-flex justify-content-center align-items-center flex-column">
+            <video autoplay muted class="col-lg-12">
+                <source src="./assets/images/12278994-uhd_3840_2160_24fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- main -->
+            <div class="hero-text d-flex flex-column justify-content-center align-items-center">
+                <h1>furniture sets & collections</h1>
+                <h6 class="animate__animated animate__fadeInLeft" style="animation-duration: 2s;">best-selling pieces of furniture - free shipping</h6>
+                <p class="animate__animated animate__fadeInRight" style="animation-duration: 2s;">Shop now and enjoy up to <span>50% off !</span></p>
+                <div class="video-icon animate__animated animate__shakeX" style="animation-duration: 10s; animation-delay: .5s;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                        <circle cx="50" cy="50" r="50" fill="rgba(255, 255, 255, 0.5)"/>
+                        <polygon points="40,30 40,70 70,50" fill="#000000" />
+                    </svg>
+                </div>
+                <video id="myVideo" width="100%" controls style="display:none;">
+                    <source src="./assets/images/12278994-uhd_3840_2160_24fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <!-- End Main -->
+            <div class="overlay">
+                <div class="left"></div>
+                <div class="right"></div>
+            </div>
+        </div>
+        <!-- None -->
+        <nav class="navbar navbar-dark bg-dark fixed-top d-sm-block d-md-none d-lg-none md p-sm-0">
+            <div class="container-fluid">
+                <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><span>n</span>oo<span>n'i</span></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">About us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#">Contact us</a>
+                        </li>
+                    </ul>
+                    
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End Hero Section -->
+    
+    <!-- Shop Category-->
+    <div class="shop-category d-flex flex-column justify-content-between">
+        <div class="top">
+            <p>SHOP BY CATEGORY</p>
+        </div>
+        
+        <div class="bottom d-flex justify-content-between algin-items-center gap-sm-2 flex-sm-wrap flex-lg-nowrap">
+            <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                    <div class="link">
+                        <a href="#"><img src="./assets/images/bed-310x310.jpg" alt=""></a>
+                        <i class="icon fa-solid fa-download"></i>
+                    </div>
+                    <div class="text d-flex flex-column justify-content-center">
+                        <h6>Bed</h6>
+                        <p>7 Product</p>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                    <div class="link">
+                        <a href="#"><img src="./assets/images/table-310x310.jpg" alt=""></a>
+                        <i class="icon fa-solid fa-download"></i>
+                    </div>
+                    <div class="text d-flex flex-column justify-content-center">
+                        <h6>Table</h6>
+                        <p>5 Product</p>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                    <div class="link">
+                        <a href="#"><img src="./assets/images/chair-1-310x310.jpg" alt=""></a>
+                        <i class="icon fa-solid fa-download"></i>
+                    </div>
+                    <div class="text d-flex flex-column justify-content-center">
+                        <h6>Chair</h6>
+                        <p>12 Product</p>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee-item">
+                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                    <div class="link">
+                        <a href="#"><img src="./assets/images/chair-1-310x310.jpg" alt=""></a>
+                        <i class="icon fa-solid fa-download"></i>
+                    </div>
+                    <div class="text d-flex flex-column justify-content-center">
+                        <h6>Chair</h6>
+                        <p>12 Product</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <!-- End ShopCategory -->
+    
+    <!-- Services -->
+    <div class="services">
+        <div class="overlay"></div>
+        <img src="./assets/images/news-1.jpg" alt="">
+        <div class="boxes d-flex justify-content-center">
+            <div class="box">
+                <div class="image">
+                    <div class="filter"></div>
+                    <img src="./assets/images/service-3.jpg" alt="">
+                </div>
+                <div class="text d-flex flex-column ">
+                    <div class="icons d-flex gap-2">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <p>architecture</p>
+                    </div>
+                    <a href="#">read more</a>
+                </div>
+                <div class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3" style="height: 100%; width: 300px; ">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h6>architecture</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusamus laborum iure veniam adipisci impedit</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <div class="filter"></div>
+                    <img src="./assets/images/service-3.jpg" alt="">
+                </div>
+                <div class="text d-flex flex-column ">
+                    <div class="icons d-flex gap-2">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <p>architecture</p>
+                    </div>
+                    <a href="#">read more</a>
+                </div>
+                <div class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3" style="height: 100%; width: 300px; ">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h6>architecture</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusamus laborum iure veniam adipisci impedit</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <div class="filter"></div>
+                    <img src="./assets/images/service-3.jpg" alt="">
+                </div>
+                <div class="text d-flex flex-column ">
+                    <div class="icons d-flex gap-2">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <p>architecture</p>
+                    </div>
+                    <a href="#">read more</a>
+                </div>
+                <div class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3" style="height: 100%; width: 300px; ">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h6>architecture</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusamus laborum iure veniam adipisci impedit</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <div class="filter"></div>
+                    <img src="./assets/images/service-3.jpg" alt="">
+                </div>
+                <div class="text d-flex flex-column ">
+                    <div class="icons d-flex gap-2">
+                        <i class="fa-solid fa-arrow-up"></i>
+                        <p>architecture</p>
+                    </div>
+                    <a href="#">read more</a>
+                </div>
+                <div class="hidden-box d-sm-flex flex-column justify-content-center align-items-center gap-3" style="height: 100%; width: 300px; ">
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                    <h6>architecture</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusamus laborum iure veniam adipisci impedit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Services -->
+    
+    <!-- Cabina -->
+    <div class="section-two d-flex justify-content-between gap-4 m-sm-5 ">
+        <div class="left col-lg-6 d-flex flex-column">
+            <div class="lamp h-50 d-flex flex-wrap">
+                <div class="text">
+                    <p>Up To 40% Off <br>Top Lamp Brands</p>
+                    <a href="#">SHOP NOW</a>
+                </div>
+                <div class="links d-flex">
+                    <img class="" src="./assets/images/banner-0-removebg-preview.png" alt="">
+                </div>           
+            </div>
+            <div class="cabinets h-50 p-5">
+                <p>NEW PRODUCTS</p>
+                <h3>Up To 25% Off Cabinets</h3>
+                <a href="#">SHOP NOW</a>
+            </div>
+        </div>
+        <div class="right col-lg-6 d-flex justify-content-start text-center flex-column">
+            <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                <rect
+                    rx="1"
+                    ry="1"
+                    class="line"
+                    height="100%"
+                    width="100%"
+                    stroke-linejoin="round"
+                />
+            </svg>
+            <div class="sale">
+                <p>BIG SALE</p>
+                <h2>Up to 70% Off <br>Furniture & Decor</h2>
+                <a href="#">SHOP NOW</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="canaba d-flex justify-content-between">
+        <div class="text d-flex justify-content-center align-items-center gap-3 col-6">
+            <span>10%</span>
+            <div class="right">
+                <h2>Get More Pay Less</h2>
+                <p>On orders $500 + Use Coupon Code: <a> WSD10</a></p>
+            </div>
+        </div>
+        <div class="image col-6">
+            <img src="./assets/images/banner-3-removebg-preview.png" alt="">
+        </div>
+    </div>
+    <!-- Canaba -->
+    <!-- <div class="section-three">
+        <div class="text d-flex align-items-center gap-5 p-5">
+            <div class="left">
+                <span>10%</span>
+            </div>
+            <div class="right d-flex flex-column justify-content-between align-items-center gap-0">
+                <h2>Get More Pay Less</h3>
+                <p>On orders $500 + Use Coupon Code: <span>WSD10</span></p>
+            </div>   
+        </div>
+    </div> -->
+
+    <!-- section-4 -->
+    <div class="section-four d-flex flex-wrap p-0 gap-5">
+        <div class="top col-lg-12 d-flex justify-content-between align-items-center gap-2">
+            <div class="text col-lg-3 p-3 d-flex flex-column gap-3">
+                <p>Best<br> Modern<br> Furniture</p>
+                <a href="#">See All >></a>
+            </div>
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/01-450x572.jpg" data-hover="./assets/images/10-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div> 
+                <a href="#"><P>Wood Outdoor Adirondack Chair</P></a>
+                <div class="price d-flex gap-3">
+                    <span>$1,009</span>
+                    <del >$1,259</del>
+                </div>
+                <div class="position-r px-2">hot</div>
+                <div class="pt px-2 bg-black">sale</div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/08-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <a href="#"><P>Solid Wood Bar Storage Cabinet</P></a>
+                <div class="price">
+                    <span>$1,899</span>
+                </div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/13-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+                <a href="#"><P>Solid Wood Bed With Fabric Headboard</P></a>
+                <div class="price">
+                    <span>$3,707 – $5,707</span>
+                </div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+        <!-- bottom -->
+        <div class="bottom col-lg-12 d-flex justify-content-between align-items-center gap-2">
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/26-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div> 
+                <a href="#"><P>Floor Lamp With Polyester Shade</P></a>
+                <div class="price">
+                    <span>$399</span>                
+                </div>
+                <div class="position px-1">sold out</div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/02-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div> 
+                <a href="#"><P>Garden Chair With Armrests</P></a>
+                <div class="price">
+                    <span>$1,009</span>
+                </div>
+                <div class="position-r px-2">hot</div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/22-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div> 
+                <a href="#"><P>Led Steel Floor Lamp</P></a>
+                <div class="price d-flex gap-3">
+                    <span>$299</span>
+                    <del>$420</del>
+                </div>
+                <div class="position px-2 bg-black">sale</div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product col-lg-3">
+                <div>
+                    <img class="hover-image" src="./assets/images/06-450x572.jpg" alt="">
+                    <button>select options</button>
+                    <div class="icons">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-code-compare"></i>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div> 
+                <a href="#"><P>Teak Garden Chair With Armrests</P></a>
+                <div class="price">
+                    <span>$999</span>                  
+                </div>
+                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+            </div>
+        </div>
+    </div>
+    <!-- Start Blog -->
+    <div class="blog">
+        <p>our blog</p>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+            <div class="carousel-item active d-flex justify-content-between gap-5">
+                <div class="blog-left col-lg-6">
+                    <img src="./assets/images/blog-1-1174x862.jpg"class="w-100"lt="...">
+                </div>
+                <div class="blog-center d-flex flex-column justify-content-center gap-2  col-lg-3">
+                    <div class="links">
+                        <a href="#">furniture,</a>
+                        <a href="#">table</a>
+                    </div>
+                    <h2><a href="#">The Secrets to a Living Room that Draws You In</a></h2>
+                    <p>Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim feils. Nam nec diam ultricies, malesuada</p>
+                    <a href="#">READ MORE</a> 
+                </div>
+                <div class="blog-right col-lg-3">
+                    <img src="./assets/images/blog-2-1174x862.jpg" class="w-100" style="height: 100% ;" alt="">
+                </div>
+            </div>
+            <div class="carousel-item d-flex justify-content-between gap-5">
+                <div class="blog-left col-lg-6">
+                    <img src="./assets/images/blog-2-1174x862.jpg" class="w-100"  alt="...">
+                </div>
+                <div class="blog-center d-flex flex-column justify-content-center gap-2 col-lg-3">
+                    <div class="links">
+                        <a href="#">furniture,</a>
+                        <a href="#">table</a>
+                    </div>
+                    <h2><a href="#">The Secrets to a Living Room that Draws You In</a></h2>
+                    <p>Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim feils. Nam nec diam ultricies, malesuada</p>
+                    <a href="#">READ MORE</a>
+                </div>
+                <div class="blog-right col-lg-3">
+                    <img src="./assets/images/blog-1-1174x862.jpg" class="w-100" style="height: 100%;" alt="">
+                </div>
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- End Blog -->
+    <!-- section-video -->
+    <div class="section-video mb-5">
+        <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <p>wood</p>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="container d-flex flex-column justify-content-between">
+            <div class="top d-flex justify-content-between">
+                <div class="one d-flex flex-column gap-3">
+                    <img src="./assets/images/logo.png" alt="logo">
+                    <p>Phone: +01143363912</p>
+                    <p>Mon - Fri: 8 am - 8 pm</p>
+                    <p>Sat - Sun: 8 am - 7 pm</p>
+                </div>
+                <div class="two d-flex flex-column gap-3">
+                    <h4>ABOUT</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Influencers</a>
+                    <a href="#">Join our team</a>
+                </div>
+                <div class="three d-flex flex-column gap-3">
+                    <h4>CUSTOMER SERVICES</h4>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Customer Service</a>
+                    <a href="#">Find Store</a>
+                    <a href="#">Book appointment</a>
+                    <a href="#">Shipping & Returns</a>
+                </div>
+                <div class="four d-flex flex-column gap-3">
+                    <h4>SIGN UP FOR EMAILS</h4>
+                    <p>Enjoy 15% off* your first order when sign up to our newsletter</p>
+                    <div class="sub d-flex">
+                        <input  class="input w-100 " type="text" placeholder="Your e-mail address">
+                        <button type="submit">SUBSCRIBE</button>
+                    </div>
+                    <div class="icons d-flex gap-2">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom ">
+                <div class="hr">
+                    <hr>
+                </div>
+                <div class="info d-flex justify-content-between">
+                    <div class="left d-flex gap-5">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Help</a>
+                        <a href="#">FAQs</a>
+                    </div>
+                    <div class="center">
+                        <p> Gemy, All Rights Reserved.</p>
+                    </div>
+                    <div class="right">
+                        <img src="./assets/images/payment.png" alt="">
+                    </div>
+                </div>
+        </div>
+    </footer>
+    <!-- animation text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- js -->
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
