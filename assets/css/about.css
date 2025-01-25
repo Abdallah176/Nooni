@@ -113,7 +113,7 @@ header .dropdown a:hover {
 }
 /* Start About */
 .about {
-    margin-top: 150px;
+    margin-top: 50px;
 }
 /* Links */
 .about .links a {
@@ -122,6 +122,9 @@ header .dropdown a:hover {
 .about .links a:nth-child(1) {
     color: #848484;
     transition: 0.3s;
+}
+.about .links a:nth-child(2) {
+    text-decoration: line-through;
 }
 .about .links a:nth-child(1):hover {
     color: rgb(205, 2, 2);
@@ -265,9 +268,9 @@ header .dropdown a:hover {
     padding-bottom: 100px;
     overflow: hidden;
     position: relative;
-    clip-path: inset(0 round 15px);
+    clip-path: inset(0 15px);
     width: 100%;
-    height: 100%;
+    height: 400px;
 }
 .contact-us  img {
     position: fixed;
@@ -329,13 +332,174 @@ header .dropdown a:hover {
 }
 .about .brands img:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 /* End About */
+@media (max-width: 576px){
+    /* About-Nooni */
+    .about-nooni {
+        margin-top: 20px;
+    }
+    .about-nooni h1 {
+        font-size: 2rem;
+    }
+    .about-nooni p {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    .about .about-nooni img {
+        height: 300px;
+    }
+    /* How-Works */
+    .about .how-works {
+        font-size: .9rem;
+    }
+    .about .how-works {
+        display: flex;
+        flex-direction: column;
+    }
+    .about .how-works .text {
+        order: -1;
+        text-align: center;
+    }
+    .about .how-works .text .line h4 {
+        font-size: 1rem;
+    }
+    /* Our team */
+    .about .our-team .team {
+        flex-wrap: wrap;
+    }
+    .about .our-team h3 {
+        margin-bottom: 30px;
+    }
+    .about .our-team .team .line {
+        width: 100%;
+    }
+    /* Contact us */
+    .about .contact-us .content .text-center p{
+        font-size: .9rem;
+        letter-spacing: 1px;
+        margin-bottom: 60px;
+    } 
+    /* Brands */
+    .about .brands {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
+/* ------------ */
+@media (min-width: 576px) and (max-width: 992px) {
+      /* About-Nooni */
+    .about-nooni {
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-nooni h1 {
+        font-size: 2.4rem;
+    }
+    .about-nooni p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+    }
+    .about .about-nooni img {
+        height: 500px;
+        width: 100%;
+    }
+    /* How-Works */
+    .about .how-works .image {
+        background-color: red;
+    }
+    .about .how-works .image img {
+        width: 100%;
+        height: 600px;
+    }
+    .about .how-works .text h3 {
+        font-size: 1.7rem;
+    }
+    .about .how-works {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .about .how-works .text {
+        order: -1;
+        text-align: center;
+    }
+    .about .how-works .text .line h4 {
+        font-size: 1.2rem;
+    }
+    /* Our team */
+    .about .our-team .team {
+        flex-wrap: wrap;
+        padding: 0 50px;        
+    }
+    .about .our-team .team .line {
+        width: 100%;
+    }
+    .about .our-team h3 {
+        font-size: 2rem;
+    }
+    /* Contact us */
+    .about .contact-us .content .text-center p{
+        font-size: .9rem;
+        letter-spacing: 1px;
+        color: #ffffff;
+        margin-bottom: 60px;
+    } 
+    /* Brands */
+    .about .brands {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: space-between;
+        text-align: center;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    /* Our Team */
+    .about .our-team .team {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 50px;
+    }
+    .about .our-team .team .line .image img {
+        width: 100%;
+        height: 100%;
+    }
+    /* Brands */
+    .about .brands {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 40px;
+        text-align: center;
+    }
+    .about .brands img { 
+        width: 25%;
+        height: 140px;
+    }
+}
+@media ((min-width: 1200px) and (max-width: 1300px)) {
+    /* Our Team */
+    .about .our-team .team {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    /* Brands */
+    .about .brands {
+        display: flex;
+        text-align: center;
+    }
+    .about .brands img { 
+        width: 250px;
+    }
+}
+/* footer */
 footer {
     padding-top: 70px;
 }
 footer .container {
-    gap: 6rem;
+    gap: 8rem;
 }
 footer .one img {
     width: 150px;
@@ -380,12 +544,90 @@ footer .sub button {
     font-weight: 700;
     letter-spacing: 1px;
     transition: .3s ease;
+    border: rgb(205, 2, 2);
 }
 footer a:hover,
 footer .icons i:hover {
     color: rgb(205, 2, 2);
+    cursor: pointer;
 }
 footer .sub button:hover {
     background-color: rgb(205, 2, 2);
     border: none;
+}
+@media (max-width: 768px){
+    footer .top {
+        gap: 70px;
+    }
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    footer .top .four .sub {
+        width: 100%;    
+    }   
+    footer .top .one {
+        order: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer .top .three {
+        order: 1;
+    }
+    footer .top .two {
+        order: 2;
+        padding-right: 70px;
+    }
+    footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    footer .bottom .info .center {
+        order: -1;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    footer .top .four .sub {
+        width: 100%;    
+    }   
+    footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    footer .bottom .info .center {
+        order: -1;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    footer .bottom .info { 
+        display: flex;
+    }
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }

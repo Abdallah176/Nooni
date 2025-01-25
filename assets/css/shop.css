@@ -495,7 +495,7 @@ footer {
     padding-top: 70px;
 }
 footer .container {
-    gap: 6rem;
+    gap: 8rem;
 }
 footer .one img {
     width: 150px;
@@ -540,12 +540,90 @@ footer .sub button {
     font-weight: 700;
     letter-spacing: 1px;
     transition: .3s ease;
+    border: rgb(205, 2, 2);
 }
 footer a:hover,
 footer .icons i:hover {
     color: rgb(205, 2, 2);
+    cursor: pointer;
 }
 footer .sub button:hover {
     background-color: rgb(205, 2, 2);
     border: none;
+}
+@media (max-width: 768px){
+    footer .top {
+        gap: 70px;
+    }
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    footer .top .four .sub {
+        width: 100%;    
+    }   
+    footer .top .one {
+        order: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer .top .three {
+        order: 1;
+    }
+    footer .top .two {
+        order: 2;
+        padding-right: 70px;
+    }
+    footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    footer .bottom .info .center {
+        order: -1;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    footer .top .four .sub {
+        width: 100%;    
+    }   
+    footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    footer .bottom .info .center {
+        order: -1;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    footer .bottom .info { 
+        display: flex;
+    }
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
