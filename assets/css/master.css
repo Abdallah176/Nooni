@@ -313,8 +313,66 @@ body {
     }
 }
 /* End Hero Section */
+/* Shop */
+.shop {
+    padding: 100px 100px;
+}
+.shop h1 {
+    font-size: 2.9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.shop .line img {
+    width: 200px;
+    border-radius: 50%;
+}
+#mySectionLeft {
+    opacity: 0; /* مخفي في البداية */
+    transform: translateX(-100px); /* مُزاح لليسار بمقدار 100 بكسل */
+    transition: opacity 1s, transform 1s;
+}
+#mySectionLeft.active {
+    opacity: 1; /* يظهر */
+    transform: translateX(0); /* يعود لمكانه الأصلي */
+}
+/* Photo */
+.photo {
+    padding: 0 50px;
+}
+.photo .line {
+    gap: 1rem;
+}
+.photo .image {
+    overflow: hidden;
+}
+.photo img {
+    height: 400px;
+    transition: .5s ease all;
+}
+.photo img:hover {
+    transform: scale(1.1);
+}
+.photo .line .image .one {
+    width: 600px;
+}
+.photo .line .image .two {
+    width: 300px;
+}
+.photo .line .image .three {
+    width: 300px;
+}
+.photo .line .image .four {
+    width: 400px;
+}
+.photo .line .image .five {
+    width: 500px;
+}
+.photo .line .image .six {
+    width: 300px;
+}
 /* Start Shop Category */
-.shop-category {
+/* .shop-category {
     margin: 100px 60px 90px 60px;
 }
 .shop-category .top p {
@@ -380,7 +438,7 @@ body {
 .shop-category {
     overflow: hidden;
     position: relative;
-}
+} */
 /* .shop-category .bottom {
     animation: slide 5s infinite;;
 }
@@ -702,10 +760,154 @@ body {
     top: 40%;
     left: 12%;
 } */
+.product {
+    padding: 100px 50px;
+}
+.product .card-content .box {
+    margin-top: 70px;
+}
+.product .card-content .box h2 {
+    font-size: 3.1rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.product .card-content .box a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .3s ease all;
+}
+.product .card-content .box a:hover {
+    color: rgb(205, 2, 2);
+}
+.product .card-content .card {
+    border: none;
+    position: relative;
+}
+.product .card-content .card p {
+    padding-top: 10px;
+    font-weight: 500;    
+}
+.product .card-content .card .price {
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+.product .card-content .card span {
+    font-weight: 700;
+}
+.product .card-content .card del {
+    color: #afafaf;
+}
+.product .card-content .card .icon i {
+    position: absolute;
+    right: 1.4rem;
+    bottom: 5.5rem;
+    font-size: 1.3rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+}
+.product .card-content .card .sale {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+.product .card-content .card .sale h6 {
+    padding: 2px 15px;
+    font-size: .8rem;
+    color: #ffffff;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.product .card-content .card .sale h6:nth-child(1) {
+    background-color: rgb(205, 2, 2);   
+}
+.product .card-content .card .sale h6:nth-child(2) {
+    background-color: #000000;
+}
+
+/* لي مش بتختفي */
+.product .card-content .card .icons {
+    position: absolute;
+    right: .5rem;
+    bottom: 8rem;
+    display: none;
+}
+.product .card-content .card .icons i {
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    border-radius: 50%;
+    padding: 10px;
+    transition: .3s ease all;
+}
+.product .card-content .card .icons i:hover  {
+    color: #ffffff;
+    background-color: rgb(205, 2, 2);
+    cursor: pointer;
+}
+/* اكيد مش هتتكتب كدا */
+.product .card-content .card .icons i:hover p {
+    display: block;
+}
+.product .card-content .card .icons p {
+    background-color: rgb(205, 2, 2);
+    color: #ffffff;
+    padding: 5px 10px;
+    font-size: .8rem;
+    display: none;
+}
+
+
+.product .card-content .card .links {
+    position: absolute;
+    bottom: 4.5rem;
+    display: none;
+}
+.product .card-content .card .links button{
+    padding: 15px;
+    border: none;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    width: 325px;
+}
+/* .product .card-content .card .one {
+    transition: opacity 2s ease;
+} */
+.product .card-content .card:hover .icon i {
+    display: block;
+}
+.product .card-content .card .one {
+    transition: 2s;
+}
+.product .card-content .card .one:hover {
+    content: url("../images/01-2-450x572.jpg");
+}
+.product .card-content .card .two:hover {
+    content: url("../images/10-450x572.jpg");
+}
+.product .card-content .card .three:hover {
+    content: url("../images/13-2-450x572.jpg");
+}
+.product .card-content .card .four:hover {
+    content: url("../images/26-450x572.jpg");
+}
+.product .card-content .card .five:hover {
+    content: url("../images/02-4-450x572.jpg");
+}
+.product .card-content .card .six:hover {
+    content: url("../images/26-450x572.jpg");
+}
+.product .card-content .card .seven:hover {
+    content: url("../images/34-450x572.jpg");
+}
 
 
 /* section-4 */
-.section-four {
+/* .section-four {
     margin: 100px 60px 0 60px;
 }
 .section-four img {
@@ -714,9 +916,9 @@ body {
 .section-four .product {
     position: relative;
     transition: 3s ease;
-}
+} */
 /* None */
-.section-four .product button {
+/* .section-four .product button {
     background-color: white;
     position: absolute;
     left: 0;
@@ -770,7 +972,7 @@ body {
 }
 .section-four .top .text a:hover {
     color: rgb(205, 2, 2);
-}
+} */
 /* .section-four .hover-image{
     transition: opacity 2s ease-in-out;
 }
@@ -778,15 +980,15 @@ body {
     content: attr(data-hover);
 } */
 
-.hover-image {
+/* .hover-image {
     transition: opacity 2s ease;
 }
 .hover-image:hover{
     content: url('../images/01-450x572.jpg'); 
-}
+} */
 
 /* ------------ */
-.section-four .text {
+/* .section-four .text {
     color: #000000;
 }
 .section-four .text p {
@@ -847,7 +1049,7 @@ body {
 }
 .heart i {
     font-size: 20px;
-}
+} */
 
 /*  Strar Blog */
 .blog {
