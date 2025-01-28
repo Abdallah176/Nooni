@@ -8,7 +8,7 @@ body {
 .header {
     background-color: #000000;
     padding: 0 60px;
-    height: 35px;
+    height: 40px;
 }
 /* left */
 .header .left .line {
@@ -69,26 +69,28 @@ body {
     color: #ffffff;
 }
 /* right */
-.header .icon button a i {
+.header .right .icon button {
+    position: relative;
+}
+.header .right .icon button a i {
     color: #ffffff;
     transition: .3s;
 }
-.header .icon button a i:hover {
+.header .right .icon button a i:hover {
     color: #afafaf;
 }
-.header .icon button a{
-    position: relative;
-}
-.header .icon button span {
+.header .right .icon button span {
     position: absolute;
-    bottom: 150px;
+    bottom: 50px;
+    background-color: rgb(205, 2, 2);
+    height: 20px;    
 }
-.header .icon button:hover .hide {
+.header .right .icon button:hover .hide {
     z-index: 1;
 }
-.header .icon button .hide {
+.header .right .icon button .hide {
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     right: 0;
     top: 37px;
     background-color: #ffffff;
@@ -96,18 +98,18 @@ body {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     transition: .3s;
 }
-.header .icon button .hide input {
+.header .right .icon button .hide input {
     padding: 5px 20px;
     font-size: .9rem;
     border: 1px solid #d1d1d1;
 }   
-.header .icon button .hide input::placeholder {
+.header .right .icon button .hide input::placeholder {
     color: #afafaf;
 }
-.header .icon button .line {
+.header .right .icon button .line {
     gap: 20px;
 }
-.header .icon button .line a {
+.header .right .icon button .line a {
     background-color: #000000;
     color: #ffffff;
     text-decoration: none;
@@ -117,14 +119,24 @@ body {
     padding: 10px 20px;
     transition: .3s;
 }
-/* لييييييييييييييييييييييييييييييي */
-.header .icon button .line a:hover {
+/* whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
+.header .right .icon button .line a:hover {
     background-color: rgb(205, 2, 2);
 }
-.header .icon button .line label {
+.header .right .icon button .line label {
     color: #000000;
     font-size: .9rem;
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    /* whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
+    .header .left {
+        background-color: red;
+        display: none;
+    }
+    .header .right {
+        display: none;
+    }
 }
 /* hero section */
 .hero-section {
@@ -312,6 +324,22 @@ body {
         transform: translateX(100%);
     }
 }
+@media (max-width: 768px) {
+    .hero-section .section-top .menu-search {
+        display: none;
+        background-color: red;
+    }
+    .hero-section .section-bottom .hero-text p span {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 200px) and (max-width: 1400px){
+    
+    /* whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
+    .hero-section .navbar {
+        /* display: none; */
+    }
+}
 /* End Hero Section */
 /* Shop */
 .shop {
@@ -339,6 +367,13 @@ body {
 /* Photo */
 .photo {
     padding: 0 50px;
+    opacity: 0;
+    transform: translateY(-100px); /* ابدأ من أعلى */
+    transition: opacity 1s, transform 1s;
+}
+.photo.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 .photo .line {
     gap: 1rem;
@@ -348,7 +383,7 @@ body {
 }
 .photo img {
     height: 400px;
-    transition: .5s ease all;
+    transition: .3s ease all;
 }
 .photo img:hover {
     transform: scale(1.1);
@@ -578,59 +613,67 @@ body {
 }
 /* Services */
 /* Cabina */
-.section-two {
+.lamp {
     cursor: pointer;
-    margin: 15px 85px 0 60px;
+    padding: 50px 60px 0 60px;
 }
-.section-two .left {
+.lamp .left {
     height: 700px;
-}
-.section-two .left .lamp {
     position: relative;
 }
-.section-two .left .lamp .text p{
+.lamp .left .lampp {
+    height: 350px;
+}
+.lamp .left .cabinets {
+    height: 350px;
+}
+.lamp .left .lampp .text {
+    gap: 2.5rem;
+}
+.lamp .left .lampp .text p{
     font-size: 2.8rem;
     letter-spacing: 5px;
     font-weight: 500;
 }
-.section-two .left .lamp .text a{
+.lamp .left .lampp .text a{
     color: #000000;
     font-size: .9rem;
     font-weight: 700;
 }
-.section-two .left .lamp .links img {
+.lamp .left .lampp .links img {
     position: absolute;
-    left: 60px;
-    bottom: 0px;
+    /* left: 60px; */
+    right: 0px;
+    bottom: 350px;
     transition: .5s;
-    opacity: .9;
 }
-.section-two .left .lamp .links img:hover {
+.lamp .left .lampp .links img:hover {
     transform: scale(1.1);
 }
-.section-two .left .cabinets {
+.lamp .left .cabinets {
     background-image: url('../images/banner-1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
 }
-.section-two .left .cabinets {
+.lamp .left .cabinets {
     letter-spacing: 2px;
+    padding: 40px;
 }
-.section-two .left .cabinets P{
+.lamp .left .cabinets P{
     font-size: 1rem;
 }
-.section-two .left .cabinets h3{
+.lamp .left .cabinets h3{
     font-size: 2rem;
     font-weight: 700;
 }
-.section-two .left .cabinets a{
+.lamp .left .cabinets a{
     color: #000000;
     font-weight: 700;
     font-size: .9rem;
 }
-.section-two .right {
+.lamp .right {
     background-image: url('../images/banner-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -638,28 +681,28 @@ body {
     height: 700px;
     position: relative;
 }
-.section-two .right .sale {
+.lamp .right .sale {
     color: #f2f2f2;
     margin-top: 100px;
 }
-.section-two .right .sale p{
+.lamp .right .sale p{
     font-size: 1.2rem;
     font-weight: 500;
 }
-.section-two .right .sale h2{
+.lamp .right .sale h2{
     font-size: 3rem;
     letter-spacing: 5px;
     font-weight: 500;
 }
-.section-two .right .sale a{
+.lamp .right .sale a{
     color: #f2f2f2;
     font-size: .9rem;
     font-weight: 700;
 }
-.section-two .right svg {
+.lamp .right svg {
     position: absolute;
 }
-.section-two .right .line {
+.lamp .right .line {
     stroke-dasharray: 300;
     stroke-width: 5px;
     fill: transparent;
@@ -674,48 +717,140 @@ body {
         stroke-dashoffset: 2000;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    .section-two {
+        flex-wrap: wrap;
+        padding: 50px 10px 0 10px;
+    }
     .section-two .right {
-        
+        order: -1;
     }
-    .section-two .left {
-
+    .section-two .left .lamp .text p {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        font-weight: 400;
     }
-    .section-two .left .text {
-        
+    .section-two .left .lamp .links img {
+        width: 500px;
+        height: 350px;
     }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    /* Whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy */
+    .lamp {
+        padding: 50px 30px 0 30px;
+    }
+    .lamp .left .lampp {
+        height: 300px;
+    }
+    .lamp .left .cabinets {
+        height: 300px;
+    }
+    .lamp .left .lampp .text {
+        gap: 2px;
+    }
+    .lamp.left .lampp .text p {
+        font-size: 1.7rem;
+        letter-spacing: 1px;
+        font-weight: 400;
+    }
+    .lamp .left .lampp .links img {
+        width: 500px;
+        height: 350px;
+        bottom: 400px;
+    }
+    .lamp .left .cabinets {
+        padding: 15px;
+    }
+    .lamp .left .cabinets h3 {
+        font-size:  1.3rem;
+    }
+    .lamp .left .cabinets a {
+        font-size: .9rem;
+    }
+    .lamp .right {
+        height: 600px;
+    }
+    .lamp .right .sale h2 {
+        font-size: 2rem;
+        letter-spacing: 4px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1300px) {
+    .lamp .left .lampp .text p {
+        font-size: 2.1rem;
+        letter-spacing: 2px;
+        font-weight: 500;
+    }
+    /* .section-two .left .lamp .links img {
+        left: -150px;
+        bottom: 0px;
+        width: 600px;
+    } */
 }
 /* End Setction-two cabina */
-.canaba {
+.main-canaba {
+    padding: 20px 35px 0 60px;
+}
+.main-canaba .canaba {
     background-color: #ffd4c8;
     height: 200px;
-    margin: 15px 25px 0 50px;
-
     padding-left: 50px;
 }
-.canaba .text span {
+.main-canaba .canaba .text {
+    gap: 30px;
+}
+.main-canaba .canaba .text span {
     font-size: 5rem;
     font-weight: 700;
 }
 .canaba .text h2 {
     letter-spacing: 2px;
 }
-.canaba .text p {
+.main-canaba .canaba .text p {
     letter-spacing: 1px;
 }
-.canaba .text .right p a{
+.main-canaba .canaba .text .right p a{
     font-weight: 700;
 }
-.canaba .image {
+.main-canaba .canaba .image {
     overflow: hidden;
 }
-.canaba img {
+.main-canaba .canaba img {
     width: 100%;
     height: 100%;
     transition: .3s;
 }
-.canaba img:hover {
+.main-canaba .canaba img:hover {
     transform: scale(1.1);
+}
+@media (max-width: 767px) {
+    .main-canaba {
+        padding: 10px;
+    }
+    .main-canaba .canaba {
+        height: 400px;
+    }
+    .main-canaba .canaba {
+        flex-direction: column;
+    }
+    .main-canaba .canaba .text {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .main-canaba {
+        padding: 0 10px 0 30px;
+    }
+    .main-canaba .canaba .text {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .main-canaba .canaba .text .right h2 {
+        font-size: 2rem;
+    }
 }
 /* Canaba */
 /* .section-three {
@@ -761,7 +896,7 @@ body {
     left: 12%;
 } */
 .product {
-    padding: 100px 50px;
+    padding: 100px 25px 0 50px;
 }
 .product .card-content .box {
     margin-top: 70px;
@@ -1053,7 +1188,7 @@ body {
 
 /*  Strar Blog */
 .blog {
-    margin: 100px 60px 0 60px;
+    padding: 100px 60px 0 60px;
 }
 .blog p:nth-child(1) {
     color: #000000;

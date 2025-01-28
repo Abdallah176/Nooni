@@ -22,7 +22,7 @@
 <body>
     <!-- header -->
     <div class="header d-flex justify-content-between align-items-center">
-        <div class="left d-flex justify-content-between gap-4">
+        <div class="left d-flex justify-content-between gap-lg-4 d-sm-none d-md-flex d-lg-flex">
             <div class="line d-flex justify-content-center align-items-center gap-2">
                 <a href="#">english</a>
                 <i class="fa-solid fa-angle-down"></i>
@@ -40,11 +40,11 @@
                 </div>
             </div>
         </div>
-        <div class="center pt-3">
+        <div class="center align-items-sm-center pt-3">
             <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
         </div>
-        <div class="right">
-            <div class="icon d-flex gap-2 d-sm-none d-md-none d-lg-block">
+        <div class="right d-sm-none d-md-flex d-lg-flex">
+            <div class="icon d-flex gap-2">
                 <button type="button" class="btn position-relative">
                     <a href="#"><i class="fa-regular fa-user"></i></a>
                     <div class="hide d-flex flex-column gap-3">
@@ -74,15 +74,18 @@
             </div>
         </div>
     </div>
-    <!-- End header -->
-    
+
+
+
+
+
     <!-- hero Section -->
     <div class="hero-section">
-        <div class="section-top col-lg-12 d-flex justify-content-between align-items-center d-sm-none d-md-flex d-lg-flex">
+        <div class="section-top col-lg-12 d-flex justify-content-between align-items-center">
             <!-- left -->
             <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
             <!-- center -->
-            <div class="menu-search d-flex justify-content-between gap-5 ms-md-5">
+            <div class="menu-search d-flex justify-content-between gap-5">
                 <a href="#">Home</a>
                 <a href="./shop.html">Shop</a>
                 <a href="./product.html">Product</a>
@@ -128,14 +131,13 @@
                     Your browser does not support the video tag.
                 </video>
             </div>
-            <!-- End Main -->
             <div class="overlay">
                 <div class="left"></div>
                 <div class="right"></div>
             </div>
         </div>
         <!-- None -->
-        <nav class="navbar navbar-dark bg-dark fixed-top d-sm-block d-md-none d-lg-none md p-sm-0">
+        <nav class="navbar navbar-dark bg-dark fixed-top d-none">
             <div class="container-fluid">
                 <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
@@ -170,7 +172,16 @@
             </div>
         </nav>
     </div>
-    <!-- End Hero Section -->
+
+
+
+
+
+
+
+
+
+
     <!-- Shop Category -->
     <div  id="mySectionLeft" data-aos="fade-right"  class="shop col-12 d-flex flex-column flex-wrap gap-4">
         <h1 class="text-center">Shop Category</h1>
@@ -255,7 +266,7 @@
     
     </div> -->
     <!-- Photo -->
-    <div class="photo d-flex flex-wrap justify-content-center align-items-center col-12 gap-4">
+    <div class="photo d-flex flex-wrap justify-content-center gap-4">
             <div class="image">
                 <img class="one col-12 col-md-12 col-lg-12" src="./assets/images/project-10.jpg" alt="">
             </div>
@@ -275,9 +286,8 @@
                 <img class="six col-12 col-md-12 col-lg-12" src="./assets/images/project-15.jpg" alt="">
             </div>
     </div>
-    
     <!-- Services -->
-    <div class="services">
+    <!-- <div class="services">
         <div class="overlay"></div>
         <img src="./assets/images/news-1.jpg" alt="">
         <div class="boxes d-flex justify-content-center">
@@ -354,12 +364,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Cabina -->
-    <div class="section-two d-flex justify-content-between gap-4 ">
-        <div class="left d-flex flex-column col-md-12 col-lg-6">
-            <div class="lamp h-50 d-flex flex-wrap">
-                <div class="text">
+    <div class="lamp d-flex justify-content-between gap-4 col-12">
+        <div class="left d-flex flex-column col-12 col-md-6 col-lg-6">
+            <div class="lampp d-flex">
+                <div class="text d-flex flex-column">
                     <p>Up To 40% Off <br>Top Lamp Brands</p>
                     <a href="#">SHOP NOW</a>
                 </div>
@@ -367,13 +377,13 @@
                     <img class="" src="./assets/images/banner-0-removebg-preview.png" alt="">
                 </div>           
             </div>
-            <div class="cabinets h-50 p-5">
+            <div class="cabinets">
                 <p>NEW PRODUCTS</p>
                 <h3>Up To 25% Off Cabinets</h3>
                 <a href="#">SHOP NOW</a>
             </div>
         </div>
-        <div class="right d-flex justify-content-start text-center flex-column col-md-12 col-lg-6">
+        <div class="right d-flex justify-content-start text-center flex-column col-12 col-md-6 col-lg-6">
             <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
                 <rect
                     rx="1"
@@ -392,18 +402,20 @@
         </div>
     </div>
     <!-- Canaba -->
-    <div class="canaba d-flex justify-content-between">
-        <div class="text d-flex justify-content-center align-items-center gap-3 col-6">
-            <span>10%</span>
-            <div class="right">
-                <h2>Get More Pay Less</h2>
-                <p>On orders $500 + Use Coupon Code: <a> WSD10</a></p>
+    <div class="main-canaba col-12">
+        <div class="canaba d-flex justify-content-between col-12">
+            <div class="text d-flex align-items-center">
+                <span>10%</span>
+                <div class="right">
+                    <h2>Get More Pay Less</h2>
+                    <p>On orders $500 + Use Coupon Code: <a> WSD10</a></p>
+                </div>
+            </div>
+            <div class="image">
+                <img src="./assets/images/banner-3-removebg-preview.png" alt="">
             </div>
         </div>
-        <div class="image col-6">
-            <img src="./assets/images/banner-3-removebg-preview.png" alt="">
-        </div>
-    </div>
+    </div> 
     <!-- Product -->
     <div class="product col-12 d-flex flex-wrap">
         <div class="card-content col-12 col-md-6 col-lg-3 p-3">
@@ -653,7 +665,7 @@
     </div>
     <!-- Blog -->
     <div class="blog">
-        <p>our blog</p>
+        <p class="text-center fs-1 mb-4">our blog</p>
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-between gap-5">
@@ -701,7 +713,6 @@
             </button>
         </div>
     </div>
-    <!-- End Blog -->
     <!-- section-video -->
     <div class="section-video mb-5">
         <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"></video>
@@ -710,7 +721,6 @@
             <p>wood</p>
         </div>
     </div>
-
     <!-- footer -->
     <footer>
         <div class="container d-flex flex-column justify-content-between">

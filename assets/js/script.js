@@ -29,18 +29,31 @@
   //     items[currentIndex].classList.add('active');
   //    setInterval(showNextItem, 3000); // تبديل كل 3 ثوانٍ
 
+// left Shop Category 
+const section = document.getElementById('mySectionLeft');
+let hasAnimated = false; // متغير للتحقق من أن الحركة حدثت بالفعل
 
-  const section = document.getElementById('mySectionLeft');
-  let hasAnimated = false; // متغير للتحقق من أن الحركة حدثت بالفعل
-  
-  window.addEventListener('scroll', () => {
-    if (hasAnimated) return; // إذا حدثت الحركة بالفعل، لا تفعل شيئًا
-  
-    const sectionTop = section.getBoundingClientRect().top;
+window.addEventListener('scroll', () => {
+  if (hasAnimated) return; // إذا حدثت الحركة بالفعل، لا تفعل شيئًا
+
+  const sectionTop = section.getBoundingClientRect().top;
+  const windowHeight = window.innerHeight;
+
+  if (sectionTop < windowHeight) {
+    section.classList.add('active');
+    hasAnimated = true; // تم تنفيذ الحركة
+  }
+});
+
+
+// Photo
+const photo = document.querySelector('.photo');
+window.addEventListener('scroll', () => {
+    const sectionTop = photo.getBoundingClientRect().top;
     const windowHeight = window.innerHeight;
-  
+
     if (sectionTop < windowHeight) {
-      section.classList.add('active');
-      hasAnimated = true; // تم تنفيذ الحركة
+        photo.classList.add('active');
     }
-  });
+});
+

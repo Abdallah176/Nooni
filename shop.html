@@ -82,30 +82,19 @@
             </div>
         </div>
     </div>
-    <!-- <script>
-        const nav = document.getElementById('navbar');
-        const navTop = nav.offsetTop ;
-        window.addEventListener('scroll', () {
-            if (window.scrollY >= navTop ){
-                nav.classList.add('fixed');
-            } else {
-                nav.classList.remove('fixed');
-            }
-        });
-    </script> -->
 <!-- Hero Shop -->
     <div class="hero-shop d-flex flex-column justify-content-center">
         <div class="links text-center">
-            <a href="#">Home</a>
+            <a href="./index.html">Home</a>
             /
-            <a href="#" style="color: #000000;">Shop</a>
+            <a style="color: #000000;">Shop</a>
         </div>
         <div class="section-one d-flex flex-column justify-content-between">
             <div class="top">
                 <p>Shop</p>
             </div>
-            <div class="bottom d-flex justify-content-between algin-items-center">
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
+            <div class="bottom d-flex flex-wrap justify-content-between algin-items-center">
+                <div class="d-flex algin-items-center gap-4 col-6 col-md-4 col-lg-3 p-2">
                     <div class="link">
                         <a href="#"><img src="./assets/images/bed-310x310.jpg" alt=""></a>
                         <i class="icon fa-solid fa-download"></i>
@@ -115,7 +104,7 @@
                         <p>7 Product</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                <div class="d-flex algin-items-center gap-4 col-6 col-md-4 col-lg-3 p-2">
                     <div class="link">
                         <a href="#"><img src="./assets/images/table-310x310.jpg" alt=""></a>
                         <i class="icon fa-solid fa-download"></i>
@@ -125,7 +114,7 @@
                         <p>5 Product</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                <div class="d-flex algin-items-center gap-4 col-6 col-md-4 col-lg-3 p-2">
                     <div class="link">
                         <a href="#"><img src="./assets/images/chair-1-310x310.jpg" alt=""></a>
                         <i class="icon fa-solid fa-download"></i>
@@ -135,7 +124,7 @@
                         <p>12 Product</p>
                     </div>
                 </div>
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
+                <div class="d-flex algin-items-center gap-4 col-6 col-md-4 col-lg-3 p-2">
                     <div class="link">
                         <a href="#"><img src="./assets/images/lamp-1-310x310.jpg" alt=""></a>
                         <i class="icon fa-solid fa-download"></i>
@@ -151,7 +140,7 @@
     <hr> 
 <!-- product -->
     <div class="products d-flex justify-content-between gap-4">
-        <div class="left col-lg-3">
+        <div class="left col-md-3 col-lg-3 d-sm-none d-md-block d-lg-block">
             <div class="type">
                 <p>Type</p>
                 <div class="check d-flex flex-column justify-content-between gap-2 ps-4 pt-2">
@@ -387,7 +376,7 @@
                 </div>
             </div>
         </div>
-        <div class="right col-lg-9 d-flex flex-column">
+        <div class="right col-md-9 col-lg-9 d-flex flex-column">
             <div class="topp col-lg-12 d-flex justify-content-between align-items-center">
                 <div class="icons">
                     <a href="#"><i class="fa-solid fa-arrow-up-from-bracket"></i></i></a>
@@ -414,295 +403,263 @@
             </div>
             <!-- bottom -->
             <!-- section-4 -->
-    <div class="section-four d-flex flex-wrap gap-5">
-        <div class="top d-flex justify-content-between align-items-center gap-1">
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/01-450x572.jpg" data-hover="./assets/images/10-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
+            <div class="product col-12 d-flex flex-wrap">
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="one" src="./assets/images/01-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
                     </div>
-                </div> 
-                <a href="#"><P>Wood Outdoor Adirondack Chair</P></a>
-                <div class="price d-flex gap-3">
-                    <span>$1,009</span>
-                    <del >$1,259</del>
                 </div>
-                <div class="position-r px-2">hot</div>
-                <div class="pt px-2 bg-black">sale</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="two" src="./assets/images/08-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="three" src="./assets/images/13-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="four" src="./assets/images/27-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="five" src="./assets/images/02-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="six" src="./assets/images/22-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content col-12 col-md-6 col-lg-4 p-3">
+                    <div class="card col-12">
+                        <img class="seven" src="./assets/images/06-450x572.jpg" alt="">
+                        <p>Wood Outdoor Adirondack Chair</p>
+                        <div class="price d-flex gap-2">
+                            <span>$1,009</span>
+                            <del>$1,259</del>
+                        </div>
+                        <div class="icon">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>Sale</h6>
+                        </div>
+                        <div class="icons d-flex flex-column gap-2 d-none">
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Quick view</p>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Compare</p>
+                                <i class="fa-solid fa-code-compare"></i>
+                            </div>
+                            <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                <p>Wishlist</p>
+                                <i class="fa-regular fa-heart"></i>
+                            </div> 
+                        </div>
+                        <div class="links">
+                            <button>Select Options</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/08-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-                <a href="#"><P>Solid Wood Bar Storage Cabinet</P></a>
-                <div class="price">
-                    <span>$1,899</span>
-                </div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/13-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div>
-                <a href="#"><P>Solid Wood Bed With Fabric Headboard</P></a>
-                <div class="price">
-                    <span>$3,707 – $5,707</span>
-                </div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-        </div>
-        <!-- bottom -->
-        <div class="bottom d-flex justify-content-between align-items-center gap-2">
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/26-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Floor Lamp With Polyester Shade</P></a>
-                <div class="price">
-                    <span>$399</span>                
-                </div>
-                <div class="position px-1">sold out</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/02-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Garden Chair With Armrests</P></a>
-                <div class="price">
-                    <span>$1,009</span>
-                </div>
-                <div class="position-r px-2">hot</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/22-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Led Steel Floor Lamp</P></a>
-                <div class="price d-flex gap-3">
-                    <span>$299</span>
-                    <del>$420</del>
-                </div>
-                <div class="position px-2 bg-black">sale</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>        
-        </div>
-        <div class="bottom d-flex justify-content-between align-items-center gap-2">
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/26-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Floor Lamp With Polyester Shade</P></a>
-                <div class="price">
-                    <span>$399</span>                
-                </div>
-                <div class="position px-1">sold out</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/02-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Garden Chair With Armrests</P></a>
-                <div class="price">
-                    <span>$1,009</span>
-                </div>
-                <div class="position-r px-2">hot</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/22-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Led Steel Floor Lamp</P></a>
-                <div class="price d-flex gap-3">
-                    <span>$299</span>
-                    <del>$420</del>
-                </div>
-                <div class="position px-2 bg-black">sale</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>      
-        </div>
-        <div class="bottom d-flex justify-content-between align-items-center gap-2">
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/26-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Floor Lamp With Polyester Shade</P></a>
-                <div class="price">
-                    <span>$399</span>                
-                </div>
-                <div class="position px-1">sold out</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/02-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Garden Chair With Armrests</P></a>
-                <div class="price">
-                    <span>$1,009</span>
-                </div>
-                <div class="position-r px-2">hot</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/22-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Led Steel Floor Lamp</P></a>
-                <div class="price d-flex gap-3">
-                    <span>$299</span>
-                    <del>$420</del>
-                </div>
-                <div class="position px-2 bg-black">sale</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-        </div>
-        <div class="bottom d-flex justify-content-between align-items-center gap-2">
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/26-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Floor Lamp With Polyester Shade</P></a>
-                <div class="price">
-                    <span>$399</span>                
-                </div>
-                <div class="position px-1">sold out</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/02-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Garden Chair With Armrests</P></a>
-                <div class="price">
-                    <span>$1,009</span>
-                </div>
-                <div class="position-r px-2">hot</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-            <div class="product col-lg-4">
-                <div>
-                    <img class="hover-image" src="./assets/images/22-450x572.jpg" alt="">
-                    <button>select options</button>
-                    <div class="icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-code-compare"></i>
-                        <i class="fa-regular fa-heart"></i>
-                    </div>
-                </div> 
-                <a href="#"><P>Led Steel Floor Lamp</P></a>
-                <div class="price d-flex gap-3">
-                    <span>$299</span>
-                    <del>$420</del>
-                </div>
-                <div class="position px-2 bg-black">sale</div>
-                <div class="heart"><i class="fa-regular fa-heart"></i></div>
-            </div>
-        </div>
-    </div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-            <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-            </a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item">
-                <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                    <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
     <hr>
