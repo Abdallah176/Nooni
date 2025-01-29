@@ -1,14 +1,14 @@
 // VideoHeroSection
-  document.querySelector('.video-icon').addEventListener('click', function() {
+document.querySelector('.video-icon').addEventListener('click', function() {
     const video = document.getElementById('myVideo');
     if (video.style.display === 'block') {
-      video.style.display = 'none';  
-    } else {
-      video.style.display = 'block';  
-      video.play(); 
-    }
-  });
-  
+        video.style.display = 'none';  
+        } else {
+        video.style.display = 'block';  
+        video.play(); 
+        }
+    });
+
 
   // const items = document.querySelectorAll('.marquee-item');
   // let currentIndex = 0;
@@ -34,15 +34,15 @@ const section = document.getElementById('mySectionLeft');
 let hasAnimated = false; // متغير للتحقق من أن الحركة حدثت بالفعل
 
 window.addEventListener('scroll', () => {
-  if (hasAnimated) return; // إذا حدثت الحركة بالفعل، لا تفعل شيئًا
+    if (hasAnimated) return; // إذا حدثت الحركة بالفعل، لا تفعل شيئًا
 
-  const sectionTop = section.getBoundingClientRect().top;
-  const windowHeight = window.innerHeight;
+    const sectionTop = section.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
 
-  if (sectionTop < windowHeight) {
-    section.classList.add('active');
-    hasAnimated = true; // تم تنفيذ الحركة
-  }
+    if (sectionTop < windowHeight) {
+        section.classList.add('active');
+        hasAnimated = true; // تم تنفيذ الحركة
+    }
 });
 
 
@@ -56,4 +56,3 @@ window.addEventListener('scroll', () => {
         photo.classList.add('active');
     }
 });
-
