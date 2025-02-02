@@ -21,216 +21,164 @@
 </head>
 <body>
     <!-- header -->
-    <header class="d-flex bg-black justify-content-between align-items-center">
-    <div class="left d-flex">
-        <p>Up to 40% off Best-Selling Furniture.</p>
-        <a href="#">SHOP NOW</a>
-    </div>
-    <div class="right">
-        <div class="dropdown d-flex justify-content-center gap-2">
-            <p class="text">ENGLISH</p>
-            <i class="fa-solid fa-caret-down"></i>
-            <div class="dropdown-content">
-                <a href="#">Français</a>
-                <a href="#">DEUTSCH</a>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left">
+                <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
+            </div>
+            <div class="right d-none d-md-flex d-lg-flex">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Francais</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>       
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        usd
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Usd</a></li>
+                        <li><a class="dropdown-item" href="#">Eur</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="dropdown d-flex justify-content-between gap-2">
-            <p class="text">USD</p>
-            <i class="fa-solid fa-caret-down"></i>
-            <div class="dropdown-content">
-            <a href="#">USD</a>
-            <a href="#">EUR</a>
-            </div>
-        </div>
-    </div>
     </header>
     <!-- Hero Section -->
-    <div class="hero-section">
-<div class="section-top col-lg-12 d-flex justify-content-between align-items-center">
-    <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
-    <div class="menu-search d-flex gap-5">
-        <a href="./index.html">Home</a>
-        <a href="#">Shop</a>
-        <a href="./product.html">Product</a>
-        <a href="./blog.html">Blog</a>
-        <a href="./about.html">About Us</a>
-        <a href="./contact.html">Contact Us</a>
-    </div>
-    <div class="icon d-flex gap-2">
-        <button type="button" class="btn position-relative">
-            <a href="#"><i class="fa-regular fa-user"></i></a>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                25+
-            <span class="visually-hidden">unread messages</span>
-            </span>
-        </button>
-        <button type="button" class="btn position-relative">
-            <a href="#"><i class="fa-regular fa-heart"></i></a>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                12+
-            <span class="visually-hidden">unread messages</span>
-            </span>
-        </button>
-        <button type="button" class="btn position-relative">
-            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                99+
-            <span class="visually-hidden">unread messages</span>
-            </span>
-        </button>
-    </div>
-</div>
-    </div>
-
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left d-flex gap-md-3 gap-lg-3">
+                <div class="menu">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>      
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <p><span>n</span>oo<span>n</span>'i</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <a href="./product.html">Product</a>
+                            <a href="./blog.html">Blog</a>
+                            <a href="./about.html">About us</a>
+                            <a href="./contact.html">Contact us</a>                      
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5>Search for products (0)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="search-product d-flex">
+                                <input type="text" placeholder="Search for products...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <div class="center">
+                <p><span>n</span>oo<span>n</span>'i</p>
+            </div>
+            <div class="right d-flex justify-content-center align-items-center gap-md-3 gap-lg-3">
+                <div class="dropdown d-flex justify-content-center align-items-center">
+                    <button class="btn " data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <form class="dropdown-menu p-4">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check d-flex align-items-center gap-5">
+                                <button type="submit">Sign in</button>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2">
+                                        Remember me
+                                    </label>
+                                </div>   
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div class="shop">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+                            <img src="./assets/images/unnamed.png" alt="">
+                            <p>Your cart is currently empty</p>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </nav>
+    <!-- product -->
     <div class="product d-flex flex-column justify-content-between align-items-center mt-5 col-12">
-        <div class="top d-flex gap-2">
-            <a href="./index.html">Home /</a>
-            <a href="./shop.html">Shop /</a>
-            <a href="./now">New & Now /</a>
-            <a href="./arrivals">New Arrivals /</a>
-            <p>Wood Outdoor Adirondack Chair</p>
-        </div>
-        <div class="bottom d-flex justify-content-between gap-2">
-            <div class="left d-flex flex-column gap-2 col-12 col-md-6 col-lg-1">
-                <img src="./assets/images/01-2-450x572.jpg" alt="">
-                <img src="./assets/images/01-2-450x572.jpg" alt="">
-                <img src="./assets/images/01-2-450x572.jpg" alt="">
-                <img src="./assets/images/01-2-450x572.jpg" alt="">
+        <div class="container">
+            <div class="top d-flex justify-content-center gap-2">
+                <a href="./index.html">Home /</a>
+                <a href="./shop.html">Shop /</a>
+                <a href="./now">New & Now /</a>
+                <a href="./arrivals">New Arrivals /</a>
+                <p>Wood Outdoor Adirondack Chair</p>
             </div>
-            <div class="center col-12 col-md-6 col-lg-6">
-                <div class="image">
-                    <img src="./assets/images/01-450x572.jpg" alt="">
-                </div>
-            </div>
-            <div class="right d-flex flex-column align-items-start col-12 col-md-6 col-lg-5">
-                <h3>Wood Outdoor Adirondack Chair</h3>
-                <div class="stars d-flex gap-5">
-                    <div class="star">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                        (4)
+            <div class="bottom d-wrap d-md-flex d-lg-flex justify-content-between gap-2">
+                <div class="left d-flex flex-sm-row flex-lg-column gap-2 col-lg-1">
+                    <div class="image">
+                        <img src="./assets/images/01-2-450x572.jpg" alt="">
+                        <div class="active"></div>
                     </div>
-                    <div class="text">
-                        <p>Stock: <span>In stock</span></p>
+                    <div class="image">
+                        <img src="./assets/images/01-2-450x572.jpg" alt="">
+                        <div class="overlay"></div>
                     </div>
-                </div>
-                <div class="price d-flex align-items-center gap-3">
-                    <p>$1,009</p>
-                    <del>$1,259</del>
-                </div>
-                <div class="sed">
-                    <p>Aliquam condimentum dictum gravida. Sed eu odio id lorem fermentum faucibus. Cras tempor semper ligula.</p>
-                </div>
-                <div class="color">
-                    <p>Color : </p>
-                    <div class="color-options">
-                        <div class="color-option black"></div>
-                        <div class="color-option green"></div>
-                        <div class="color-option blue"></div>
-                        <div class="color-option banfsg"></div>
+                    <div class="image">
+                        <img src="./assets/images/01-2-450x572.jpg" alt="">
+                        <div class="overlay"></div>
                     </div>
-                </div>
-                <div class="add d-flex justify-content-between align-items-end  col-lg-12">
-                    <div class="counter col-lg-4">
-                        <button onclick="decrement()">-</button>
-                        <span id="count">0</span>
-                        <button onclick="increment()">+</button>
+                    <div class="image">
+                        <img src="./assets/images/01-2-450x572.jpg" alt="">
+                        <div class="overlay"></div>
                     </div>
-                    <a class="col-lg-8 text-center" href="#">Add to cart</a>
                 </div>
                 
-                    <a class="buy col-lg-12" href="#">Buy Now</a>
-                
-                <div class="app d-flex justify-content-between gap-4 col-lg-12">
-                    <div class="line d-flex justify-content-center gap-1 col-lg-3">
-                        <i class="fa-regular fa-heart"></i>
-                        <p>Add to wishlist</p>
-                    </div>
-                    <div class="line d-flex justify-content-center gap-1 col-lg-3">
-                        <i class="fa-solid fa-code-compare"></i>
-                        <p>Compare</p>
-                    </div>
-                    <div class="line-right d-flex justify-content-center gap-3 col-lg-6">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                        <i class="fa-brands fa-pinterest-p"></i>
+                <div class="center col-12 col-md-6 col-lg-6">
+                    <div class="image image-container">
+                        <img src="./assets/images/01-450x572.jpg" id="main-image" alt="">
+                        <div id="zoom-lens"></div>
+                        <div id="zoom-result"></div>
+                        <div class="sale d-flex gap-1">
+                            <h6>Hot</h6>
+                            <h6>sale</h6>
+                        </div>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
-                <hr>
-                <div class="brands">
-                    <p>SKU: <span>0093</span></p>
-                    <p>BRANDS: <a href="#">Creative Design</a></p>
-                    <p>TAGS: <a href="#">Furniture, </a><a href="#">Trending, </a><a href="#">Wood</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="review d-flex flex-column justify-content-between">
-        <ul class="nav nav-tabs d-flex justify-content-center gap-2" id="myTab" role="tablist">
-            <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="dimensions-tab" data-bs-toggle="tab" data-bs-target="#dimensions" type="button" role="tab" aria-controls="dimensions" aria-selected="true">Dimensions</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Details</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab" aria-controls="delivery" aria-selected="false">Delivery & Returns</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3)</button>
-            </li>
-        </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="dimensions tab-pane fade show active d-flex justify-content-between col-lg-12" id="dimensions" role="tabpanel" aria-labelledby="dimensions-tab">
-                <div class="line d-flex flex-column col-lg-6">
-                    <p>OVERALL : <span>64.5" w x 36.5" d x 35" h</span></p>
-                    <p>INSIDE SEATING : <span>50.5" w x 22" d x 19.5" h</span></p>
-                    <p>ARM : <span>7" w x 38.5" d x 22.5" h</span></p>
-                    <p>LEGS : <span>5.5" w x 2" d x 2" h</span></p>
-                </div>
-                <div class="line d-flex flex-column col-lg-6">
-                    <p>SEAT HEIGHT : <span>19.5"</span></p>
-                    <p>BACK FRAME : <span>30"</span></p>
-                    <p>DIAGONAL DEPTH : <span>29.5"</span></p>
-                    <p>WEIGHT : <span>121 lbs</span></p>
-                </div>
-            </div>
-            <div class="details tab-pane fade d-flex flex-column" id="details" role="tabpanel" aria-labelledby="details-tab">
-                <p>Ankara Chair with Fabric Cushion 29.75″Wx28″Dx30.5″H</p>
-                <ul class="d-flex flex-column gap-3">
-                    <li>Frame is benchmade with precision-cut solid ash with grey wash finish, hardwood plywood, and a cane seat</li>
-                    <li>Synthetic webbing suspension system</li>
-                    <li>Soy-based polyfoam cushion with fiber encased in downproof ticking</li>
-                    <li>Frame stained with grey wash finish and clear protective lacquer</li>
-                    <li>See product label or call customer service for additional details on product content</li>
-                </ul>
-            </div>
-            <div class="delivery tab-pane fade d-flex flex-column gap-3" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
-                <div class="line d-flex flex-column gap-2">
-                    <h6>WHITE GLOVE SERVICE</h6>
-                    <p>Items are delivered to your room of choice by appointment, then unpacked and fully assembled by a skilled two-person team. Includes packaging removal and recycling Fee varies by location and order total. (Doorstep delivery does not include assembly)</p>
-                </div>
-                <div class="line d-flex flex-column gap-2">
-                    <h6>FLAT RATE DELIVERY</h6>
-                    <p>An unlimited number of eligible furniture and select non-furniture items can be delivered for one flat rate per shipping address. Your order will ship when all items are ready for delivery. Fee varies by location and order total.</p>
-                </div>
-                <div class="line d-flex flex-column gap-2">
-                    <h6>RETURN POLICY</h6>
-                    <p>You can return eligible items within 30 days of receiving an order or 7 days for Quick Ship upholstery items for a refund of the merchandise value. Made-to-Order furniture is not eligible for returns.</p>
-                </div>
-            </div>
-            <div class="customerss tab-pane fade mb-5" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
-                <div class="customers d-flex flex-column">
-                    <div class="customer-review d-flex flex-column justify-content-between align-items-center gap-2 mb-5">
-                        <h3>Customers Reviews</h3>
-                        <div class="icons">
+                <div class="right d-flex flex-column align-items-start col-12 col-md-6 col-lg-5">
+                    <h3>Wood Outdoor Adirondack Chair</h3>
+                    <div class="stars d-flex gap-5">
+                        <div class="star">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -238,107 +186,233 @@
                             <i class="fa-regular fa-star"></i>
                             (4)
                         </div>
-                    </div>
-                    <div class="line d-flex justify-content-between align-items-center">
-                        <div class="left">
-                            <img src="./assets/images/c78c16621b17ce14195c0da72c4454ed.png" alt="">
-                        </div>
-                        <div class="center">
-                            <div class="text d-flex flex-column gap-2">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at, consectetur eu justo.</p>
-                                <div class="name d-flex gap-2">
-                                    <h6>John henrry </h6>
-                                    <p>May 18, 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </div>
+                        <div class="text">
+                            <p>Stock: <span>In stock</span></p>
                         </div>
                     </div>
-                    <hr>
-                    <div class="line d-flex justify-content-between align-items-center ">
-                        <div class="left">
-                            <img src="./assets/images/e37e05791ac775975aaffb62f352fe32.png" alt="">
+                    <div class="price d-flex align-items-center gap-3">
+                        <p>$1,009</p>
+                        <del>$1,259</del>
+                    </div>
+                    <div class="sed">
+                        <p>Aliquam condimentum dictum gravida. Sed eu odio id lorem fermentum faucibus. Cras tempor semper ligula.</p>
+                    </div>
+                    <div class="color">
+                        <p>Color : </p>
+                        <div class="color-options">
+                            <div class="color-option black"></div>
+                            <div class="color-option green"></div>
+                            <div class="color-option blue"></div>
+                            <div class="color-option banfsg"></div>
                         </div>
-                        <div class="center">
-                            <div class="text d-flex flex-column gap-2">
-                                <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu.</p>
-                                <div class="name d-flex gap-2">
-                                    <h6>marcel</h6>
-                                    <p>May 18, 2023</p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="add d-flex justify-content-between align-items-end gap-2 col-lg-12">
+                        <div class="counter col-lg-4">
+                            <button onclick="decrement()">-</button>
+                            <span id="count">0</span>
+                            <button onclick="increment()">+</button>
                         </div>
-                        <div class="right">
-                            <div class="icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
+                        <a class="col-lg-8 text-center" href="#">Add to cart</a>
+                    </div>
+                    <a class="buy col-lg-12 mt-3" href="#">Buy Now</a>         
+                    <div class="app d-flex justify-content-between gap-4 col-lg-12">
+                        <div class="line d-flex justify-content-center gap-1 col-lg-3">
+                            <i class="fa-regular fa-heart"></i>
+                            <p>Add to wishlist</p>
+                        </div>
+                        <div class="line d-flex justify-content-center gap-1 col-lg-3">
+                            <i class="fa-solid fa-code-compare"></i>
+                            <p>Compare</p>
+                        </div>
+                        <div class="line-right d-flex justify-content-center col-lg-6">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-pinterest-p"></i>
                         </div>
                     </div>
                     <hr>
-                    <div class="line d-flex justify-content-between align-items-center">
-                        <div class="left">
-                            <img src="./assets/images/d8f3ff0124db2720fc8d49466411e944.png" alt="">
-                        </div>
-                        <div class="center">
-                            <div class="text d-flex flex-column gap-2">
-                                <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu.</p>
-                                <div class="name d-flex gap-2">
-                                    <h6>Sofia</h6>
-                                    <p>May 18, 2023</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <div class="icons">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                        </div>
+                    <div class="brands">
+                        <p>SKU: <span>0093</span></p>
+                        <p>BRANDS: <a href="#">Creative Design</a></p>
+                        <p>TAGS: <a href="#">Furniture, </a><a href="#">Trending, </a><a href="#">Wood</a></p>
                     </div>
-                </div>
-                <div class="add d-flex flex-column align-items-center gap-3">
-                    <h3>Add a review</h3>
-                    <p>Your email address will not be published. Required fields are marked *</p>
-                    <div class="text d-flex gap-2">
-                        <p>Your rating * </p>
-                        <div class="icons">
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                    </div>
-                    <textarea class="col-lg-12" name="" id="">Your review *</textarea>
-                    <div class="col-lg-12 inputt d-flex gap-3">
-                        <input class="col-lg-6" type="text" placeholder="Name *">
-                        <input class="col-lg-6" type="email" placeholder="Email *">
-                    </div>
-                    <a class="col-lg-12" href="#">submit</a>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <!-- review -->
+    <div class="review d-flex flex-column justify-content-between">
+        <div class="container">
+            <ul class="nav nav-tabs d-flex justify-content-center gap-2" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="dimensions-tab" data-bs-toggle="tab" data-bs-target="#dimensions" type="button" role="tab" aria-controls="dimensions" aria-selected="true">Dimensions</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="details-tab" data-bs-toggle="tab" data-bs-target="#details" type="button" role="tab" aria-controls="details" aria-selected="false">Details</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="delivery-tab" data-bs-toggle="tab" data-bs-target="#delivery" type="button" role="tab" aria-controls="delivery" aria-selected="false">Delivery & Returns</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button" role="tab" aria-controls="reviews" aria-selected="false">Reviews (3)</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="dimensions tab-pane fade show active d-sm-grid d-md-flex d-lg-flex justify-content-between col-lg-12" id="dimensions" role="tabpanel" aria-labelledby="dimensions-tab">
+                    <div class="line d-flex flex-column col-lg-6">
+                        <p>OVERALL : <span>64.5" w x 36.5" d x 35" h</span></p>
+                        <p>INSIDE SEATING : <span>50.5" w x 22" d x 19.5" h</span></p>
+                        <p>ARM : <span>7" w x 38.5" d x 22.5" h</span></p>
+                        <p>LEGS : <span>5.5" w x 2" d x 2" h</span></p>
+                    </div>
+                    <div class="line d-flex flex-column col-lg-6">
+                        <p>SEAT HEIGHT : <span>19.5"</span></p>
+                        <p>BACK FRAME : <span>30"</span></p>
+                        <p>DIAGONAL DEPTH : <span>29.5"</span></p>
+                        <p>WEIGHT : <span>121 lbs</span></p>
+                    </div>
+                </div>
+                <div class="details tab-pane fade d-flex flex-column" id="details" role="tabpanel" aria-labelledby="details-tab">
+                    <p>Ankara Chair with Fabric Cushion 29.75″Wx28″Dx30.5″H</p>
+                    <ul class="d-flex flex-column gap-3">
+                        <li>Frame is benchmade with precision-cut solid ash with grey wash finish, hardwood plywood, and a cane seat</li>
+                        <li>Synthetic webbing suspension system</li>
+                        <li>Soy-based polyfoam cushion with fiber encased in downproof ticking</li>
+                        <li>Frame stained with grey wash finish and clear protective lacquer</li>
+                        <li>See product label or call customer service for additional details on product content</li>
+                    </ul>
+                </div>
+                <div class="delivery tab-pane fade d-flex flex-column gap-3" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+                    <div class="line d-flex flex-column gap-2">
+                        <h6>WHITE GLOVE SERVICE</h6>
+                        <p>Items are delivered to your room of choice by appointment, then unpacked and fully assembled by a skilled two-person team. Includes packaging removal and recycling Fee varies by location and order total. (Doorstep delivery does not include assembly)</p>
+                    </div>
+                    <div class="line d-flex flex-column gap-2">
+                        <h6>FLAT RATE DELIVERY</h6>
+                        <p>An unlimited number of eligible furniture and select non-furniture items can be delivered for one flat rate per shipping address. Your order will ship when all items are ready for delivery. Fee varies by location and order total.</p>
+                    </div>
+                    <div class="line d-flex flex-column gap-2">
+                        <h6>RETURN POLICY</h6>
+                        <p>You can return eligible items within 30 days of receiving an order or 7 days for Quick Ship upholstery items for a refund of the merchandise value. Made-to-Order furniture is not eligible for returns.</p>
+                    </div>
+                </div>
+                <div class="customerss tab-pane fade mb-5" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                    <div class="customers d-flex flex-column">
+                        <div class="customer-review d-flex flex-column justify-content-between align-items-center gap-2 mb-5">
+                            <h3>Customers Reviews</h3>
+                            <div class="icons">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                (4)
+                            </div>
+                        </div>
+                        <div class="line d-grid d-md-flex d-lg-flex justify-content-between align-items-center">
+                            <div class="left text-center">
+                                <img src="./assets/images/c78c16621b17ce14195c0da72c4454ed.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="text d-flex flex-column gap-2">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at, consectetur eu justo.</p>
+                                    <div class="name d-flex gap-2">
+                                        <h6>John henrry </h6>
+                                        <p>May 18, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="line d-grid d-md-flex d-lg-flex justify-content-between align-items-center ">
+                            <div class="left text-center">
+                                <img src="./assets/images/e37e05791ac775975aaffb62f352fe32.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="text d-flex flex-column gap-2">
+                                    <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu.</p>
+                                    <div class="name d-flex gap-2">
+                                        <h6>marcel</h6>
+                                        <p>May 18, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="line d-grid d-md-flex d-lg-flex justify-content-between align-items-center">
+                            <div class="left text-center">
+                                <img src="./assets/images/d8f3ff0124db2720fc8d49466411e944.png" alt="">
+                            </div>
+                            <div class="center">
+                                <div class="text d-flex flex-column gap-2">
+                                    <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu.</p>
+                                    <div class="name d-flex gap-2">
+                                        <h6>Sofia</h6>
+                                        <p>May 18, 2023</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="icons">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add d-flex flex-column align-items-center gap-3">
+                        <h3>Add a review</h3>
+                        <p>Your email address will not be published. Required fields are marked *</p>
+                        <div class="text d-flex gap-2">
+                            <p>Your rating * </p>
+                            <div class="icons">
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+                        </div>
+                        <textarea class="col-lg-12" name="" id="">Your review *</textarea>
+                        <div class="col-lg-12 inputt d-flex gap-3">
+                            <input class="col-lg-6" type="text" placeholder="Name *">
+                            <input class="col-lg-6" type="email" placeholder="Email *">
+                        </div>
+                        <a class="col-lg-12" href="#">submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+
+    <!-- related-producte -->
     <div class="related-products">
-        <p class="rel mb-4">Related products</p>
+        <div class="container">
+            <p class="rel mb-4">Related products</p>
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-between">
@@ -627,6 +701,7 @@
             <span class="visually-hidden">Next</span>
             </button>
         </div>
+        </div>
     </div>
 
     <hr>
@@ -698,6 +773,7 @@
         <!-- Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- js -->
+        <script src="./assets/js/product.js"></script>
         <script src="./assets/js/sript.js"></script>
     </body>
     </html>

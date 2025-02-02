@@ -1,0 +1,22 @@
+.image {
+    width: 100%;
+    position: relative;
+}
+.image img {
+    width: 490px;
+}
+.image p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #000000;
+}
+.image p span {
+    color: #ffffff
+    ;
+}

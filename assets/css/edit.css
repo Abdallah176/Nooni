@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body {
+    min-height: 100vh;
+    font-family: "Inter", serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 38px;
+    background-color: #000000;
+}
+header .container .left p {
+    font-size: .9rem;
+    color: #ffffff;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+}
+header .container .left p a {
+    color: #ffffff;
+    transition: .3s ease all;
+}
+header .container .left p a:hover {
+    color: rgb(205, 2, 2);
+}
+header .container .right .btn-group button {
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    transition: .3s ease all;
+}
+header .container .right .btn-group button:hover {
+    color: rgb(205, 2, 2);
+}
+header .container .right .btn-group ul {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    padding: 20px 10px;
+}
+header .container .right .btn-group ul li {
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+header .container .right .btn-group ul li a {
+    transition: .3s ease all;
+}
+header .container .right .btn-group ul li a:hover {
+    background: none;
+    color: rgb(205, 2, 2);
+}
+@media (max-width: 576px) {
+    header .container .left p {
+        font-size: .7rem;
+    }
+}
+/* hero */
+.hero {
+    background-color: #f2f2f2;
+    height: 100vh;
+}
+nav .container {
+    padding: 20px 0;
+}
+nav .container .left .menu button i,
+nav .container .left .search button i {
+    font-size: 1.3rem;
+}
+nav .container .left .menu .offcanvas .offcanvas-header p {
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+nav .container .left .menu .offcanvas .offcanvas-header p span {
+    color: rgb(205, 2, 2);
+}
+nav .container .left .menu .offcanvas .offcanvas-header .btn-close,
+nav .container .left .search .offcanvas .offcanvas-header .btn-close {
+    font-size: 1.3rem;
+    background-color: rgb(205, 2, 2);
+    transition: .3s ease all;
+}
+nav .container .left .menu .offcanvas .offcanvas-header .btn-close:hover {
+    color: rgb(205, 2, 2);
+}
+nav .container .left .menu .offcanvas .offcanvas-body {
+    gap: 30px;
+}
+nav .container .left .menu .offcanvas .offcanvas-body a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: .3s ease all;
+}   
+nav .container .left .menu .offcanvas .offcanvas-body a:hover {
+    color: rgb(205, 2, 2);
+}
+nav .container .left .search .offcanvas .offcanvas-header h5 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+nav .container .left .search .offcanvas .offcanvas-body .search-product {
+    position: relative;
+}
+nav .container .left .search .offcanvas .offcanvas-body .search-product input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid#afafaf;
+
+}nav .container .left .search .offcanvas .offcanvas-body .search-product input::placeholder {
+    color: #afafaf;
+}
+nav .container .left .search .offcanvas .offcanvas-body .search-product i {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #afafaf;
+}
+nav .container .center p {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+nav .container .center p span {
+    color: rgb(205, 2, 2); 
+}
+nav .container .right .dropdown button i,
+nav .container .right a,
+nav .container .right a button {
+    color: #000000;
+    font-size: 1.3rem;
+    transition: .3s ease all;
+}
+nav .container .right .dropdown button i:hover,
+nav .container .right a:hover,
+nav .container .right .shop button:hover {
+    color: rgb(205, 2, 2);
+}
+nav .container .right .dropdown .dropdown-menu {
+    width: 400px;
+}
+nav .container .right .dropdown .dropdown-menu ::placeholder {
+    padding: 20px;
+    font-size: .9rem;
+    color: #afafaf;
+}
+nav .container .right .dropdown .dropdown-menu .form-check button {
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    width: 50%;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: .3s ease all;
+}
+nav .container .right .dropdown .dropdown-menu .form-check button:hover {
+    background-color: rgb(205, 2, 2);
+}
+nav .container .right .dropdown .dropdown-menu .form-check .check label {
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+nav .container .right .shop .offcanvas .offcanvas-body img {
+    width: 200px;
+}
+nav .container .right .shop .offcanvas .offcanvas-body p {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+@media (max-width: 576px) {
+    nav .container {
+        padding: 0;
+    }
+    nav .container .center p {
+        font-size: 2.7rem;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        transform: scale(.5);
+        opacity: 0;
+    }
+}
+@keyframes fadeLeft {
+    0% {
+        transform: translateX(-5rem);
+        opacity: 0;
+    }
+}
+.hero .caro .carousel-inner .carousel-item .image img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+

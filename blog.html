@@ -21,26 +21,29 @@
 </head>
 <body>
     <!-- StartHeader -->
-    <header class="d-flex bg-black justify-content-between align-items-center">
-        <div class="left d-flex">
-            <p>Up to 40% off Best-Selling Furniture.</p>
-            <a href="#">SHOP NOW</a>
-        </div>
-        <div class="right">
-            <div class="dropdown d-flex justify-content-center gap-2">
-                <p class="text">ENGLISH</p>
-                <i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown-content">
-                    <a href="#">Français</a>
-                    <a href="#">DEUTSCH</a>
-                </div>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left">
+                <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
             </div>
-            <div class="dropdown d-flex justify-content-between gap-2">
-                <p class="text">USD</p>
-                <i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown-content">
-                <a href="#">USD</a>
-                <a href="#">EUR</a>
+            <div class="right d-none d-md-flex d-lg-flex">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Francais</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>       
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        usd
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Usd</a></li>
+                        <li><a class="dropdown-item" href="#">Eur</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -48,176 +51,226 @@
     <!-- EndHeader -->
     
     <!-- StartNav-->
-    <div class="hero-section">
-        <div class="section-top col-lg-12 d-flex justify-content-between align-items-center">
-            <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
-            <div class="menu-search d-flex gap-5">
-                <a href="./index.html">Home</a>
-                <a href="./shop.html">Shop</a>
-                <a href="./product.html">Product</a>
-                <a href="#">Blog</a>
-                <a href="./about.html">About Us</a>
-                <a href="./contact.html">Contact Us</a>
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left d-flex gap-md-3 gap-lg-3">
+                <div class="menu">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>      
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <p><span>n</span>oo<span>n</span>'i</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <a href="./product.html">Product</a>
+                            <a href="./blog.html">Blog</a>
+                            <a href="./about.html">About us</a>
+                            <a href="./contact.html">Contact us</a>                      
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5>Search for products (0)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="search-product d-flex">
+                                <input type="text" placeholder="Search for products...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>      
             </div>
-            <div class="icon d-flex gap-2">
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        25+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        12+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        99+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
+            <div class="center">
+                <p><span>n</span>oo<span>n</span>'i</p>
+            </div>
+            <div class="right d-flex justify-content-center align-items-center gap-md-3 gap-lg-3">
+                <div class="dropdown d-flex justify-content-center align-items-center">
+                    <button class="btn " data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <form class="dropdown-menu p-4">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check d-flex align-items-center gap-5">
+                                <button type="submit">Sign in</button>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2">
+                                        Remember me
+                                    </label>
+                                </div>   
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div class="shop">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+                            <img src="./assets/images/unnamed.png" alt="">
+                            <p>Your cart is currently empty</p>
+                        </div>
+                    </div>
+                </div>              
             </div>
         </div>
-    </div>
+    </nav>
     <!-- EndNav-->
     
     <!-- StartMianBlog -->
     <div class="blog d-flex flex-column justify-content-center align-items-center">
-        <div class="link d-flex flex-column justify-content-between align-items-center gap-4">
-            <div class="links d-flex gap-2">
-                <a href="./index.html">Home /</a>
-                <a href="./blog.html">Blog</a>
+        <div class="container">
+            <div class="link d-flex flex-column justify-content-between align-items-center gap-4">
+                <div class="links d-flex gap-2">
+                    <a href="./index.html">Home /</a>
+                    <a href="./blog.html">Blog</a>
+                </div>
+                <p>Blog</p>
             </div>
-            <p>Blog</p>
-        </div>
-        <div class="section-blog d-flex justify-content-between">
-            <div class="left col-lg-8 d-flex flex-column gap-5">
-                <div class="left-section d-flex flex-column col-md-12">
-                    <div class="image">
-                        <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+            <div class="section-blog col-12 d-sm-grid d-md-flex justify-content-between">
+                <div class="left col-12 col-md-8 col-lg-8 d-flex flex-column gap-5">
+                    <div class="left-section d-flex flex-column">
+                        <div class="image">
+                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                        </div>
+                        <h5>Furniture, Table</h5>
+                        <h2>The Secrets to a Living Room that Draws You In</h2>
+                        <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
+                        <a href="#">read more</a>
+                        <h6>Jan 9, 2025</h6>
+                        <div class="small-image">
+                            <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                        </div>
                     </div>
-                    <h5>Furniture, Table</h5>
-                    <h2>The Secrets to a Living Room that Draws You In</h2>
-                    <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
-                    <a href="#">read more</a>
-                    <h6>Jan 9, 2025</h6>
-                    <div class="small-image">
-                        <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                    <div class="left-section d-flex flex-column">
+                        <div class="image">
+                            <img src="./assets/images/blog-2-1174x862.jpg" alt="">
+                        </div>
+                        <h5>Chair, Furniture</h5>
+                        <h2>What is Feng Shui and How Can I Use It When I Decorate?</h2>
+                        <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
+                        <a href="#">read more</a>
+                        <h6>Jan 9, 2025</h6>
+                        <div class="small-image">
+                            <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                        </div>
                     </div>
+                    <div class="left-section d-flex flex-column">
+                        <div class="image">
+                            <img src="./assets/images/blog-4-1000x724.jpg" alt="">
+                        </div>
+                        <h5>Chair, Furniture, Table</h5>
+                        <h2>Customer Delight Makes Furniture Shopping Easy</h2>
+                        <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
+                        <a href="#">read more</a>
+                        <h6>Jan 8, 2025</h6>
+                        <div class="small-image">
+                            <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="left-section d-flex flex-column">
+                        <div class="image">
+                            <img src="./assets/images/blog-3-1174x862.jpg" alt="">
+                        </div>
+                        <h5>Bed, Furniture</h5>
+                        <h2>What’s in a Child’s Bedroom Set?</h2>
+                        <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
+                        <a href="#">read more</a>
+                        <h6>Jan 8, 2025</h6>
+                        <div class="small-image">
+                            <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item">
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <div class="left-section d-flex flex-column">
-                    <div class="image">
-                        <img src="./assets/images/blog-2-1174x862.jpg" alt="">
+                <div class="right d-flex flex-column justify-content-between align-items-start col-12 col-md-4 col-lg-4 gap-3">
+                    <div class="icon d-flex justify-content-between align-items-center">
+                        <input type="text" placeholder="Search for products...">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
                     </div>
-                    <h5>Chair, Furniture</h5>
-                    <h2>What is Feng Shui and How Can I Use It When I Decorate?</h2>
-                    <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
-                    <a href="#">read more</a>
-                    <h6>Jan 9, 2025</h6>
-                    <div class="small-image">
-                        <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
+                    <div class="popular-posts d-flex flex-column">
+                        <h4>Popular Posts</h4>
+                        <div class="line d-flex align-items-center gap-4">
+                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                            <a href="#">What’s in a Child’s<br> Bedroom Set?</a>
+                        </div>
+                        <div class="line d-flex align-items-center gap-4">
+                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                            <a href="#">The Secrets to a Living<br> Room that Draws You In</a>
+                        </div>
+                        <div class="line d-flex align-items-center gap-4">
+                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                            <a href="#">Customer Delight Makes<br> Furniture Shopping Easy</a>
+                        </div>
                     </div>
-                </div>
-                <div class="left-section d-flex flex-column">
-                    <div class="image">
-                        <img src="./assets/images/blog-4-1000x724.jpg" alt="">
+                    <div class="recent-comments">
+                        <h4>Recent Comments</h4>
+                        <div class="line">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 17, 2025</span></p>
+                        </div>
+                        <div class="line">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 16, 2025</span></p>
+                        </div>
+                        <div class="line">
+                            <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing<br><span>Jan 16, 2025</span></p>
+                        </div>
                     </div>
-                    <h5>Chair, Furniture, Table</h5>
-                    <h2>Customer Delight Makes Furniture Shopping Easy</h2>
-                    <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
-                    <a href="#">read more</a>
-                    <h6>Jan 8, 2025</h6>
-                    <div class="small-image">
-                        <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
-                    </div>
-                </div>
-                <div class="left-section d-flex flex-column">
-                    <div class="image">
-                        <img src="./assets/images/blog-3-1174x862.jpg" alt="">
-                    </div>
-                    <h5>Bed, Furniture</h5>
-                    <h2>What’s in a Child’s Bedroom Set?</h2>
-                    <p>Nunc ut sem ut ex sollicitudin commodo. Suspendisse non enim felis. Nam nec diam ultricies, malesuada purus in, malesuada libero</p>
-                    <a href="#">read more</a>
-                    <h6>Jan 8, 2025</h6>
-                    <div class="small-image">
-                        <img src="./assets/images/f458ff8b61e871611d3de680ec718a03.jpeg" alt="">
-                    </div>
-                </div>
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination">
-                        <li class="page-item">
-                        </li>
-                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item"><a class="page-link" href="#">4</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="right d-flex flex-column justify-content-between align-items-start col-lg-4">
-                <div class="icon d-flex justify-content-between align-items-center">
-                    <input type="text" placeholder="Search for products...">
-                    <i class="fa-solid fa-magnifying-glass"></i> 
-                </div>
-                <div class="popular-posts d-flex flex-column">
-                    <h4>Popular Posts</h4>
-                    <div class="line d-flex align-items-center gap-4">
-                        <img src="./assets/images/blog-1-1174x862.jpg" alt="">
-                        <a href="#">What’s in a Child’s<br> Bedroom Set?</a>
-                    </div>
-                    <div class="line d-flex align-items-center gap-4">
-                        <img src="./assets/images/blog-1-1174x862.jpg" alt="">
-                        <a href="#">The Secrets to a Living<br> Room that Draws You In</a>
-                    </div>
-                    <div class="line d-flex align-items-center gap-4">
-                        <img src="./assets/images/blog-1-1174x862.jpg" alt="">
-                        <a href="#">Customer Delight Makes<br> Furniture Shopping Easy</a>
-                    </div>
-                </div>
-                <div class="recent-comments">
-                    <h4>Recent Comments</h4>
-                    <div class="line">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 17, 2025</span></p>
-                    </div>
-                    <div class="line">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 16, 2025</span></p>
-                    </div>
-                    <div class="line">
-                        <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing<br><span>Jan 16, 2025</span></p>
-                    </div>
-                </div>
-                <div class="tags-post d-flex flex-column gap-2">
-                    <h4>Tags Post</h4>
-                    <div class="line d-flex">
-                        <a href="#">Bedroom Furniture</a>
-                        <a href="#">Bookcases</a>
-                    </div>
-                    <div class="line d-flex ">
-                        <a href="#">Chair</a>
-                        <a href="#">Coffee Tables</a>
-                    </div>
-                    <div class="line d-flex">
-                        <a href="#">Dining Tables</a>
-                        <a href="#">Dressers & Armoires</a>
-                    </div>
-                    <div class="line d-flex">
-                        <a href="#">Lamps</a>
-                        <a href="#">Sofas & Loveseats</a>
-                    </div>
-                    <div class="line d-flex">
-                        <a href="#">Table</a>
-                        <a href="#">Tv & Media Stands</a>
+                    <div class="tags-post d-flex flex-column gap-2">
+                        <h4>Tags Post</h4>
+                        <div class="line d-flex">
+                            <a href="#">Bedroom Furniture</a>
+                            <a href="#">Bookcases</a>
+                        </div>
+                        <div class="line d-flex ">
+                            <a href="#">Chair</a>
+                            <a href="#">Coffee Tables</a>
+                        </div>
+                        <div class="line d-flex">
+                            <a href="#">Dining Tables</a>
+                            <a href="#">Dressers & Armoires</a>
+                        </div>
+                        <div class="line d-flex">
+                            <a href="#">Lamps</a>
+                            <a href="#">Sofas & Loveseats</a>
+                        </div>
+                        <div class="line d-flex">
+                            <a href="#">Table</a>
+                            <a href="#">Tv & Media Stands</a>
+                        </div>
                     </div>
                 </div>
             </div>

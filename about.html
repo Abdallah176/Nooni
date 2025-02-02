@@ -21,72 +21,119 @@
 </head>
 <body>
     <!-- StartHeader -->
-    <header class="d-flex bg-black justify-content-between align-items-center">
-        <div class="left d-flex">
-            <p>Up to 40% off Best-Selling Furniture.</p>
-            <a href="./shop.html">SHOP NOW</a>
-        </div>
-        <div class="right">
-            <div class="dropdown d-flex justify-content-center gap-2">
-                <p class="text">ENGLISH</p>
-                <i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown-content">
-                    <a href="#">Français</a>
-                    <a href="#">DEUTSCH</a>
-                </div>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left">
+                <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
             </div>
-            <div class="dropdown d-flex justify-content-between gap-2">
-                <p class="text">USD</p>
-                <i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown-content">
-                <a href="#">USD</a>
-                <a href="#">EUR</a>
+            <div class="right d-none d-md-flex d-lg-flex">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Francais</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>       
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        usd
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Usd</a></li>
+                        <li><a class="dropdown-item" href="#">Eur</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
-    <!-- EndHeader -->
-    
-    <!-- StartNav-->
-    <div class="hero-section">
-        <div class="section-top col-lg-12 d-flex justify-content-between align-items-center">
-            <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
-            <div class="menu-search d-flex gap-5">
-                <a href="./index.html">Home</a>
-                <a href="./shop.html">Shop</a>
-                <a href="./product.html">Product</a>
-                <a href="./blog.html">Blog</a>
-                <a href="#">About Us</a>
-                <a href="./contact.html">Contact Us</a>
+    <!--Nav-->
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left d-flex gap-md-3 gap-lg-3">
+                <div class="menu">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>      
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <p><span>n</span>oo<span>n</span>'i</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <a href="./product.html">Product</a>
+                            <a href="./blog.html">Blog</a>
+                            <a href="./about.html">About us</a>
+                            <a href="./contact.html">Contact us</a>                      
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5>Search for products (0)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="search-product d-flex">
+                                <input type="text" placeholder="Search for products...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>      
             </div>
-            <div class="icon d-flex gap-2">
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        25+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        12+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        99+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
+            <div class="center">
+                <p><span>n</span>oo<span>n</span>'i</p>
+            </div>
+            <div class="right d-flex justify-content-center align-items-center gap-md-3 gap-lg-3">
+                <div class="dropdown d-flex justify-content-center align-items-center">
+                    <button class="btn " data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <form class="dropdown-menu p-4">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check d-flex align-items-center gap-5">
+                                <button type="submit">Sign in</button>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2">
+                                        Remember me
+                                    </label>
+                                </div>   
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div class="shop">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+                            <img src="./assets/images/unnamed.png" alt="">
+                            <p>Your cart is currently empty</p>
+                        </div>
+                    </div>
+                </div>              
             </div>
         </div>
-    </div>
-    <!-- EndNav-->
-
-    <!-- Start About -->
+    </nav>
+    <!-- About -->
     <div class="about d-flex flex-column justify-content-between align-items-center">
         <!-- links -->
         <div class="links d-flex gap-2">
@@ -100,29 +147,32 @@
             <img src="./assets/images/about-parallax-1.jpg" alt="" >
         </div>
         <!-- How-Works -->
-        <div class="how-works d-flex justify-content-between col-lg-12">
-            <div class="image">
-                <img src="./assets/images/about-3.jpg" alt="">
-            </div>
-            <div class="text d-flex flex-column">
-                <h3>HOW WE WORKS</h3>
-                <div class="line">
-                    <h4>Production Design</h4>
-                    <p>Integer dignissim sagittis quam. Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.</p>
+        <div class="how-works">
+            <div class="container d-grid d-md-grid d-lg-flex justify-content-between col-lg-12 gap-5">
+                <div class="image">
+                    <img src="./assets/images/about-3.jpg" alt="">
                 </div>
-                <div class="line">
-                    <h4>Manufacturing</h4>
-                    <p>Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
-                </div>
-                <div class="line">
-                    <h4>Marketing and selling</h4>
-                    <p>Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
+                <div class="text d-flex flex-column ">
+                    <h3>HOW WE WORKS</h3>
+                    <div class="line">
+                        <h4>Production Design</h4>
+                        <p>Integer dignissim sagittis quam. Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi.</p>
+                    </div>
+                    <div class="line">
+                        <h4>Manufacturing</h4>
+                        <p>Maecenas sem eros, rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
+                    </div>
+                    <div class="line">
+                        <h4>Marketing and selling</h4>
+                        <p>Rutrum vitae risus eget, vulputate aliquam nisi ex gravida neque tempus.</p>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Our-team -->
         <div class="our-team d-flex flex-column justify-content-center align-items-center">
-            <h3>our team</h3>
+            <div class="container">
+                <h3>our team</h3>
             <div class="team d-flex justify-content-between gap-3">
                 <div class="line d-flex flex-column justify-content-between align-items-center gap-2  col-lg-3">
                     <div class="image">
@@ -189,7 +239,8 @@
                     </div>  
                 </div> 
             </div>
-        </div>
+            </div>
+        </div>  
         <!-- contact-us -->
         <div class="contact-us">
             <img src="./assets/images/about-2.jpg" alt="">
@@ -204,16 +255,17 @@
             </div>
         </div>
         <!-- Brands -->
-        <div class="brands d-flex justify-content-between col-lg-12">
-            <img src="./assets/images/brand-1.png" alt="">
-            <img src="./assets/images/brand-2.png" alt="">
-            <img src="./assets/images/brand-3.png" alt="">
-            <img src="./assets/images/brand-4.png" alt="">
-            <img src="./assets/images/brand-5.png" alt="">
-            <img src="./assets/images/brand-6.png" alt="">
+        <div class="brands col-lg-12">
+            <div class="container d-grid d-md-flex d-lg-flex flex-md-wrap justify-content-between">
+                <img src="./assets/images/brand-1.png" alt="">
+                <img src="./assets/images/brand-2.png" alt="">
+                <img src="./assets/images/brand-3.png" alt="">
+                <img src="./assets/images/brand-4.png" alt="">
+                <img src="./assets/images/brand-5.png" alt="">
+                <img src="./assets/images/brand-6.png" alt="">
+            </div>
         </div>
     </div>
-    <!-- End About -->
     <hr>
     <!-- footer -->
     <footer>
@@ -275,6 +327,7 @@
                 </div>
         </div>
     </footer>
+    
     <!-- animation text -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Bootstrap -->

@@ -56,3 +56,5 @@ window.addEventListener('scroll', () => {
         photo.classList.add('active');
     }
 });
+
+

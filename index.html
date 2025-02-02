@@ -21,65 +21,34 @@
 </head>
 <body>
     <!-- header -->
-    <div class="header d-flex justify-content-between align-items-center">
-        <div class="left d-flex justify-content-between gap-lg-4 d-sm-none d-md-flex d-lg-flex">
-            <div class="line d-flex justify-content-center align-items-center gap-2">
-                <a href="#">english</a>
-                <i class="fa-solid fa-angle-down"></i>
-                <div class="drop-down d-flex flex-column">
-                    <a href="#">Français</a>
-                    <a href="#">DEUTSCH</a>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left">
+                <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
+            </div>
+            <div class="right d-none d-md-flex d-lg-flex">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Francais</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>       
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        usd
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Usd</a></li>
+                        <li><a class="dropdown-item" href="#">Eur</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="line d-flex justify-content-center align-items-center gap-2">
-                <a href="#">usd</a>
-                <i class="fa-solid fa-angle-down"></i>
-                <div class="drop-down-r d-flex flex-column">
-                    <a href="#">usd</a>
-                    <a href="#">eur</a>
-                </div>
-            </div>
         </div>
-        <div class="center align-items-sm-center pt-3">
-            <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
-        </div>
-        <div class="right d-sm-none d-md-flex d-lg-flex">
-            <div class="icon d-flex gap-2">
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
-                    <div class="hide d-flex flex-column gap-3">
-                        <input type="text" placeholder="Username or email address*">
-                        <input type="password" placeholder="Password*">
-                        <div class="line d-flex justify-content-center align-items-center">
-                            <a href="#">sign in</a>
-                            <div class="check d-flex gap-1">
-                                <input type="checkbox" id="profile" name="profile" value="profile">
-                                <label for="profile">Remember Me</label>
-                            </div>
-                        </div>
-                    </div>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        99+
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        22+
-                    </span>
-                </button>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <!-- hero Section -->
+    </header>
+    <!-- hero -->
     <div class="hero-section">
         <div class="section-top col-lg-12 d-flex justify-content-between align-items-center">
             <!-- left -->
@@ -172,119 +141,55 @@
             </div>
         </nav>
     </div>
-
-
-
-
-
-
-
-
-
-
     <!-- Shop Category -->
     <div  id="mySectionLeft" data-aos="fade-right"  class="shop col-12 d-flex flex-column flex-wrap gap-4">
-        <h1 class="text-center">Shop Category</h1>
-        <div class="line d-flex justify-content-center align-items-center gap-4 col-lg-12">
-            <img src="./assets/images/chair-1-310x310.jpg" alt="">
-            <div class="text">
-                <p>A chair is a fundamental piece of furniture in our daily lives, used for sitting and resting. A typical chair consists of a seat, back, and legs, and may also include armrests. Chairs come in various shapes and types, including wooden, metal, and plastic chairs, as well as upholstered and padded chairs for greater comfort. Chairs are used in homes, offices, and public spaces, and are an integral part of our lives.</p>
-                <p>The chair is not merely a simple piece of furniture, but a symbol of comfort and stability. Throughout history, chair design has evolved to suit various human needs, from simple wooden stools to modern, ergonomically designed chairs. Chairs are used in many aspects of life, from dining to working, studying, and relaxing, making them an essential part of our daily routines.</p>
-            </div>       
-        </div>
-        <div class="line d-flex justify-content-center align-items-center gap-4 col-lg-12">
-            <div class="text">
-                <p>The table is a versatile piece of furniture found in almost every home. It serves various purposes, from providing a surface for dining and working to displaying decorative items. Tables come in many shapes, sizes, and materials, from simple wooden tables to elegant glass and metal designs. Its fundamental function is to provide a stable horizontal surface for various activities</p>
-                <p>From the small bedside table to the large conference table, the variety of tables is vast. There are tables designed for specific purposes, such as dining tables, coffee tables, desks, and side tables. Each type serves a unique function and contributes to the overall functionality and aesthetics of a space.</p>
+        <div class="container">
+            <h1 class="text-center">Shop Category</h1>
+            <div class="line d-flex justify-content-center align-items-center gap-4 col-lg-12">
+                <img src="./assets/images/chair-1-310x310.jpg" alt="">
+                <div class="text">
+                    <p>A chair is a fundamental piece of furniture in our daily lives, used for sitting and resting. A typical chair consists of a seat, back, and legs, and may also include armrests. Chairs come in various shapes and types, including wooden, metal, and plastic chairs, as well as upholstered and padded chairs for greater comfort. Chairs are used in homes, offices, and public spaces, and are an integral part of our lives.</p>
+                    <p class="none">The chair is not merely a simple piece of furniture, but a symbol of comfort and stability. Throughout history, chair design has evolved to suit various human needs, from simple wooden stools to modern, ergonomically designed chairs. Chairs are used in many aspects of life, from dining to working, studying, and relaxing, making them an essential part of our daily routines.</p>
+                </div>       
             </div>
-            <img src="./assets/images/table-310x310.jpg" alt="">
-        </div>
-        <div class="line d-flex justify-content-center align-items-center gap-4 col-lg-12">
-            <img src="./assets/images/bed-310x310.jpg" alt="">
-            <div class="text">
-                <p>The bed is a fundamental piece of furniture designed for sleep and rest. It provides a comfortable surface for relaxation and rejuvenation. A typical bed consists of a frame and a mattress, often accompanied by pillows and blankets. Beds come in various sizes and styles to accommodate different needs and preferences.</p>
-                <p>The bed is more than just a piece of furniture; it's a sanctuary for rest and recovery. A good night's sleep on a comfortable bed is essential for physical and mental well-being. The bed is a place where we can escape the stresses of the day and recharge for what lies ahead.</p>
+            <div class="line d-flex justify-content-center align-items-center gap-4 col-lg-12">
+                <div class="text">
+                    <p>The table is a versatile piece of furniture found in almost every home. It serves various purposes, from providing a surface for dining and working to displaying decorative items. Tables come in many shapes, sizes, and materials, from simple wooden tables to elegant glass and metal designs. Its fundamental function is to provide a stable horizontal surface for various activities</p>
+                    <p class="none">From the small bedside table to the large conference table, the variety of tables is vast. There are tables designed for specific purposes, such as dining tables, coffee tables, desks, and side tables. Each type serves a unique function and contributes to the overall functionality and aesthetics of a space.</p>
+                </div>
+                <img src="./assets/images/table-310x310.jpg" alt="">
+            </div>
+            <div class="line d-flex justify-content-center align-items-center gap-4 col-lg-12">
+                <img src="./assets/images/bed-310x310.jpg" alt="">
+                <div class="text">
+                    <p>The bed is a fundamental piece of furniture designed for sleep and rest. It provides a comfortable surface for relaxation and rejuvenation. A typical bed consists of a frame and a mattress, often accompanied by pillows and blankets. Beds come in various sizes and styles to accommodate different needs and preferences.</p>
+                    <p class="none">The bed is more than just a piece of furniture; it's a sanctuary for rest and recovery. A good night's sleep on a comfortable bed is essential for physical and mental well-being. The bed is a place where we can escape the stresses of the day and recharge for what lies ahead.</p>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Shop Category-->
-    <!-- <div class="shop-category d-flex flex-column justify-content-between">
-        <div class="top">
-            <p>SHOP BY CATEGORY</p>
-        </div>
-        
-        <div class="bottom d-flex justify-content-between algin-items-center gap-sm-2 flex-sm-wrap flex-lg-nowrap">
-            <div class="marquee-item">
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
-                    <div class="link">
-                        <a href="#"><img src="./assets/images/bed-310x310.jpg" alt=""></a>
-                        <i class="icon fa-solid fa-download"></i>
-                    </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h6>Bed</h6>
-                        <p>7 Product</p>
-                    </div>
-                </div>
-            </div>
-            <div class="marquee-item">
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
-                    <div class="link">
-                        <a href="#"><img src="./assets/images/table-310x310.jpg" alt=""></a>
-                        <i class="icon fa-solid fa-download"></i>
-                    </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h6>Table</h6>
-                        <p>5 Product</p>
-                    </div>
-                </div>
-            </div>
-            <div class="marquee-item">
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
-                    <div class="link">
-                        <a href="#"><img src="./assets/images/chair-1-310x310.jpg" alt=""></a>
-                        <i class="icon fa-solid fa-download"></i>
-                    </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h6>Chair</h6>
-                        <p>12 Product</p>
-                    </div>
-                </div>
-            </div>
-            <div class="marquee-item">
-                <div class="col-lg-3 d-flex algin-items-center gap-4">
-                    <div class="link">
-                        <a href="#"><img src="./assets/images/chair-1-310x310.jpg" alt=""></a>
-                        <i class="icon fa-solid fa-download"></i>
-                    </div>
-                    <div class="text d-flex flex-column justify-content-center">
-                        <h6>Chair</h6>
-                        <p>12 Product</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    </div> -->
     <!-- Photo -->
-    <div class="photo d-flex flex-wrap justify-content-center gap-4">
+    <div class="photo ">
+        <div class="container d-flex flex-wrap justify-content-center gap-4">
             <div class="image">
-                <img class="one col-12 col-md-12 col-lg-12" src="./assets/images/project-10.jpg" alt="">
+                <img class="one col-12" src="./assets/images/project-10.jpg" alt="">
             </div>
             <div class="image">
-                <img class="two col-12 col-md-12 col-lg-12" src="./assets/images/project-11.jpg" alt="">
+                <img class="two col-12 " src="./assets/images/project-11.jpg" alt="">
             </div>
             <div class="image">
-                <img class="three col-12 col-md-12 col-lg-12" src="./assets/images/project-12.jpg" alt="">
+                <img class="three col-12" src="./assets/images/project-12.jpg" alt="">
             </div> 
             <div class="image">
-                <img class="four col-12 col-md-12 col-lg-12" src="./assets/images/project-13.jpg" alt="">
+                <img class="four col-12 " src="./assets/images/project-13.jpg" alt="">
             </div>
             <div class="image">
-                <img class="five col-12 col-md-12 col-lg-12" src="./assets/images/project-14.jpg" alt="">
+                <img class="five col-12 " src="./assets/images/project-14.jpg" alt="">
             </div>
             <div class="image">
-                <img class="six col-12 col-md-12 col-lg-12" src="./assets/images/project-15.jpg" alt="">
+                <img class="six col-12" src="./assets/images/project-15.jpg" alt="">
             </div>
+        </div>
     </div>
     <!-- Services -->
     <!-- <div class="services">
@@ -365,355 +270,352 @@
             </div>
         </div>
     </div> -->
-    <!-- Cabina -->
-    <div class="lamp d-flex justify-content-between gap-4 col-12">
-        <div class="left d-flex flex-column col-12 col-md-6 col-lg-6">
-            <div class="lampp d-flex">
-                <div class="text d-flex flex-column">
-                    <p>Up To 40% Off <br>Top Lamp Brands</p>
+    <!-- lamp -->
+    <div class="lamp ">
+        <div class="container d-flex justify-content-between gap-4 col-12">
+            <div class="left d-flex flex-column col-12 col-md-6 col-lg-6">
+                <div class="lampp d-flex">
+                    <div class="text d-flex flex-column">
+                        <p>Up To 40% Off <br>Top Lamp Brands</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
+                    <div class="links d-flex">
+                        <img class="" src="./assets/images/banner-0-removebg-preview.png" alt="">
+                    </div>           
+                </div>
+                <div class="cabinets">
+                    <p>NEW PRODUCTS</p>
+                    <h3>Up To 25% Off Cabinets</h3>
                     <a href="#">SHOP NOW</a>
                 </div>
-                <div class="links d-flex">
-                    <img class="" src="./assets/images/banner-0-removebg-preview.png" alt="">
-                </div>           
             </div>
-            <div class="cabinets">
-                <p>NEW PRODUCTS</p>
-                <h3>Up To 25% Off Cabinets</h3>
-                <a href="#">SHOP NOW</a>
-            </div>
-        </div>
-        <div class="right d-flex justify-content-start text-center flex-column col-12 col-md-6 col-lg-6">
-            <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
-                <rect
-                    rx="1"
-                    ry="1"
-                    class="line"
-                    height="100%"
-                    width="100%"
-                    stroke-linejoin="round"
-                />
-            </svg>
-            <div class="sale">
-                <p>BIG SALE</p>
-                <h2>Up to 70% Off <br>Furniture & Decor</h2>
-                <a href="#">SHOP NOW</a>
+            <div class="right d-flex justify-content-start text-center flex-column col-12 col-md-6 col-lg-6">
+                <svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect
+                        rx="1"
+                        ry="1"
+                        class="line"
+                        height="100%"
+                        width="100%"
+                        stroke-linejoin="round"
+                    />
+                </svg>
+                <div class="sale">
+                    <p>BIG SALE</p>
+                    <h2>Up to 70% Off <br>Furniture & Decor</h2>
+                    <a href="#">SHOP NOW</a>
+                </div>
             </div>
         </div>
     </div>
     <!-- Canaba -->
     <div class="main-canaba col-12">
-        <div class="canaba d-flex justify-content-between col-12">
-            <div class="text d-flex align-items-center">
-                <span>10%</span>
-                <div class="right">
-                    <h2>Get More Pay Less</h2>
-                    <p>On orders $500 + Use Coupon Code: <a> WSD10</a></p>
+        <div class="container">
+            <div class="canaba d-flex justify-content-between">
+                <div class="text d-flex align-items-center">
+                    <span>10%</span>
+                    <div class="right">
+                        <h2>Get More Pay Less</h2>
+                        <p>On orders $500 + Use Coupon Code: <a> WSD10</a></p>
+                    </div>
                 </div>
-            </div>
-            <div class="image">
-                <img src="./assets/images/banner-3-removebg-preview.png" alt="">
+                <div class="image">
+                    <img src="./assets/images/banner-3-removebg-preview.png" alt="">
+                </div>
             </div>
         </div>
     </div> 
     <!-- Product -->
-    <div class="product col-12 d-flex flex-wrap">
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="box d-flex flex-column justify-content-center col-12 gap-5">
-                <h2>Best<br> Modern<br> Furniture</h2>
-                <a href="#">See All >></a>
-            </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
-                        <i class="fa-regular fa-heart"></i>
-                    </div> 
-                </div>
-                <div class="links">
-                    <button>Select Options</button>
+    <div class="product">
+        <div class="container col-12 d-flex flex-wrap">
+            <div class="card-content col-12 col-md-4 col-lg-3 p-3">
+                <div class="box d-flex flex-column justify-content-center col-12 gap-5">
+                    <h2>Best<br> Modern<br> Furniture</h2>
+                    <a href="#">See All >></a>
                 </div>
             </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="two" src="./assets/images/08-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="one" src="./assets/images/01-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
                     </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
+                    <div class="icon">
                         <i class="fa-regular fa-heart"></i>
-                    </div> 
-                </div>
-                <div class="links">
-                    <button>Select Options</button>
+                    </div>
+                    <div class="sale d-flex gap-1">
+                        <h6>Hot</h6>
+                        <h6>Sale</h6>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="three" src="./assets/images/13-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="two" src="./assets/images/08-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
                     </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
+                    <div class="icon">
                         <i class="fa-regular fa-heart"></i>
-                    </div> 
-                </div>
-                <div class="links">
-                    <button>Select Options</button>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="four" src="./assets/images/27-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="three" src="./assets/images/13-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
                     </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
+                    <div class="icon">
                         <i class="fa-regular fa-heart"></i>
-                    </div> 
-                </div>
-                <div class="links">
-                    <button>Select Options</button>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="five" src="./assets/images/02-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="four" src="./assets/images/27-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
                     </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
+                    <div class="icon">
                         <i class="fa-regular fa-heart"></i>
-                    </div> 
-                </div>
-                <div class="links">
-                    <button>Select Options</button>
+                    </div>
+                    <div class="sale d-flex gap-1">
+                        <h6 class="d-none">Hot</h6>
+                        <h6 class="d-none">Sale</h6>
+                        <h6 class="sold">Sold out</h6>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="six" src="./assets/images/22-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="five" src="./assets/images/02-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
                     </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
+                    <div class="icon">
                         <i class="fa-regular fa-heart"></i>
-                    </div> 
-                </div>
-                <div class="links">
-                    <button>Select Options</button>
+                    </div>
+                    <div class="sale d-flex gap-1">
+                        <h6>Hot</h6>
+                        <h6 class="d-none">Sale</h6>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="card-content col-12 col-md-6 col-lg-3 p-3">
-            <div class="card col-12">
-                <img class="seven" src="./assets/images/06-450x572.jpg" alt="">
-                <p>Wood Outdoor Adirondack Chair</p>
-                <div class="price d-flex gap-2">
-                    <span>$1,009</span>
-                    <del>$1,259</del>
-                </div>
-                <div class="icon">
-                    <i class="fa-regular fa-heart"></i>
-                </div>
-                <div class="sale d-flex gap-1">
-                    <h6>Hot</h6>
-                    <h6>Sale</h6>
-                </div>
-                <div class="icons d-flex flex-column gap-2 d-none">
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Quick view</p>
-                        <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="six" src="./assets/images/22-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
                     </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Compare</p>
-                        <i class="fa-solid fa-code-compare"></i>
-                    </div>
-                    <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                        <p>Wishlist</p>
+                    <div class="icon">
                         <i class="fa-regular fa-heart"></i>
-                    </div> 
+                    </div>
+                    <div class="sale d-flex gap-1">
+                        <h6 class="d-none">Hot</h6>
+                        <h6>Sale</h6>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
-                <div class="links">
-                    <button>Select Options</button>
+            </div>
+            <div class="card-content col-6 col-md-4 col-lg-3 p-3">
+                <div class="card col-12">
+                    <img class="seven" src="./assets/images/06-450x572.jpg" alt="">
+                    <p>Wood Outdoor Adirondack Chair</p>
+                    <div class="price d-flex gap-2">
+                        <span>$1,009</span>
+                        <del>$1,259</del>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="icons d-flex flex-column gap-2 d-none">
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Quick view</p>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Compare</p>
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                            <p>Wishlist</p>
+                            <i class="fa-regular fa-heart"></i>
+                        </div> 
+                    </div>
+                    <div class="links">
+                        <button>Select Options</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- Blog -->
     <div class="blog">
-        <p class="text-center fs-1 mb-4">our blog</p>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-                <div class="carousel-item active d-flex justify-content-between gap-5">
-                    <div class="blog-left col-lg-6">
-                        <img src="./assets/images/blog-1-1174x862.jpg"class="w-100"lt="...">
-                    </div>
-                    <div class="blog-center d-flex flex-column justify-content-center gap-2  col-lg-3">
-                        <div class="links">
-                            <a href="#">furniture,</a>
-                            <a href="#">table</a>
+        <div class="container">
+            <p class="text-sm-center fs-1 mb-4">our blog</p>
+            <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                    <div class="carousel-item active d-flex justify-content-between gap-5">
+                        <div class="blog-left col-lg-6">
+                            <img src="./assets/images/blog-1-1174x862.jpg"class="w-100" alt="...">
                         </div>
-                        <h2><a href="#">The Secrets to a Living Room that Draws You In</a></h2>
-                        <p>Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim feils. Nam nec diam ultricies, malesuada</p>
-                        <a href="#">READ MORE</a> 
+                        <div class="blog-center d-flex flex-column justify-content-center gap-2 col-lg-3">
+                            <div class="links">
+                                <a href="#">furniture,</a>
+                                <a href="#">table</a>
+                            </div>
+                            <h2><a href="#">The Secrets to a Living Room that Draws You In</a></h2>
+                            <p>Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim feils. Nam nec diam ultricies, malesuada</p>
+                            <a href="#">READ MORE</a> 
+                        </div>
+                        <div class="blog-right col-lg-3">
+                            <img src="./assets/images/blog-2-1174x862.jpg" class="w-100" style="height: 100% ;" alt="">
+                        </div>
                     </div>
-                    <div class="blog-right col-lg-3">
-                        <img src="./assets/images/blog-2-1174x862.jpg" class="w-100" style="height: 100% ;" alt="">
+                    <div class="carousel-item d-flex justify-content-between gap-5">
+                        <div class="blog-left col-lg-6">
+                            <img src="./assets/images/blog-2-1174x862.jpg" class="w-100"  alt="...">
+                        </div>
+                        <div class="blog-center d-flex flex-column justify-content-center gap-2 col-lg-3">
+                            <div class="links">
+                                <a href="#">furniture,</a>
+                                <a href="#">table</a>
+                            </div>
+                            <h2><a href="#">The Secrets to a Living Room that Draws You In</a></h2>
+                            <p>Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim feils. Nam nec diam ultricies, malesuada</p>
+                            <a href="#">READ MORE</a>
+                        </div>
+                        <div class="blog-right col-lg-3">
+                            <img src="./assets/images/blog-1-1174x862.jpg" class="w-100" style="height: 100%;" alt="">
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item d-flex justify-content-between gap-5">
-                    <div class="blog-left col-lg-6">
-                        <img src="./assets/images/blog-2-1174x862.jpg" class="w-100"  alt="...">
-                    </div>
-                    <div class="blog-center d-flex flex-column justify-content-center gap-2 col-lg-3">
-                        <div class="links">
-                            <a href="#">furniture,</a>
-                            <a href="#">table</a>
-                        </div>
-                        <h2><a href="#">The Secrets to a Living Room that Draws You In</a></h2>
-                        <p>Nunc ut sem ut ex sollicitudin commodo Suspendisse non enim feils. Nam nec diam ultricies, malesuada</p>
-                        <a href="#">READ MORE</a>
-                    </div>
-                    <div class="blog-right col-lg-3">
-                        <img src="./assets/images/blog-1-1174x862.jpg" class="w-100" style="height: 100%;" alt="">
-                    </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-            </button>
         </div>
     </div>
-    <!-- section-video -->
+    <!-- video -->
     <div class="section-video mb-5">
         <video class="elementor-background-video-hosted elementor-html5-video" autoplay="" muted="" playsinline="" loop="" src="https://demo.theme-sky.com/nooni/wp-content/uploads/2023/07/Pexels-Karolina-Grabowska-7708902-4096X2160-25Fps.mp4"></video>
         <div class="overlay"></div>
@@ -781,6 +683,7 @@
                 </div>
         </div>
     </footer>
+    
     <!-- animation text -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

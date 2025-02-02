@@ -21,68 +21,119 @@
 </head>
 <body>
     <!-- StartHeader -->
-    <header class="d-flex bg-black justify-content-between align-items-center">
-        <div class="left d-flex">
-            <p>Up to 40% off Best-Selling Furniture.</p>
-            <a href="#">SHOP NOW</a>
-        </div>
-        <div class="right">
-            <div class="dropdown d-flex justify-content-center gap-2">
-                <p class="text">ENGLISH</p>
-                <i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown-content">
-                    <a href="#">Français</a>
-                    <a href="#">DEUTSCH</a>
-                </div>
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left">
+                <p>Up to 40% off Best-Selling Furniture. <a href="./shop.html">Shop Now</a></p>
             </div>
-            <div class="dropdown d-flex justify-content-between gap-2">
-                <p class="text">USD</p>
-                <i class="fa-solid fa-caret-down"></i>
-                <div class="dropdown-content">
-                <a href="#">USD</a>
-                <a href="#">EUR</a>
+            <div class="right d-none d-md-flex d-lg-flex">
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        English
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Francais</a></li>
+                        <li><a class="dropdown-item" href="#">Deutsch</a></li>       
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        usd
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Usd</a></li>
+                        <li><a class="dropdown-item" href="#">Eur</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </header>
     
     <!-- StartNav-->
-    <div class="hero-section">
-        <div class="section-top col-lg-12 d-flex justify-content-between align-items-center">
-            <p><a href=""><span>n</span>oo<span>n'</span>i</a></p>
-            <div class="menu-search d-flex gap-5">
-                <a href="./index.html">Home</a>
-                <a href="./shop.html">Shop</a>
-                <a href="./product.html">Product</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./about.html">About Us</a>
-                <a href="#">Contact Us</a>
+    <nav>
+        <div class="container d-flex justify-content-between align-items-center">
+            <div class="left d-flex gap-md-3 gap-lg-3">
+                <div class="menu">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>      
+                    <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+                        <div class="offcanvas-header">
+                            <p><span>n</span>oo<span>n</span>'i</p>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center">
+                            <a href="./index.html">Home</a>
+                            <a href="./shop.html">Shop</a>
+                            <a href="./product.html">Product</a>
+                            <a href="./blog.html">Blog</a>
+                            <a href="./about.html">About us</a>
+                            <a href="./contact.html">Contact us</a>                      
+                        </div>
+                    </div>
+                </div>
+                <div class="search">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5>Search for products (0)</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="search-product d-flex">
+                                <input type="text" placeholder="Search for products...">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>                   
+                        </div>
+                    </div>
+                </div>      
             </div>
-            <div class="icon d-flex gap-2">
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        25+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-regular fa-heart"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        12+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <button type="button" class="btn position-relative">
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
-                        99+
-                    <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
+            <div class="center">
+                <p><span>n</span>oo<span>n</span>'i</p>
+            </div>
+            <div class="right d-flex justify-content-center align-items-center gap-md-3 gap-lg-3">
+                <div class="dropdown d-flex justify-content-center align-items-center">
+                    <button class="btn " data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                        <i class="fa-regular fa-user"></i>
+                    </button>
+                    <form class="dropdown-menu p-4">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check d-flex align-items-center gap-5">
+                                <button type="submit">Sign in</button>
+                                <div class="check">
+                                    <input type="checkbox" class="form-check-input" id="dropdownCheck2">
+                                    <label class="form-check-label" for="dropdownCheck2">
+                                        Remember me
+                                    </label>
+                                </div>   
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <div class="shop">
+                    <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i></button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body d-flex flex-column align-items-center justify-content-center">
+                            <img src="./assets/images/unnamed.png" alt="">
+                            <p>Your cart is currently empty</p>
+                        </div>
+                    </div>
+                </div>              
             </div>
         </div>
-    </div>
+    </nav>
 
     <!-- contact-us -->
     <div class="contact-us">
@@ -93,39 +144,41 @@
     </div>
     <!-- main -->
     <div class="main d-flex justify-content-center">
-        <div class="main-section d-flex justify-content-between col-12">
-            <div class="left d-flex flex-column col-4">
-                <h2>Contact Us</h2>
-                <div class="line">
-                    <h3>Call to Us</h3>
-                    <p>We’re available 24/7, 7 days a week.</p>
-                    <a href="#">+ 011 4336 3912</a>
+        <div class="main-section">
+            <div class="container d-flex justify-content-between col-12">
+                <div class="left d-flex flex-column col-4">
+                    <h2>Contact Us</h2>
+                    <div class="line">
+                        <h3>Call to Us</h3>
+                        <p>We’re available 24/7, 7 days a week.</p>
+                        <a href="#">+ 011 4336 3912</a>
+                    </div>
+                    <div class="line">
+                        <h3>Write to Us:</h3>
+                        <p>Fill out our form and we will contact you within 24 hours.</p>
+                        <h4><span>Email: </span><a href="#">abdalaagamal226@gmail.com</a></h4>
+                    </div>
+                    <div class="line">
+                        <h3>Headquarter:</h3>
+                        <p>Monday – Friday: 9:00-20:00
+                            Saturady: 11:00 – 15:00</p>
+                        <h5>123 Atlantic, Brooklyn, New York, USA</h5>
+                    </div>
                 </div>
-                <div class="line">
-                    <h3>Write to Us:</h3>
-                    <p>Fill out our form and we will contact you within 24 hours.</p>
-                    <h4><span>Email: </span><a href="#">abdalaagamal226@gmail.com</a></h4>
+                <div class="right d-flex flex-column justify-content-between align-items-start align-items-sm-center col-8">
+                    <h2>We would love to hear from you.</h2>
+                    <div class="line d-flex">
+                        <input type="text" placeholder="Name *" class="one">
+                        <input type="email" placeholder="E-mail *" class="one">
+                    </div>
+                    <div class="line bg-black">
+                        <input type="text" placeholder="Subject *" class="two">
+                    </div>
+                    <div class="line">
+                        <textarea name="message" rows="8" placeholder="Message" required=""></textarea>
+                    </div>
+                    <a href="#">Send Message</a>
                 </div>
-                <div class="line">
-                    <h3>Headquarter:</h3>
-                    <p>Monday – Friday: 9:00-20:00
-                        Saturady: 11:00 – 15:00</p>
-                    <h5>123 Atlantic, Brooklyn, New York, USA</h5>
-                </div>
-            </div>
-            <div class="right d-flex flex-column justify-content-between align-items-start align-items-sm-center col-8">
-                <h2>We would love to hear from you.</h2>
-                <div class="line d-flex">
-                    <input type="text" placeholder="Name *" class="one">
-                    <input type="email" placeholder="E-mail *" class="one">
-                </div>
-                <div class="line bg-black">
-                    <input type="text" placeholder="Subject *" class="two">
-                </div>
-                <div class="line">
-                    <textarea name="message" rows="8" placeholder="Message" required=""></textarea>
-                </div>
-                <a href="#">Send Message</a>
             </div>
         </div>
     </div>

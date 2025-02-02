@@ -4,117 +4,174 @@ body {
     font-family: "Inter", serif;
 }
 header {
-    height: 40px;
-    padding: 15px 60px 0 60px;
+    height: 38px;
+    background-color: #000000;
 }
-header .left {
-    color: #fff; 
-    font-size: .8rem;
-}
-header .left p {
+header .container .left p {
+    font-size: .9rem;
+    color: #ffffff;
+    letter-spacing: 1.3px;
     text-transform: uppercase;
-    letter-spacing: 1px;
 }
-header .left a {
+header .container .left p a {
+    color: #ffffff;
+    transition: .3s ease all;
+}
+header .container .left p a:hover {
     color: rgb(205, 2, 2);
-    letter-spacing: 1px;
-    padding-left: 5px;
-    transition: .3s ease;
 }
-.right {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+header .container .right .btn-group button {
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    transition: .3s ease all;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
+header .container .right .btn-group button:hover {
+    color: rgb(205, 2, 2);
 }
-.dropdown i {
-    color: #fff;
+header .container .right .btn-group ul {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    padding: 20px 10px;
 }
-header .dropdown .text {
-    color: #fff;
-    cursor: pointer;
-    font-size: .8rem;
-    transition: .2s;
+header .container .right .btn-group ul li {
+    font-size: .9rem;
+    text-transform: uppercase;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 100px;
-    font-size: .8rem;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    top: 30px;
-    right: 0px;
+header .container .right .btn-group ul li a {
+    transition: .3s ease all;
 }
-.dropdown-content a {
-    padding: 8px 12px;
-    display: block;
-    color: #000000;
-    text-decoration: none;
-    transition: .2s;
+header .container .right .btn-group ul li a:hover {
+    background: none;
+    color: rgb(205, 2, 2);
 }
-.dropdown:hover .dropdown-content {
-    display: block;
-    transition-delay: 10s;
-}
-header .dropdown i:hover {
-    color: #848484;
-}
-header .text:hover  {
-    color: #848484;
-}
-header .dropdown a:hover {
-    color: #afafaf;
+@media (max-width: 576px) {
+    header .container .left p {
+        font-size: .7rem;
+    }
 }
 /* nav */
-.hero-section {
-    position: relative;
-    overflow: hidden;
+nav .container {
+    padding: 20px 0;
 }
-.hero-section .section-top {
-    padding: 0 60px;
-    background-color: #fff;
-    /* position: fixed; */
-    z-index: 100;
-    box-shadow: 1px 1px 1px 1px #e7e7e7;
-}
-.hero-section .section-top p a {
-    text-decoration: none;
-    font-size: 3rem;
-    color: #000000;
-    font-weight: 900;
-}
-.hero-section .section-top a span{
-    color: rgb(205, 2, 2);
-    font-size: 3.5rem;
-}
-.hero-section .section-top .menu-search a{
-    color: #000000;
-    text-decoration: none;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    font-weight: 500;
-    transition: .2s ease;
-}
-.hero-section .section-top .menu-search a:hover {
-    color: rgb(160, 0, 0);
-}
-.hero-section .section-top .icon i {
-    color: #000000;
+nav .container .left .menu button i,
+nav .container .left .search button i {
     font-size: 1.3rem;
 }
-.hero-section .section-top .icon span {
+nav .container .left .menu .offcanvas .offcanvas-header p {
+    font-size: 3.7rem;
+    font-weight: 700;
+}
+nav .container .left .menu .offcanvas .offcanvas-header p span {
+    color: rgb(205, 2, 2);
+}
+nav .container .left .menu .offcanvas .offcanvas-header .btn-close,
+nav .container .left .search .offcanvas .offcanvas-header .btn-close {
+    font-size: 1.3rem;
     background-color: rgb(205, 2, 2);
-    color: #fff;
+    transition: .3s ease all;
 }
+nav .container .left .menu .offcanvas .offcanvas-header .btn-close:hover {
+    color: rgb(205, 2, 2);
+}
+nav .container .left .menu .offcanvas .offcanvas-body {
+    gap: 30px;
+}
+nav .container .left .menu .offcanvas .offcanvas-body a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: .3s ease all;
+}   
+nav .container .left .menu .offcanvas .offcanvas-body a:hover {
+    color: rgb(205, 2, 2);
+}
+nav .container .left .search .offcanvas .offcanvas-header h5 {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+nav .container .left .search .offcanvas .offcanvas-body .search-product {
+    position: relative;
+}
+nav .container .left .search .offcanvas .offcanvas-body .search-product input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid#afafaf;
 
-/* product */
-.product {
+}nav .container .left .search .offcanvas .offcanvas-body .search-product input::placeholder {
+    color: #afafaf;
 }
+nav .container .left .search .offcanvas .offcanvas-body .search-product i {
+    font-size: 1.3rem;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    color: #afafaf;
+}
+nav .container .center p {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+nav .container .center p span {
+    color: rgb(205, 2, 2); 
+}
+nav .container .right .dropdown button i,
+nav .container .right a,
+nav .container .right a button {
+    color: #000000;
+    font-size: 1.3rem;
+    transition: .3s ease all;
+}
+nav .container .right .dropdown button i:hover,
+nav .container .right a:hover,
+nav .container .right .shop button:hover {
+    color: rgb(205, 2, 2);
+}
+nav .container .right .dropdown .dropdown-menu {
+    width: 400px;
+}
+nav .container .right .dropdown .dropdown-menu ::placeholder {
+    padding: 20px;
+    font-size: .9rem;
+    color: #afafaf;
+}
+nav .container .right .dropdown .dropdown-menu .form-check button {
+    text-transform: uppercase;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+    padding: 10px;
+    width: 50%;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: .3s ease all;
+}
+nav .container .right .dropdown .dropdown-menu .form-check button:hover {
+    background-color: rgb(205, 2, 2);
+}
+nav .container .right .dropdown .dropdown-menu .form-check .check label {
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+nav .container .right .shop .offcanvas .offcanvas-body img {
+    width: 200px;
+}
+nav .container .right .shop .offcanvas .offcanvas-body p {
+    color: #000000;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+@media (max-width: 576px) {
+    nav .container {
+        padding: 0;
+    }
+    nav .container .center p {
+        font-size: 2.7rem;
+    }
+}
+/* product */
 .product .top a {
     color: rgb(132, 132, 132);
     text-decoration: none;
@@ -124,13 +181,110 @@ header .dropdown a:hover {
 .product .top a:hover {
     color: rgb(205, 2, 2);
 }
-.product .bottom .left img {
+/* left */
+.product .bottom .left .image {
+    position: relative;
+}
+.product .bottom .left .image .active:hover {
+    cursor: pointer;
+}
+.product .bottom .left .image img {
     width: 100%;
     height: 130px;
 }
-.product .bottom .center .image img {
+.product .bottom .left .image .overlay,
+.product .bottom .left .image .active {
+    height: 130px;
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s ease all;
+    background-color:  #ffffff;
+    opacity: .4;
 }
+.product .bottom .left .image .overlay {
+    z-index: -1;
+}
+.product .bottom .left .image .active {
+    z-index: 1;
+}
+.product .bottom .left .image:hover .overlay {
+    z-index: 1;
+    cursor: pointer;   
+}
+/* center */
+.product .bottom .center {
+    position: relative;
+}
+.product .bottom .center .image-container {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.product .bottom .center .image-container img {
+    width: 100%;
+    /* transition: transform .3s ease-in-out; */
+    display: block;
+}
+.product .bottom .center #zoom-lens {
+    position: absolute;
+    border: 2px solid #000;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, .3);
+    display: none;
+    pointer-events: none;
+}
+.product .bottom .center #zoom-result {
+    position: absolute;
+    top: 0;
+    left: 110%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #ddd;
+    background-repeat: no-repeat;
+    background-size: 200%;
+    display: none;
+}
+.product .bottom .center .image-container:hover img {
+    /* transform: scale(1.2);
+    cursor: zoom-in; */
+}
+.product .bottom .center .image .sale {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.product .bottom .center .image .sale h6:nth-child(1) {
+    background-color: rgb(205, 2, 2);
+    padding: 5px 15px;
+    font-size: .8rem;
+}
+.product .bottom .center .image .sale h6:nth-child(2) {
+    background-color: #000000;
+    padding: 5px 15px;
+    font-size: .8rem;
+}
+.product .bottom .center .image i {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.1rem;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .3s ease all;
+}
+.product .bottom .center .image i:hover {
+    background-color: rgb(205, 2, 2);
+    color: #ffffff;
+    cursor: pointer;
+}
+/* right */
 .product .bottom .right {
     padding-left: 20px;
 }
@@ -227,6 +381,9 @@ header .dropdown a:hover {
 .product .bottom .right .app {
     margin-top: 15px;
 }
+.product .bottom .right .app .line-right {
+    gap: 10px;
+}
 .product .bottom .right .app .line-right i {
     font-size: 1.5rem;
     transition: .3s ease all;
@@ -253,9 +410,36 @@ header .dropdown a:hover {
 .product .bottom .right .brands a:hover {
     color: rgb(205, 2, 2);
 }
-
-
-
+@media (max-width: 576px) {
+    .product .top {
+        flex-wrap: wrap;
+    }
+    .product .top p {
+        margin-top: -40px;
+    }
+    .product .bottom .left {
+        order: 0;
+    }
+    .product .bottom .center {
+        order: -1;
+    }
+    .product .bottom .right {
+        order: 1;
+    }
+    .product .bottom .right .add .counter {
+        margin-top: 10px;
+    }
+    .product .bottom .right .buy {
+        width: 100%;
+    }
+    .product .bottom .right .app {
+        margin-top: 20px;
+        align-items: center;
+    }
+    .product .bottom .right .app .line-right {
+        gap: 5px;
+    }
+}
 .review {
     padding: 50px;
 }
@@ -369,7 +553,87 @@ header .dropdown a:hover {
 .review .tab-content .customerss .add a:hover {
     background-color: rgb(205, 2, 2);
 }
-
+@media (max-width: 576px) {
+    .review {
+        padding: 2px;
+    }
+    .review .tab-content .dimensions {
+        padding-top: 40px;
+    }
+    .review .nav .nav-item button {
+        font-size: 1.5rem;
+    }
+    .review .tab-content .details {
+        margin-top: 20px;
+    }
+    .review .tab-content .delivery {
+        margin-top: -400px;
+        margin-bottom: 200px;
+    }
+    /* ifuhyghfiqvgfu */
+    .review .tab-content .customerss {
+        margin-top: -850px;
+    }
+    .review .tab-content .customerss .customers .line .left img {
+        border-radius: 50%;
+        width: 70px;
+    }
+    /* .review .tab-content .customerss .customers .line .center .text p {
+        order: ;
+    }
+    .review .tab-content .customerss .customers .line .center .text h6 {
+        font-size: 1rem;
+        order: ;
+    } */
+    .review .tab-content .customerss .add {
+        padding-top: 2rem;
+    }
+    .review .tab-content .customerss .add h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+    .review .tab-content .customerss .add .text .icons i {
+        font-size: 1.7rem;
+    }
+    .review .tab-content .customerss .add .text .icons .fa-star {
+        color: #000000;
+        transition: .3s ease all;
+    }
+    .review .tab-content .customerss .add .text .icons .fa-star:hover {
+        color: rgb(205, 2, 2);
+        transform: scale(1.2);
+    }
+    .review .tab-content .customerss .add textarea {
+        height: 250px;
+        padding: 30px;
+        color: rgb(132, 132, 132);
+    }
+    .review .tab-content .customerss .add .inputt {
+        padding-right: 15px;
+        height: 50px;
+    }
+    .review .tab-content .customerss .add .inputt input {
+        padding-left: 20px;
+        color: rgb(132, 132, 132);
+    } 
+    .review .tab-content .customerss .add a {
+        background-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        transition: .3s ease all;
+    }
+    .review .tab-content .customerss .add a:hover {
+        background-color: rgb(205, 2, 2);
+    }
+    
+}
 
 
 .related-products {
