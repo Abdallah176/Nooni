@@ -298,6 +298,9 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 .main .main-section .right a:hover {
     background-color: rgb(205, 2, 2);
 }
+@media (max-width: 576px) {
+    
+}
 @media (max-width: 768px) {
     .contact-us {
         width: 100%;

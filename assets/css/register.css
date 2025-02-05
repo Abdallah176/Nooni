@@ -3,11 +3,6 @@ body {
     min-height: 100vh;
     font-family: "Inter", serif;
 }
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 header {
     height: 38px;
     background-color: #000000;
@@ -56,12 +51,7 @@ header .container .right .btn-group ul li a:hover {
         font-size: .7rem;
     }
 }
-/* hero */
-.hero {
-    background-color: #f2f2f2;
-    height: 100vh;
-    position: relative;
-}
+/* nav */
 nav .container {
     padding: 20px 0;
 }
@@ -181,179 +171,70 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         font-size: 2.7rem;
     }
 }
-@keyframes fadeOut {
-    0% {
-        transform: scale(.5);
-        opacity: 0;
-    }
+.register {
+    margin-top: 20px;
 }
-@keyframes fadeLeft {
-    0% {
-        transform: translateX(-5rem);
-        opacity: 0;
-    }
-}
-/* left */
-.hero .main-hero .left h1 {
-    color: rgb(205, 2, 2);
-    font-size: 4rem;
-    font-weight: 900;
-}
-.hero .main-hero .left h1 span {
-    color: #000000;
-}
-.hero .main-hero .left hr {
-    width: 150px;
-    color: rgb(205, 2, 2);
-    border: 1px solid rgb(222, 0, 0);
-}
-.hero .main-hero .left p {
-    font-size: 1rem;
-    color: #000000;
-}
-.hero .main-hero .left a {
-    color: rgb(205, 2, 2);
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-}
-.hero .main-hero .left .phone .line i {
-    font-size: 1.3rem;
-    color: rgb(205, 2, 2);
-}
-.hero .main-hero .left .phone .line span {
-    font-weight: 700;
-}
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-.animate__slideInLeft-one {
-    opacity: 0;
-    animation: slideInLeft 1.5s ease-in-out .5s forwards;
-}
-.animate__slideInLeft-two {
-    opacity: 0;
-    animation: slideInLeft 1.5s ease-in-out 1.5s forwards;
-}
-.animate__slideInLeft-three {
-    opacity: 0;
-    animation: slideInLeft 1.5s ease-in-out 2.5s forwards;
-}
-/* center */
-.hero .main-hero .center .text {
-    background-color: #000000;
-    width: 500px;
-    height: 400px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}
-.hero .main-hero .center .text .text-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-90%);
-    color: #ffffff;
-}
-.hero .main-hero .center .text .text-content h5 {
-    font-weight: 700;
-    letter-spacing: 5px;
-    font-size: 2rem;
-    text-transform: uppercase;
-}
-.hero .main-hero .center .text .text-content h3 {
-    font-weight: 900;
-    font-size: 3rem;
-    letter-spacing: 10px;
-    text-transform: uppercase;
-}
-.hero .main-hero .center .text .text-content p {
-    color: rgb(205, 2, 2);
+.register .text {
+    font-size: .9rem;
+    letter-spacing: 1.5px;
     font-weight: 500;
-    font-size: 1.3rem;  
-    animation-duration: 2s;
+    margin-bottom: 20px;
 }
-.hero .main-hero .center .image-center img {
-    width: 800px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.register .text a {
+    color: #afafaf;
+    text-decoration: none;
 }
-@keyframes slideInTop {
-    0% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.register .content-register .line h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
-.animate__center {
-    opacity: 0;
-    animation: slideInTop 1.5s ease-in-out 3.5s forwards;
+.register .content-register .line .user-password label {
+    font-size: 1rem;
+    color: #afafaf;
 }
-/* right */
-.hero .main-hero .right .image-right img {
-    width: 80px;
+.register .content-register .line .user-password input {
+    width: 70%;
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding: 10px;
+}
+.register .content-register .line .login a {
     background-color: #000000;
-    padding: 8px;
-    border-radius: 50%;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 50px; 
+    font-size: .9rem;
+    font-weight: 700;
     transition: .3s ease all;
 }
-.hero .main-hero .right .image-right img:hover {
-    background-color: #ffffff;
-    cursor: pointer;
+.register .content-register .line .login a:hover {
+    background-color: rgb(205, 2, 2);
 }
-.hero .main-hero .right .image-right h6 {
+.register .content-register .line .login .remember label {
+    color: #000000;
     font-size: .9rem;
     font-weight: 700;
-    letter-spacing: 1.3px;
-}   
-.hero .main-hero .right .image-right span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.register .content-register .line a {
+    color: #000000;
+    letter-spacing: 1px;
+    font-size: .9rem;
+}
+.register .content-register .line .reg a {
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 15px 50px; 
     font-size: .9rem;
     font-weight: 700;
+    transition: .3s ease all;
 }
-@keyframes slideInRight {
-    0% {
-        opacity: 0;
-        transform: translateX(100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+.register .content-register .line .reg a:hover {
+    background-color: rgb(205, 2, 2);
 }
-.animate__slideInRight-one {
-    opacity: 0;
-    animation: slideInRight 1.5s ease-in-out .5s forwards;
+.register .content-register .line label span {
+    color: rgb(255, 13, 13);
 }
-.animate__slideInRight-two {
-    opacity: 0;
-    animation: slideInRight 1.5s ease-in-out 1.5s forwards;
-}
-.animate__slideInRight-three {
-    opacity: 0;
-    animation: slideInRight 1.5s ease-in-out 2.5s forwards;
-}
-
-
-
-
-
-
-
-
-
-

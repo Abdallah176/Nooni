@@ -265,6 +265,11 @@ hr {
         align-items: center;
     }
 }
+@media (min-width: 768px) and (max-width: 1100px){
+    .hero-shop .section-one .bottom {
+        gap: 1px;
+    }
+}
 /* Products */
 /* Left */
 .products {
@@ -359,6 +364,27 @@ color: #fff;
 }
 .products .right .topp {
 animation: fadeIn 1s ease-in-out;
+}
+.products .right .topp .offcanvas .offcanvas-header h5 label,
+.products .right .topp .offcanvas .offcanvas-body label {
+    color: #000000;
+}
+.products .right .topp .offcanvas .offcanvas-header h5 label {
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.products .right .topp .offcanvas .offcanvas-body p {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+.products .right .topp .button button {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 700;
+} 
+.products .right .topp .dropdown .dropdown-menu li button { 
+    color: #000000;
 }
 @keyframes fadeIn {
 from {

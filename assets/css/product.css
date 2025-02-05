@@ -445,6 +445,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 }
 .review .tab-content .dimensions {
     padding-top: 60px;
+    /* margin-bottom: -400px; */
 }
 .review .tab-content .dimensions .line p {
     font-size: 1rem;
@@ -570,7 +571,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         margin-top: -400px;
         margin-bottom: 200px;
     }
-    /* ifuhyghfiqvgfu */
+    /* وهو انا هفضل اعمل كدا ؟ */
     .review .tab-content .customerss {
         margin-top: -850px;
     }
@@ -594,48 +595,21 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         letter-spacing: 2px;
     }
     .review .tab-content .customerss .add .text .icons i {
-        font-size: 1.7rem;
-    }
-    .review .tab-content .customerss .add .text .icons .fa-star {
-        color: #000000;
-        transition: .3s ease all;
-    }
-    .review .tab-content .customerss .add .text .icons .fa-star:hover {
-        color: rgb(205, 2, 2);
-        transform: scale(1.2);
+        font-size: 1.5rem;
     }
     .review .tab-content .customerss .add textarea {
-        height: 250px;
-        padding: 30px;
-        color: rgb(132, 132, 132);
+        height: 200px;
+        padding: 20px;
+        width: 100%;
     }
     .review .tab-content .customerss .add .inputt {
-        padding-right: 15px;
         height: 50px;
+        width: 100%;
     }
-    .review .tab-content .customerss .add .inputt input {
-        padding-left: 20px;
-        color: rgb(132, 132, 132);
-    } 
-    .review .tab-content .customerss .add a {
-        background-color: #000000;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 15px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1rem;
-        letter-spacing: 1px;
-        transition: .3s ease all;
+    .review .accordion .accordion-item .details {
+        margin-top: -400px;
     }
-    .review .tab-content .customerss .add a:hover {
-        background-color: rgb(205, 2, 2);
-    }
-    
 }
-
-
 .related-products {
     margin-top: -170px;
     margin-bottom: 100px;
@@ -771,7 +745,13 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 .related-products .carousel-inner .carousel-item .card-content .card .seven:hover {
     content: url("../images/34-450x572.jpg");
 }
-
+@media (max-width: 576px) {
+    .related-products {
+        margin-top: 0;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+}
 
 /* footer */
 footer {

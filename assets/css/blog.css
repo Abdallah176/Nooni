@@ -415,6 +415,9 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     .blog .section-blog .right .icon {
         width: 100%;
     }
+    .blog .section-blog .right .accordion {
+        width: 100%;
+    }
 }
 @media (min-width: 576px) and (max-width: 768px) {
     .blog .section-blog {

@@ -222,54 +222,139 @@
                         <input type="text" placeholder="Search for products...">
                         <i class="fa-solid fa-magnifying-glass"></i> 
                     </div>
-                    <div class="popular-posts d-flex flex-column">
-                        <h4>Popular Posts</h4>
-                        <div class="line d-flex align-items-center gap-4">
-                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
-                            <a href="#">What’s in a Child’s<br> Bedroom Set?</a>
+                    <div class="pop d-none d-md-block d-lg-block">
+                        <div class="popular-posts d-flex flex-column">
+                            <h4>Popular Posts</h4>
+                            <div class="line d-flex align-items-center gap-4">
+                                <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                                <a href="#">What’s in a Child’s<br> Bedroom Set?</a>
+                            </div>
+                            <div class="line d-flex align-items-center gap-4">
+                                <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                                <a href="#">The Secrets to a Living<br> Room that Draws You In</a>
+                            </div>
+                            <div class="line d-flex align-items-center gap-4">
+                                <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                                <a href="#">Customer Delight Makes<br> Furniture Shopping Easy</a>
+                            </div>
                         </div>
-                        <div class="line d-flex align-items-center gap-4">
-                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
-                            <a href="#">The Secrets to a Living<br> Room that Draws You In</a>
+                        <div class="recent-comments">
+                            <h4>Recent Comments</h4>
+                            <div class="line">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 17, 2025</span></p>
+                            </div>
+                            <div class="line">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 16, 2025</span></p>
+                            </div>
+                            <div class="line">
+                                <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing<br><span>Jan 16, 2025</span></p>
+                            </div>
                         </div>
-                        <div class="line d-flex align-items-center gap-4">
-                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
-                            <a href="#">Customer Delight Makes<br> Furniture Shopping Easy</a>
+                        <div class="tags-post d-flex flex-column gap-2">
+                            <h4>Tags Post</h4>
+                            <div class="line d-flex">
+                                <a href="#">Bedroom Furniture</a>
+                                <a href="#">Bookcases</a>
+                            </div>
+                            <div class="line d-flex ">
+                                <a href="#">Chair</a>
+                                <a href="#">Coffee Tables</a>
+                            </div>
+                            <div class="line d-flex">
+                                <a href="#">Dining Tables</a>
+                                <a href="#">Dressers & Armoires</a>
+                            </div>
+                            <div class="line d-flex">
+                                <a href="#">Lamps</a>
+                                <a href="#">Sofas & Loveseats</a>
+                            </div>
+                            <div class="line d-flex">
+                                <a href="#">Table</a>
+                                <a href="#">Tv & Media Stands</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="recent-comments">
-                        <h4>Recent Comments</h4>
-                        <div class="line">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 17, 2025</span></p>
+                    <!-- Mobile -->
+                    <div class="accordion accordion-flush d-sm-block d-md-none d-lg-none" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Popular Posts
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="popular-posts d-flex flex-column">
+                                        <div class="line d-flex align-items-center gap-4">
+                                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                                            <a href="#">What’s in a Child’s<br> Bedroom Set?</a>
+                                        </div>
+                                        <div class="line d-flex align-items-center gap-4">
+                                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                                            <a href="#">The Secrets to a Living<br> Room that Draws You In</a>
+                                        </div>
+                                        <div class="line d-flex align-items-center gap-4">
+                                            <img src="./assets/images/blog-1-1174x862.jpg" alt="">
+                                            <a href="#">Customer Delight Makes<br> Furniture Shopping Easy</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="line">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 16, 2025</span></p>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Recent Comments
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="recent-comments">
+                                        <div class="line">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 17, 2025</span></p>
+                                        </div>
+                                        <div class="line">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at,<br><span>Jan 16, 2025</span></p>
+                                        </div>
+                                        <div class="line">
+                                            <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing<br><span>Jan 16, 2025</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="line">
-                            <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing<br><span>Jan 16, 2025</span></p>
-                        </div>
-                    </div>
-                    <div class="tags-post d-flex flex-column gap-2">
-                        <h4>Tags Post</h4>
-                        <div class="line d-flex">
-                            <a href="#">Bedroom Furniture</a>
-                            <a href="#">Bookcases</a>
-                        </div>
-                        <div class="line d-flex ">
-                            <a href="#">Chair</a>
-                            <a href="#">Coffee Tables</a>
-                        </div>
-                        <div class="line d-flex">
-                            <a href="#">Dining Tables</a>
-                            <a href="#">Dressers & Armoires</a>
-                        </div>
-                        <div class="line d-flex">
-                            <a href="#">Lamps</a>
-                            <a href="#">Sofas & Loveseats</a>
-                        </div>
-                        <div class="line d-flex">
-                            <a href="#">Table</a>
-                            <a href="#">Tv & Media Stands</a>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Tags Post
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="tags-post d-flex flex-column gap-2">
+                                        <div class="line d-flex">
+                                            <a href="#">Bedroom Furniture</a>
+                                            <a href="#">Bookcases</a>
+                                        </div>
+                                        <div class="line d-flex ">
+                                            <a href="#">Chair</a>
+                                            <a href="#">Coffee Tables</a>
+                                        </div>
+                                        <div class="line d-flex">
+                                            <a href="#">Dining Tables</a>
+                                            <a href="#">Dressers & Armoires</a>
+                                        </div>
+                                        <div class="line d-flex">
+                                            <a href="#">Lamps</a>
+                                            <a href="#">Sofas & Loveseats</a>
+                                        </div>
+                                        <div class="line d-flex">
+                                            <a href="#">Table</a>
+                                            <a href="#">Tv & Media Stands</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -278,8 +363,8 @@
     </div>
     <!-- EndMainBlog -->
     <hr>
-     <!-- footer -->
-     <footer>
+    <!-- footer -->
+    <footer>
         <div class="container d-flex flex-column justify-content-between">
             <div class="top d-flex flex-wrap justify-content-between">
                 <div class="one d-flex flex-column gap-3">

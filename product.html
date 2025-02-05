@@ -243,8 +243,8 @@
 
 
     <!-- review -->
-    <div class="review d-flex flex-column justify-content-between">
-        <div class="container">
+    <div class="review d-flex flex-column justify-content-between ">
+        <div class="container d-none d-md-flex d-lg-flex flex-column justify-content-between ">
             <ul class="nav nav-tabs d-flex justify-content-center gap-2" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="dimensions-tab" data-bs-toggle="tab" data-bs-target="#dimensions" type="button" role="tab" aria-controls="dimensions" aria-selected="true">Dimensions</button>
@@ -397,15 +397,206 @@
                             </div>
                         </div>
                         <textarea class="col-lg-12" name="" id="">Your review *</textarea>
-                        <div class="col-lg-12 inputt d-flex gap-3">
-                            <input class="col-lg-6" type="text" placeholder="Name *">
-                            <input class="col-lg-6" type="email" placeholder="Email *">
+                        <div class="col-lg-12 d-grid d-md-flex flex-wrap flex-md-row inputt d-flex gap-0 gap-md-3">
+                            <input class="col-12 col-md-6 col-lg-6" type="text" placeholder="Name *">
+                            <input class="col-12 col-md-6 col-lg-6" type="email" placeholder="Email *">
                         </div>
                         <a class="col-lg-12" href="#">submit</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Mobile -->
+        <div class="accordion accordion-flush d-sm-block d-md-none" id="accordionFlushExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        Dimensions
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="dimensions tab-pane fade show active d-sm-grid d-md-flex d-lg-flex justify-content-between col-lg-12" id="dimensions" role="tabpanel" aria-labelledby="dimensions-tab">
+                            <div class="line d-flex flex-column col-lg-6">
+                                <p>OVERALL : <span>64.5" w x 36.5" d x 35" h</span></p>
+                                <p>INSIDE SEATING : <span>50.5" w x 22" d x 19.5" h</span></p>
+                                <p>ARM : <span>7" w x 38.5" d x 22.5" h</span></p>
+                                <p>LEGS : <span>5.5" w x 2" d x 2" h</span></p>
+                            </div>
+                            <div class="line d-flex flex-column col-lg-6">
+                                <p>SEAT HEIGHT : <span>19.5"</span></p>
+                                <p>BACK FRAME : <span>30"</span></p>
+                                <p>DIAGONAL DEPTH : <span>29.5"</span></p>
+                                <p>WEIGHT : <span>121 lbs</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Details
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="details tab-pane fade d-flex flex-column" id="details" role="tabpanel" aria-labelledby="details-tab">
+                            <p>Ankara Chair with Fabric Cushion 29.75″Wx28″Dx30.5″H</p>
+                            <ul class="d-flex flex-column gap-3">
+                                <li>Frame is benchmade with precision-cut solid ash with grey wash finish, hardwood plywood, and a cane seat</li>
+                                <li>Synthetic webbing suspension system</li>
+                                <li>Soy-based polyfoam cushion with fiber encased in downproof ticking</li>
+                                <li>Frame stained with grey wash finish and clear protective lacquer</li>
+                                <li>See product label or call customer service for additional details on product content</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        Delivery
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="delivery tab-pane fade d-flex flex-column gap-3" id="delivery" role="tabpanel" aria-labelledby="delivery-tab">
+                            <div class="line d-flex flex-column gap-2">
+                                <h6>WHITE GLOVE SERVICE</h6>
+                                <p>Items are delivered to your room of choice by appointment, then unpacked and fully assembled by a skilled two-person team. Includes packaging removal and recycling Fee varies by location and order total. (Doorstep delivery does not include assembly)</p>
+                            </div>
+                            <div class="line d-flex flex-column gap-2">
+                                <h6>FLAT RATE DELIVERY</h6>
+                                <p>An unlimited number of eligible furniture and select non-furniture items can be delivered for one flat rate per shipping address. Your order will ship when all items are ready for delivery. Fee varies by location and order total.</p>
+                            </div>
+                            <div class="line d-flex flex-column gap-2">
+                                <h6>RETURN POLICY</h6>
+                                <p>You can return eligible items within 30 days of receiving an order or 7 days for Quick Ship upholstery items for a refund of the merchandise value. Made-to-Order furniture is not eligible for returns.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        Customers
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="customerss tab-pane fade mb-5" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="customers d-flex flex-column">
+                                <div class="customer-review d-flex flex-column justify-content-between align-items-center gap-2 mb-5">
+                                    <h3>Customers Reviews</h3>
+                                    <div class="icons">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        (4)
+                                    </div>
+                                </div>
+                                <div class="line d-grid d-md-flex d-lg-flex justify-content-between align-items-center">
+                                    <div class="left text-center">
+                                        <img src="./assets/images/c78c16621b17ce14195c0da72c4454ed.png" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <div class="text d-flex flex-column gap-2">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu, consectetur eleifend commodo at, consectetur eu justo.</p>
+                                            <div class="name d-flex gap-2">
+                                                <h6>John henrry </h6>
+                                                <p>May 18, 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="line d-grid d-md-flex d-lg-flex justify-content-between align-items-center ">
+                                    <div class="left text-center">
+                                        <img src="./assets/images/e37e05791ac775975aaffb62f352fe32.png" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <div class="text d-flex flex-column gap-2">
+                                            <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu.</p>
+                                            <div class="name d-flex gap-2">
+                                                <h6>marcel</h6>
+                                                <p>May 18, 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="line d-grid d-md-flex d-lg-flex justify-content-between align-items-center">
+                                    <div class="left text-center">
+                                        <img src="./assets/images/d8f3ff0124db2720fc8d49466411e944.png" alt="">
+                                    </div>
+                                    <div class="center">
+                                        <div class="text d-flex flex-column gap-2">
+                                            <p>Phasellus vitae imperdiet felis. Nam non condimentum erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor arcu.</p>
+                                            <div class="name d-flex gap-2">
+                                                <h6>Sofia</h6>
+                                                <p>May 18, 2023</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="right">
+                                        <div class="icons">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add d-flex flex-column align-items-center gap-3">
+                                <h3>Add a review</h3>
+                                <p>Your email address will not be published. Required fields are marked *</p>
+                                <div class="text d-flex gap-2">
+                                    <p>Your rating * </p>
+                                    <div class="icons">
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                        <i class="fa-regular fa-star"></i>
+                                    </div>
+                                </div>
+                                <textarea class="col-lg-12" name="" id="">Your review *</textarea>
+                                <div class="col-lg-12 d-grid d-md-flex flex-wrap flex-md-row inputt d-flex gap-0 gap-md-3">
+                                    <input class="col-12 col-md-6 col-lg-6" type="text" placeholder="Name *">
+                                    <input class="col-12 col-md-6 col-lg-6" type="email" placeholder="Email *">
+                                </div>
+                                <a class="col-lg-12" href="#">submit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </div>
 
 
@@ -416,19 +607,53 @@
         <div id="carouselExampleFade" class="carousel slide carousel-fade">
             <div class="carousel-inner">
                 <div class="carousel-item active d-flex justify-content-between">
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
                         <div class="card col-12">
-                            <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                            <p>Wood Outdoor Adirondack Chair</p>
+                            <img class="one" src="./assets/images/27-450x572.jpg" alt="">
+                            <p>Floor Lamp With Polyester Shade</p>
                             <div class="price d-flex gap-2">
-                                <span>$1,009</span>
-                                <del>$1,259</del>
+                                <span>$399</span>
                             </div>
                             <div class="icon">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                             <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
+                                <h6 class="d-none">Hot</h6>
+                                <h6 class="d-none">Sale</h6>
+                                <h6>Solid Out</h6>
+                            </div>
+                            <div class="icons d-flex flex-column gap-2 d-none">
+                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                    <p>Quick view</p>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                    <p>Compare</p>
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                    <p>Wishlist</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div> 
+                            </div>
+                            <div class="links">
+                                <button>Select Options</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
+                        <div class="card col-12">
+                            <img class="one" src="./assets/images/04-450x572.jpg" alt="">
+                            <p>Living Room Furniture Chair</p>
+                            <div class="price d-flex gap-2">
+                                <span>$3,049</span>
+                                <del>$5,808</del>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
+                            <div class="sale d-flex gap-1">
+                                <h6 class="d-none">Hot</h6>
                                 <h6>Sale</h6>
                             </div>
                             <div class="icons d-flex flex-column gap-2 d-none">
@@ -450,20 +675,15 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
                         <div class="card col-12">
-                            <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                            <p>Wood Outdoor Adirondack Chair</p>
+                            <img class="one" src="./assets/images/31-450x572.jpg" alt="">
+                            <p>Outdoor Chair With Armrests</p>
                             <div class="price d-flex gap-2">
-                                <span>$1,009</span>
-                                <del>$1,259</del>
+                                <span>$199 - $252</span>
                             </div>
                             <div class="icon">
                                 <i class="fa-regular fa-heart"></i>
-                            </div>
-                            <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
-                                <h6>Sale</h6>
                             </div>
                             <div class="icons d-flex flex-column gap-2 d-none">
                                 <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -484,54 +704,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
                         <div class="card col-12">
-                            <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                            <p>Wood Outdoor Adirondack Chair</p>
+                            <img class="one" src="./assets/images/22-450x572.jpg" alt="">
+                            <p>Led Steel Floor Lamp</p>
                             <div class="price d-flex gap-2">
-                                <span>$1,009</span>
-                                <del>$1,259</del>
+                                <span>$299</span>
+                                <del>$429</del>
                             </div>
                             <div class="icon">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                             <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
-                                <h6>Sale</h6>
-                            </div>
-                            <div class="icons d-flex flex-column gap-2 d-none">
-                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                                    <p>Quick view</p>
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                                    <p>Compare</p>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                </div>
-                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                                    <p>Wishlist</p>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div> 
-                            </div>
-                            <div class="links">
-                                <button>Select Options</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
-                        <div class="card col-12">
-                            <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                            <p>Wood Outdoor Adirondack Chair</p>
-                            <div class="price d-flex gap-2">
-                                <span>$1,009</span>
-                                <del>$1,259</del>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                            <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
-                                <h6>Sale</h6>
+                                <h6 class="d-none">Hot</h6>
+                                <h6>sale</h6>
                             </div>
                             <div class="icons d-flex flex-column gap-2 d-none">
                                 <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -554,7 +740,7 @@
                     </div>
                 </div>
                 <div class="carousel-item d-flex justify-content-between">
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
                         <div class="card col-12">
                             <img class="one" src="./assets/images/06-450x572.jpg" alt="">
                             <p>Wood Outdoor Adirondack Chair</p>
@@ -565,8 +751,38 @@
                             <div class="icon">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
+                            <div class="icons d-flex flex-column gap-2 d-none">
+                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                    <p>Quick view</p>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                    <p>Compare</p>
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </div>
+                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
+                                    <p>Wishlist</p>
+                                    <i class="fa-regular fa-heart"></i>
+                                </div> 
+                            </div>
+                            <div class="links">
+                                <button>Select Options</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
+                        <div class="card col-12">
+                            <img class="one" src="./assets/images/20-450x572.jpg" alt="">
+                            <p>Wood Adirondack Table</p>
+                            <div class="price d-flex gap-2">
+                                <span>$1,050</span>
+                                <del>$1,300</del>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-regular fa-heart"></i>
+                            </div>
                             <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
+                                <h6 class="d-none">Hot</h6>
                                 <h6>Sale</h6>
                             </div>
                             <div class="icons d-flex flex-column gap-2 d-none">
@@ -588,7 +804,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
                         <div class="card col-12">
                             <img class="one" src="./assets/images/01-450x572.jpg" alt="">
                             <p>Wood Outdoor Adirondack Chair</p>
@@ -600,7 +816,7 @@
                                 <i class="fa-regular fa-heart"></i>
                             </div>
                             <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
+                                <h6 class="d-none">Hot</h6>
                                 <h6>Sale</h6>
                             </div>
                             <div class="icons d-flex flex-column gap-2 d-none">
@@ -622,44 +838,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
+                    <div class="card-content col-6 col-md-6 col-lg-3 p-2">
                         <div class="card col-12">
-                            <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                            <p>Wood Outdoor Adirondack Chair</p>
-                            <div class="price d-flex gap-2">
-                                <span>$1,009</span>
-                                <del>$1,259</del>
-                            </div>
-                            <div class="icon">
-                                <i class="fa-regular fa-heart"></i>
-                            </div>
-                            <div class="sale d-flex gap-1">
-                                <h6>Hot</h6>
-                                <h6>Sale</h6>
-                            </div>
-                            <div class="icons d-flex flex-column gap-2 d-none">
-                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                                    <p>Quick view</p>
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                </div>
-                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                                    <p>Compare</p>
-                                    <i class="fa-solid fa-code-compare"></i>
-                                </div>
-                                <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                                    <p>Wishlist</p>
-                                    <i class="fa-regular fa-heart"></i>
-                                </div> 
-                            </div>
-                            <div class="links">
-                                <button>Select Options</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content col-12 col-md-6 col-lg-3 p-2">
-                        <div class="card col-12">
-                            <img class="one" src="./assets/images/01-450x572.jpg" alt="">
-                            <p>Wood Outdoor Adirondack Chair</p>
+                            <img class="one" src="./assets/images/38-2-450x572.jpg" alt="">
+                            <p>2 - Pices Left-Arm Sectional Sofa</p>
                             <div class="price d-flex gap-2">
                                 <span>$1,009</span>
                                 <del>$1,259</del>
