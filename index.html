@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop - Nooni</title>
+    <title>Nooni</title>
     <!-- Fontawesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -66,7 +66,8 @@
                                 <a href="./product.html">Product</a>
                                 <a href="./blog.html">Blog</a>
                                 <a href="./about.html">About us</a>
-                                <a href="./contact.html">Contact us</a>                      
+                                <a href="./contact.html">Contact us</a>
+                                <a href="https://www.google.com/">Log Out</a>                      
                             </div>
                         </div>
                     </div>
@@ -133,7 +134,7 @@
             </div>
         </nav>
         <div class="main-hero">
-            <div class="container d-flex justify-content-between align-items-center">
+            <div class="container d-flex d-md-grid d-lg-flex justify-content-between align-items-center">
                 <div class="left col-lg-3">
                     <div class="animate__slideInLeft-one">
                         <h1>Modern <br><span>Furniture</span></h1>
@@ -155,25 +156,27 @@
                     </div>
                 </div>
                 <div class="center animate__center col-lg-8">
-                    <div class="text">
-                        <div class="text-content d-flex flex-column align-items-center">
-                            <h5>Black</h5>
-                            <h3>Friday</h3>
-                            <p class="animate__animated animate__flash animate__infinite">Sale</p> 
+                    <div class="text d-none d-lg-grid">
+                        <div class="text-content">
+                            <div class="text-menu d-flex flex-column align-items-center">
+                                <h5>Black</h5>
+                                <h3>Friday</h3>
+                                <p class="animate__animated animate__flash animate__infinite">Sale</p> 
+                            </div>                  
                         </div>
                     </div>
                     <div class="image-center">
                         <img src="./assets/images/freepik_br_7058c96d-2081-4fdb-b09d-6edf94152e45.png" alt="">
                     </div>
                 </div>
-                <div class="right d-flex flex-column justify-content-between gap-3 col-lg-1 mt-5">
+                <div class="right d-none d-lg-flex flex-column justify-content-between gap-3 col-lg-1 mt-5">
                     <div class="image-right animate__slideInRight-one d-flex flex-column align-items-center">
                         <div class="image">
                             <img src="./assets/images/chair-1-310x310-removebg-preview.png" alt="">
                         </div>
                         <h6>Chair</h6>
                         <span>12 Products</span>
-                        <a href="./about.html"></a>
+                        <a href="./shop.html"></a>
                     </div>
                     <div class="image-right animate__slideInRight-two d-flex flex-column align-items-center">
                         <div class="image">
@@ -181,7 +184,7 @@
                         </div>
                         <h6>Bed</h6>
                         <span>7 Products</span>
-                        <a href="./about.html"></a>
+                        <a href="./shop.html"></a>
                     </div>
                     <div class="image-right animate__slideInRight-three d-flex flex-column align-items-center">
                         <div class="image">
@@ -189,7 +192,7 @@
                         </div>
                         <h6>Table</h6>
                         <span>5 Products</span>
-                        <a href="./about.html"></a>
+                        <a href="./shop.html"></a>
                     </div>
                 </div>
             </div>
@@ -424,7 +427,7 @@
                 <div class="lampp d-flex">
                     <div class="text d-flex flex-column">
                         <p>Up To 40% Off <br>Top Lamp Brands</p>
-                        <a href="#">SHOP NOW</a>
+                        <a href="./shop.html">SHOP NOW</a>
                     </div>
                     <div class="links d-flex">
                         <img class="" src="./assets/images/banner-0-removebg-preview.png" alt="">
@@ -433,7 +436,7 @@
                 <div class="cabinets">
                     <p>NEW PRODUCTS</p>
                     <h3>Up To 25% Off Cabinets</h3>
-                    <a href="#">SHOP NOW</a>
+                    <a href="./shop.html">SHOP NOW</a>
                 </div>
             </div>
             <div class="right d-flex justify-content-start text-center flex-column col-12 col-md-6 col-lg-6">
@@ -450,7 +453,7 @@
                 <div class="sale">
                     <p>BIG SALE</p>
                     <h2>Up to 70% Off <br>Furniture & Decor</h2>
-                    <a href="#">SHOP NOW</a>
+                    <a href="./shop.html">SHOP NOW</a>
                 </div>
             </div>
         </div>
@@ -478,12 +481,13 @@
             <div class="card-content col-12 col-md-4 col-lg-3 p-3">
                 <div class="box d-flex flex-column justify-content-center col-12 gap-5">
                     <h2>Best<br> Modern<br> Furniture</h2>
-                    <a href="#">See All >></a>
+                    <a href="./shop.html">See All >></a>
                 </div>
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
                     <img class="one" src="./assets/images/01-450x572.jpg" alt="">
+                    <img class="one-hidden" src="./assets/images/01-2-450x572.jpg" alt="">
                     <p>Wood Outdoor Adirondack Chair</p>
                     <div class="price d-flex gap-2">
                         <span>$1,009</span>
@@ -496,13 +500,13 @@
                         <h6>Hot</h6>
                         <h6>Sale</h6>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -517,22 +521,22 @@
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
-                    <img class="two" src="./assets/images/08-450x572.jpg" alt="">
-                    <p>Wood Outdoor Adirondack Chair</p>
+                    <img class="one" src="./assets/images/08-450x572.jpg" alt="">
+                    <img class="two-hidden" src="./assets/images/10-450x572.jpg" alt="">
+                    <p>Solid Wood Bar Storage Cabinet</p>
                     <div class="price d-flex gap-2">
-                        <span>$1,009</span>
-                        <del>$1,259</del>
+                        <span>$1,899</span>
                     </div>
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -541,28 +545,28 @@
                         </div> 
                     </div>
                     <div class="links">
-                        <button>Select Options</button>
+                        <button>Add To Cart</button>
                     </div>
                 </div>
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
-                    <img class="three" src="./assets/images/13-450x572.jpg" alt="">
-                    <p>Wood Outdoor Adirondack Chair</p>
+                    <img class="one" src="./assets/images/13-450x572.jpg" alt="">
+                    <img class="three-hidden" src="./assets/images/13-2-450x572.jpg" alt="">
+                    <p>Solid Wood Bed With Fabric</p>
                     <div class="price d-flex gap-2">
-                        <span>$1,009</span>
-                        <del>$1,259</del>
+                        <span>$3,707 – $5,707</span>
                     </div>
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -577,11 +581,11 @@
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
-                    <img class="four" src="./assets/images/27-450x572.jpg" alt="">
-                    <p>Wood Outdoor Adirondack Chair</p>
+                    <img class="one" src="./assets/images/26-450x572.jpg" alt="">
+                    <img class="four-hidden" src="./assets/images/26-450x572.jpg" alt="">
+                    <p>Floor Lamp With Polyester Shade</p>
                     <div class="price d-flex gap-2">
-                        <span>$1,009</span>
-                        <del>$1,259</del>
+                        <span>$399</span>
                     </div>
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
@@ -589,15 +593,15 @@
                     <div class="sale d-flex gap-1">
                         <h6 class="d-none">Hot</h6>
                         <h6 class="d-none">Sale</h6>
-                        <h6 class="sold">Sold out</h6>
+                        <h6 class="sold">solid out</h6>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -606,32 +610,31 @@
                         </div> 
                     </div>
                     <div class="links">
-                        <button>Select Options</button>
+                        <button>Read More</button>
                     </div>
                 </div>
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
-                    <img class="five" src="./assets/images/02-450x572.jpg" alt="">
-                    <p>Wood Outdoor Adirondack Chair</p>
+                    <img class="one" src="./assets/images/02-450x572.jpg" alt="">
+                    <img class="five-hidden" src="./assets/images/02-4-450x572.jpg" alt="">
+                    <p>Garden Chair With Armrests</p>
                     <div class="price d-flex gap-2">
                         <span>$1,009</span>
-                        <del>$1,259</del>
                     </div>
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
                     </div>
                     <div class="sale d-flex gap-1">
                         <h6>Hot</h6>
-                        <h6 class="d-none">Sale</h6>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -640,17 +643,18 @@
                         </div> 
                     </div>
                     <div class="links">
-                        <button>Select Options</button>
+                        <button>Add To Cart</button>
                     </div>
                 </div>
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
-                    <img class="six" src="./assets/images/22-450x572.jpg" alt="">
-                    <p>Wood Outdoor Adirondack Chair</p>
+                    <img class="one" src="./assets/images/22-450x572.jpg" alt="">
+                    <img class="six-hidden" src="./assets/images/26-450x572.jpg" alt="">
+                    <p>Led Steel Floor Lamp</p>
                     <div class="price d-flex gap-2">
-                        <span>$1,009</span>
-                        <del>$1,259</del>
+                        <span>$299</span>
+                        <del>$429</del>
                     </div>
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
@@ -659,13 +663,13 @@
                         <h6 class="d-none">Hot</h6>
                         <h6>Sale</h6>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -674,14 +678,15 @@
                         </div> 
                     </div>
                     <div class="links">
-                        <button>Select Options</button>
+                        <button>Add To Cart</button>
                     </div>
                 </div>
             </div>
             <div class="card-content col-6 col-md-4 col-lg-3 p-3">
                 <div class="card col-12">
-                    <img class="seven" src="./assets/images/06-450x572.jpg" alt="">
-                    <p>Wood Outdoor Adirondack Chair</p>
+                    <img class="one" src="./assets/images/06-450x572.jpg" alt="">
+                    <img class="seven-hidden" src="./assets/images/34-450x572.jpg" alt="">
+                    <p>Teak Garden Chair With Armrests</p>
                     <div class="price d-flex gap-2">
                         <span>$1,009</span>
                         <del>$1,259</del>
@@ -689,13 +694,13 @@
                     <div class="icon">
                         <i class="fa-regular fa-heart"></i>
                     </div>
-                    <div class="icons d-flex flex-column gap-2 d-none">
+                    <div class="icons d-flex flex-column gap-2">
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Quick view</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
-                            <p>Compare</p>
+                            <p>Wishlist</p>
                             <i class="fa-solid fa-code-compare"></i>
                         </div>
                         <div class="icons-content d-flex justify-content-center align-items-center gap-1">
@@ -704,7 +709,7 @@
                         </div> 
                     </div>
                     <div class="links">
-                        <button>Select Options</button>
+                        <button>Add To Cart</button>
                     </div>
                 </div>
             </div>
