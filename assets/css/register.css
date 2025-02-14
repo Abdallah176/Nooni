@@ -163,6 +163,11 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     font-weight: 700;
     font-size: 1.2rem;
 }
+@media (max-width: 425px) {
+    nav .container .right .dropdown .dropdown-menu {
+        display: none;
+    }
+    }
 @media (max-width: 576px) {
     nav .container {
         padding: 0;
@@ -199,7 +204,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     border: 1px solid #e6e6e6;
     padding: 10px;
 }
-.register .content-register .line .login a {
+.register .content-register .line .login button {
     background-color: #000000;
     color: #ffffff;
     text-decoration: none;
@@ -207,8 +212,9 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     font-size: .9rem;
     font-weight: 700;
     transition: .3s ease all;
+    border: none;
 }
-.register .content-register .line .login a:hover {
+.register .content-register .line .login button:hover {
     background-color: rgb(205, 2, 2);
 }
 .register .content-register .line .login .remember label {
@@ -223,7 +229,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     letter-spacing: 1px;
     font-size: .9rem;
 }
-.register .content-register .line .reg a {
+.register .content-register .line .reg button {
     background-color: #000000;
     color: #ffffff;
     text-decoration: none;
@@ -231,10 +237,158 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     font-size: .9rem;
     font-weight: 700;
     transition: .3s ease all;
+    border: none;
 }
-.register .content-register .line .reg a:hover {
+.register .content-register .line .reg button:hover {
     background-color: rgb(205, 2, 2);
 }
 .register .content-register .line label span {
     color: rgb(255, 13, 13);
+}
+@media (max-width: 426px) {
+    .register .content-register .line .user-password input {
+        width: 100%;
+    }
+}
+.hh{
+    width: 90%;
+    margin: 3rem auto;
+    border: 1px solid #c2c2c2;
+}
+/* footer */
+footer {
+    padding-top: 70px;
+}
+footer .container {
+    gap: 8rem;
+}
+footer .one img {
+    width: 150px;
+}
+footer h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+footer a {
+    color: #afafaf;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .4s ease;
+}
+footer p {
+    color: #afafaf;
+}
+footer .icons i {
+    font-size: 1.5rem;
+    color: #afafaf;
+    transition: .4s ease;
+}
+footer .sub .input {
+    padding: 12px 26px;
+    background-color: #ededed;
+    border: none;
+}
+footer input::placeholder {
+    color: #afafaf;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+footer input:focus {
+    outline: none;
+}
+footer .sub button {
+    padding: 12px 10px;
+    color: #ffffff;
+    background-color: #000000;
+    font-size: .9rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: .3s ease;
+    border: rgb(205, 2, 2);
+}
+footer a:hover,
+footer .icons i:hover {
+    color: rgb(205, 2, 2);
+    cursor: pointer;
+}
+footer .sub button:hover {
+    background-color: rgb(205, 2, 2);
+    border: none;
+}
+@media (max-width: 768px){
+    footer .top {
+        gap: 70px;
+    }
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    footer .top .four .sub {
+        width: 100%;    
+    }   
+    footer .top .one {
+        order: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    footer .top .three {
+        order: 1;
+    }
+    footer .top .two {
+        order: 2;
+        padding-right: 70px;
+    }
+    footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    footer .bottom .info .center {
+        order: -1;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    footer .top .four .sub {
+        width: 100%;    
+    }   
+    footer .bottom .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        gap: 10px;
+    }
+    footer .bottom .info .center {
+        order: -1;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    footer .bottom .info { 
+        display: flex;
+    }
+    footer .top .four {
+        order: -1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }

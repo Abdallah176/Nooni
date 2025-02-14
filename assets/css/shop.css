@@ -5,30 +5,30 @@ body {
 }
 header {
     height: 38px;
-    background-color: #000000;
+    background-color: var(--main-color);
 }
 header .container .left p {
     font-size: .9rem;
-    color: #ffffff;
+    color: var(--white-colorF);
     letter-spacing: 1.3px;
     text-transform: uppercase;
 }
 header .container .left p a {
-    color: #ffffff;
-    transition: .3s ease all;
+    color: var(--white-colorF);
+    transition: var(--main-transation);
 }
 header .container .left p a:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 header .container .right .btn-group button {
-    color: #ffffff;
+    color: var(--white-colorF);
     border: none;
     text-transform: uppercase;
     font-size: .9rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 header .container .right .btn-group button:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 header .container .right .btn-group ul {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -40,11 +40,11 @@ header .container .right .btn-group ul li {
     text-transform: uppercase;
 }
 header .container .right .btn-group ul li a {
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 header .container .right .btn-group ul li a:hover {
     background: none;
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 @media (max-width: 576px) {
     header .container .left p {
@@ -64,32 +64,45 @@ nav .container .left .menu .offcanvas .offcanvas-header p {
     font-weight: 700;
 }
 nav .container .left .menu .offcanvas .offcanvas-header p span {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .left .menu .offcanvas .offcanvas-header .btn-close,
 nav .container .left .search .offcanvas .offcanvas-header .btn-close {
     font-size: 1.3rem;
-    background-color: rgb(205, 2, 2);
-    transition: .3s ease all;
+    background-color: var(--red-color);
+    transition: var(--main-transation);
 }
 nav .container .left .menu .offcanvas .offcanvas-header .btn-close:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .left .menu .offcanvas .offcanvas-body {
     gap: 30px;
 }
 nav .container .left .menu .offcanvas .offcanvas-body a {
-    color: #000000;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 1.5rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }   
+nav .container .left .menu .offcanvas .offcanvas-body a:nth-child(7) {
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+nav .container .left .menu .offcanvas .offcanvas-body a:nth-child(7):hover {
+    background-color: var(--main-color);
+}
 nav .container .left .menu .offcanvas .offcanvas-body a:hover {
-    color: rgb(205, 2, 2);
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    border-radius: 10px;
+    padding: 5px 30px;
 }
 nav .container .left .search .offcanvas .offcanvas-header h5 {
     font-size: 1.3rem;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
     font-weight: 700;
 }
 nav .container .left .search .offcanvas .offcanvas-body .search-product {
@@ -98,36 +111,36 @@ nav .container .left .search .offcanvas .offcanvas-body .search-product {
 nav .container .left .search .offcanvas .offcanvas-body .search-product input {
     width: 100%;
     padding: 10px 20px;
-    border: 1px solid#afafaf;
+    border: 1px solid var(--gray-color);
 
 }nav .container .left .search .offcanvas .offcanvas-body .search-product input::placeholder {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .left .search .offcanvas .offcanvas-body .search-product i {
     font-size: 1.3rem;
     position: absolute;
     right: 10px;
     top: 15px;
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .center p {
     font-size: 3.5rem;
     font-weight: 700;
 }
 nav .container .center p span {
-    color: rgb(205, 2, 2); 
+    color: var(--red-color); 
 }
 nav .container .right .dropdown button i,
 nav .container .right a,
 nav .container .right a button {
     color: #000000;
     font-size: 1.3rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 nav .container .right .dropdown button i:hover,
 nav .container .right a:hover,
 nav .container .right .shop button:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .right .dropdown .dropdown-menu {
     width: 400px;
@@ -135,21 +148,21 @@ nav .container .right .dropdown .dropdown-menu {
 nav .container .right .dropdown .dropdown-menu ::placeholder {
     padding: 20px;
     font-size: .9rem;
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .right .dropdown .dropdown-menu .form-check button {
     text-transform: uppercase;
-    background-color: #000000;
+    background-color: var(--main-color);
     border: none;
-    color: #ffffff;
+    color: var(--white-colorF);
     padding: 10px;
     width: 50%;
     font-size: .9rem;
     font-weight: 700;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 nav .container .right .dropdown .dropdown-menu .form-check button:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
 }
 nav .container .right .dropdown .dropdown-menu .form-check .check label {
     font-size: .9rem;
@@ -159,10 +172,26 @@ nav .container .right .shop .offcanvas .offcanvas-body img {
     width: 200px;
 }
 nav .container .right .shop .offcanvas .offcanvas-body p {
-    color: #000000;
+    color: var(--main-color);
     font-weight: 700;
     font-size: 1.2rem;
 }
+@media (max-width: 425px) {
+    nav .container .right .dropdown .dropdown-menu ::placeholder {
+        padding: 5px 0;
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu .form-check button {
+        padding: 0 30px;
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu .form-check .check label {
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu {
+        width: 250px;
+    }
+    }
 @media (max-width: 576px) {
     nav .container {
         padding: 0;
@@ -171,7 +200,6 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         font-size: 2.7rem;
     }
 }
-
 /* hero-Shop */
 .hero-shop .links {
     margin-top: 50px;
@@ -184,7 +212,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     transition: .3s ease;
 }
 .hero-shop .links a:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 .hero-shop .links a:nth-child(2) {
     text-decoration: line-through;
@@ -205,6 +233,7 @@ hr {
     text-align: center;
     margin-bottom: 35px;
 }
+
 .hero-shop .section-one .link {
     position: relative;
     display: inline-block;
@@ -251,7 +280,7 @@ hr {
     transition: 0.3s ease-in;
 }
 .hero-shop .section-one .text {
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
 }
 .hero-shop .section-one .text h6 {
     font-weight: 700;
@@ -259,15 +288,10 @@ hr {
 .hero-shop .section-one .text p {
     font-size: .9rem;
 }
-@media (min-width: 0) and (max-width: 768px){
+@media (max-width: 426px) {
     .hero-shop .section-one .bottom .d-flex {
         flex-direction: column;
         align-items: center;
-    }
-}
-@media (min-width: 768px) and (max-width: 1100px){
-    .hero-shop .section-one .bottom {
-        gap: 1px;
     }
 }
 /* Products */
@@ -285,11 +309,11 @@ hr {
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
 }
 .products .left .type .form-check:hover .form-check-input:checked {
-    background-color: rgb(205, 2, 2);
-    border-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
+    border-color: var(--red-color);
 }
 .products .left .type .form-check-label {
     font-size: 1rem;
@@ -298,47 +322,47 @@ hr {
     padding-left: 7px;
 }
 .products .left .type .form-check-label {
-    transition: .3s ease;
+    transition: var(--main-transation);
 }
 .products .left .type .form-check:hover .form-check-label,
 .products .left .type .form-check:hover .form-check-input {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 /* Right */
 /* topp */
 .products .right .topp {
     padding: 15px 30px;
-    background-color: #000000;
-    border: 1px solid #fff; 
+    background-color: var(--main-color);
+    border: 1px solid var(--white-colorF); 
     border-radius: 8px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .products .right .icons a {
-    color: #fff;
+    color: var(--white-colorF);
     font-size: 1.4rem;
     margin-right: 15px;
     transition: color 0.3s, transform 0.3s;
 }
 .products .right .icons a:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
     transform: scale(1.2); 
 }
 .products .right .form-check-label {
     font-size: 1rem; 
-    color: #fff;
+    color: var(--white-colorF);
     transition: color 0.3s;
 }
 .products .right .form-check-input {
     width: 18px;
     height: 18px;
-    accent-color: rgb(205, 2, 2); /* checkbox */
+    accent-color: var(--red-color);
 }
 .products .right .form-check:hover .form-check-input:checked {
-    background-color: rgb(205, 2, 2);
-    border-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
+    border-color:var(--red-color);
 }
 .products .right .form-check-label:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color)
 }
 .products .right .dropdown-toggle {
     font-size: 1rem;
@@ -347,7 +371,7 @@ hr {
     transition: color 0.3s;
 }
 .products .right .dropdown-toggle:hover {
-    color: rgb(205, 2, 2);
+    color:var(--red-color);
 }
 .products .right .dropdown-menu {
 border-radius: 8px;
@@ -359,32 +383,32 @@ transition: background-color 0.3s, color 0.3s;
 }
 
 .products .right .dropdown-item:hover {
-background-color: rgb(205, 2, 2);
-color: #fff;
+background-color: var(--red-color);
+color: var(--white-colorF);
 }
 .products .right .topp {
 animation: fadeIn 1s ease-in-out;
 }
 .products .right .topp .offcanvas .offcanvas-header h5 label,
 .products .right .topp .offcanvas .offcanvas-body label {
-    color: #000000;
+    color: var(--main-color);
 }
 .products .right .topp .offcanvas .offcanvas-header h5 label {
     font-weight: 700;
     font-size: 1.3rem;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
 }
 .products .right .topp .offcanvas .offcanvas-body p {
     font-weight: 900;
     font-size: 1.2rem;
 }
 .products .right .topp .button button {
-    color: #ffffff;
+    color: var(--white-colorF);
     font-size: 1.1rem;
     font-weight: 700;
 } 
 .products .right .topp .dropdown .dropdown-menu li button { 
-    color: #000000;
+    color: var(--main-transation);
 }
 @keyframes fadeIn {
 from {
@@ -405,13 +429,13 @@ to {
     letter-spacing: 5px;
 }
 .product .card-content .box a {
-    color: #000000;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 1rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 .product .card-content .box a:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 .product .card-content .card {
     border: none;
@@ -423,21 +447,21 @@ to {
     font-size: .9rem;   
 }
 .product .card-content .card .price {
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
     font-size: .9rem;
 }
 .product .card-content .card span {
     font-weight: 700;
 }
 .product .card-content .card del {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 .product .card-content .card .icon i {
     position: absolute;
     right: 1.4rem;
     bottom: 5.5rem;
     font-size: 1.3rem;
-    background-color: #ffffff;
+    background-color: var(--white-colorF);
     border-radius: 50%;
     padding: 10px;
 }
@@ -449,22 +473,20 @@ to {
 .product .card-content .card .sale h6 {
     padding: 2px 15px;
     font-size: .8rem;
-    color: #ffffff;
+    color: var(--white-colorF);
     font-weight: 400;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 .product .card-content .card .sale h6:nth-child(1) {
-    background-color: rgb(205, 2, 2);   
+    background-color: var(--red-color);   
 }
 .product .card-content .card .sale h6:nth-child(2) {
-    background-color: #000000;
+    background-color: var(--main-color);
 }
 .product .card-content .card .sale h6:nth-child(3) {
-    background-color: #afafaf;
+    background-color: var(--gray-color);
 }
-
-/* لي مش بتختفي */
 .product .card-content .card .icons {
     position: absolute;
     right: .5rem;
@@ -473,29 +495,26 @@ to {
 }
 .product .card-content .card .icons i {
     font-size: 1.1rem;
-    background-color: #ffffff;
+    background-color: var(--white-colorF);
     border-radius: 50%;
     padding: 10px;
     transition: .3s ease all;
 }
 .product .card-content .card .icons i:hover  {
-    color: #ffffff;
-    background-color: rgb(205, 2, 2);
+    color: var(--white-colorF);
+    background-color:  var(--red-color);
     cursor: pointer;
 }
-/* اكيد مش هتتكتب كدا */
 .product .card-content .card .icons i:hover p {
     display: block;
 }
 .product .card-content .card .icons p {
-    background-color: rgb(205, 2, 2);
-    color: #ffffff;
+    background-color:  var(--red-color);
+    color: var(--white-colorF);
     padding: 5px 10px;
     font-size: .8rem;
     display: none;
 }
-
-
 .product .card-content .card .links {
     position: absolute;
     bottom: 4.5rem;
@@ -504,23 +523,26 @@ to {
 .product .card-content .card .links button{
     padding: 15px;
     border: none;
-    background-color: #ffffff;
+    background-color: var(--white-colorF);
     text-transform: uppercase;
     font-size: .9rem;
     font-weight: 700;
     letter-spacing: 1px;
     width: 325px;
 }
-@media (max-width: 570px) {
+@media (max-width: 426px) {
     .products .left {
         display: none;
     }
 }
-
-
-@media (min-width: 0) and (max-width: 768px) {
+@media (max-width: 768px) {
+    .product .card-content .card .icon i {
+        bottom: 6rem;
+        right: .5rem;
+        font-size: .9rem;
+    }
     .products {
-    padding: 0;
+        padding: 0;
     }
     .products .right .topp {
         height: 100px;
@@ -537,136 +559,7 @@ to {
         font-size: .7rem;
     }
 }
-
-
-
-
-
-
-
 /* section-4 */
-.section-four {
-    /* margin: 100px 60px 0 60px; */
-}
-.section-four img {
-    width: 94%;
-}
-.section-four .product {
-    position: relative;
-    transition: 3s ease;
-}
-/* None */
-.section-four .product button {
-    background-color: white;
-    position: absolute;
-    left: 0;
-    bottom: 74px;
-    width: 94%;
-    padding: 10px;
-    border: none;
-    font-size: .8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: none;
-    transition: .2s ease;
-}
-.section-four .product .icons {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    color: #000000;
-    right: 30px;
-    bottom: 130px;
-    display: none;
-}
-.section-four .product .icons i {
-    background-color: white;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 18px;
-    transition: .2s ease;
-}
-.section-four .product:hover {
-    cursor: pointer;
-}
-.section-four .product .icons i:hover {
-    background-color: rgb(205, 2, 2);
-    color: white;
-}
-.section-four .product button:hover {
-    background-color: rgb(205, 2, 2);
-    color: white;
-}
-.section-four .product:hover button {
-    display: block;
-}
-.section-four .product:hover .icons {
-    display: flex;
-}
-.section-four .product:hover .heart {
-    display: none;
-}
-.section-four .top .text a:hover {
-    color: rgb(205, 2, 2);
-}
-.hover-image {
-    transition: opacity 2s ease;
-}
-.hover-image:hover{
-    content: url('../images/01-450x572.jpg'); 
-}
-
-/* ------------ */
-.section-four .text {
-    color: #000000;
-}
-.section-four .text p {
-    font-size: 3rem;
-    letter-spacing: 5px;
-    line-height: 1.3;
-}
-.section-four .text a {
-    color: #000000;
-    font-size: 1rem;
-    letter-spacing: 1px;
-    text-decoration: none;
-}
-.section-four .product {
-    position: relative;
-}
-.section-four .product a{
-    color: #000000;
-    text-decoration: none;
-    font-size: 1rem;
-}
-.section-four .product a p {
-    margin-top: 10px;
-}
-.section-four .product .price span {
-    font-weight: 700;
-}
-.section-four .product .price del {
-    color: rgb(199, 198, 198);
-}
-.section-four .product .position,
-.position-r,
-.pt {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    color: #f2f2f2;
-    background-color: #848484;
-    text-transform: uppercase;
-    font-size: .8rem;
-    letter-spacing: 1px;
-}
-.section-four .product .pt {
-    left: 70px;
-}
-.section-four .product .position-r {
-    background-color: rgb(205, 2, 2);
-}
 .heart {
     position: absolute;
     background-color: rgb(245, 245, 245);
@@ -697,7 +590,7 @@ to {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #fff; 
+    color: var(--white-colorF); 
     background-color: #000000; 
     border: 1px solid #dee2e6;
     padding: 10px 15px;
@@ -706,14 +599,14 @@ to {
     transition: all 0.3s ease;
 }
 .pagination .page-link:hover {
-    background-color: rgb(205, 2, 2); 
-    color: #fff;
+    background-color: var(--red-color); 
+    color: var(--white-colorF);
     transform: scale(1.1); 
 }
 .pagination .page-item.active .page-link {
-    background-color: rgb(205, 2, 2);
-    color: #fff;
-    border-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    border-color: var(--red-color);
     font-weight: bold;
 }
 .pagination .page-link[aria-label="Previous"],
@@ -734,20 +627,20 @@ footer .one img {
 footer h4 {
     font-size: 1.1rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
 }
 footer a {
-    color: #afafaf;
+    color: var(--gray-color);
     text-decoration: none;
     font-size: 1rem;
     transition: .4s ease;
 }
 footer p {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 footer .icons i {
     font-size: 1.5rem;
-    color: #afafaf;
+    color: var(--gray-color);
     transition: .4s ease;
 }
 footer .sub .input {
@@ -756,30 +649,30 @@ footer .sub .input {
     border: none;
 }
 footer input::placeholder {
-    color: #afafaf;
+    color: var(--gray-color);
     font-size: 1rem;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
 }
 footer input:focus {
     outline: none;
 }
 footer .sub button {
     padding: 12px 10px;
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--white-colorF);
+    background-color: var(--main-color);
     font-size: .9rem;
     font-weight: 700;
-    letter-spacing: 1px;
-    transition: .3s ease;
-    border: rgb(205, 2, 2);
+    letter-spacing: var(--letter-spacing1);
+    transition: var(--main-transation);
+    border: var(--red-color);
 }
 footer a:hover,
 footer .icons i:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
     cursor: pointer;
 }
 footer .sub button:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
     border: none;
 }
 @media (max-width: 768px){

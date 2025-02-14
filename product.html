@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
-    <!-- header -->
     <header>
         <div class="container d-flex justify-content-between align-items-center">
             <div class="left">
@@ -48,7 +47,7 @@
             </div>
         </div>
     </header>
-    <!-- Hero Section -->
+
     <nav>
         <div class="container d-flex justify-content-between align-items-center">
             <div class="left d-flex gap-md-3 gap-lg-3">
@@ -67,7 +66,8 @@
                             <a href="./product.html">Product</a>
                             <a href="./blog.html">Blog</a>
                             <a href="./about.html">About us</a>
-                            <a href="./contact.html">Contact us</a>                      
+                            <a href="./contact.html">Contact us</a>
+                            <a href="https://www.google.com/">Log Out</a>                     
                         </div>
                     </div>
                 </div>
@@ -99,17 +99,17 @@
                     </button>
                     <form class="dropdown-menu p-4">
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                            <input onclick="redirectToPage()" type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                            <input onclick="redirectToPage()" type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
                         </div>
                         <div class="mb-3">
-                            <div class="form-check d-flex align-items-center gap-5">
+                            <div class="form-check d-flex align-items-center gap-4 gap-lg-5">
                                 <button type="submit">Sign in</button>
                                 <div class="check">
                                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                    <label class="form-check-label" for="dropdownCheck2">
+                                    <label onclick="redirectToPage()" class="form-check-label" for="dropdownCheck2">
                                         Remember me
                                     </label>
                                 </div>   
@@ -133,7 +133,7 @@
             </div>
         </div>
     </nav>
-    <!-- product -->
+
     <div class="product d-flex flex-column justify-content-between align-items-center mt-5 col-12">
         <div class="container">
             <div class="top d-flex justify-content-center gap-2">
@@ -206,15 +206,15 @@
                             <div class="color-option banfsg"></div>
                         </div>
                     </div>
-                    <div class="add d-flex justify-content-between align-items-end gap-2 col-lg-12">
-                        <div class="counter col-lg-4">
+                    <div class="add d-flex justify-content-between align-items-end gap-2 col-12">
+                        <div class="counter d-flex justify-content-center align-items-center gap-1">
                             <button onclick="decrement()">-</button>
                             <span id="count">0</span>
                             <button onclick="increment()">+</button>
                         </div>
-                        <a class="col-lg-8 text-center" href="#">Add to cart</a>
+                        <button class="add-b">Add to Cart</button>
                     </div>
-                    <a class="buy col-lg-12 mt-3" href="#">Buy Now</a>         
+                    <button class="buy">Buy Now</button>         
                     <div class="app d-flex justify-content-between gap-4 col-lg-12">
                         <div class="line d-flex justify-content-center gap-1 col-lg-3">
                             <i class="fa-regular fa-heart"></i>
@@ -241,8 +241,6 @@
         </div>
     </div>
 
-
-    <!-- review -->
     <div class="review d-flex flex-column justify-content-between ">
         <div class="container d-none d-md-flex d-lg-flex flex-column justify-content-between ">
             <ul class="nav nav-tabs d-flex justify-content-center gap-2" id="myTab" role="tablist">
@@ -599,8 +597,6 @@
         </div>    
     </div>
 
-
-    <!-- related-producte -->
     <div class="related-products">
         <div class="container">
             <p class="rel mb-4">Related products</p>
@@ -888,7 +884,6 @@
 
     <hr>
     
-    <!-- footer -->
     <footer>
         <div class="container d-flex flex-column justify-content-between">
             <div class="top d-flex flex-wrap justify-content-between">
@@ -956,6 +951,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <!-- js -->
         <script src="./assets/js/product.js"></script>
-        <script src="./assets/js/sript.js"></script>
+        <script src="./assets/js/script.js"></script>
     </body>
     </html>

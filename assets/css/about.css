@@ -5,30 +5,30 @@ body {
 }
 header {
     height: 38px;
-    background-color: #000000;
+    background-color: var(--main-color);
 }
 header .container .left p {
     font-size: .9rem;
-    color: #ffffff;
-    letter-spacing: 1.3px;
+    color: var(--white-colorF);
+    letter-spacing: var(--letter-spacing3);
     text-transform: uppercase;
 }
 header .container .left p a {
-    color: #ffffff;
-    transition: .3s ease all;
+    color: var(--white-colorF);
+    transition: var(--main-transation);
 }
 header .container .left p a:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 header .container .right .btn-group button {
-    color: #ffffff;
+    color: var(--white-colorF);
     border: none;
     text-transform: uppercase;
     font-size: .9rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 header .container .right .btn-group button:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 header .container .right .btn-group ul {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -40,11 +40,11 @@ header .container .right .btn-group ul li {
     text-transform: uppercase;
 }
 header .container .right .btn-group ul li a {
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 header .container .right .btn-group ul li a:hover {
     background: none;
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 @media (max-width: 576px) {
     header .container .left p {
@@ -64,32 +64,45 @@ nav .container .left .menu .offcanvas .offcanvas-header p {
     font-weight: 700;
 }
 nav .container .left .menu .offcanvas .offcanvas-header p span {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .left .menu .offcanvas .offcanvas-header .btn-close,
 nav .container .left .search .offcanvas .offcanvas-header .btn-close {
     font-size: 1.3rem;
-    background-color: rgb(205, 2, 2);
-    transition: .3s ease all;
+    background-color: var(--red-color);
+    transition: var(--main-transation);
 }
 nav .container .left .menu .offcanvas .offcanvas-header .btn-close:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .left .menu .offcanvas .offcanvas-body {
     gap: 30px;
 }
 nav .container .left .menu .offcanvas .offcanvas-body a {
-    color: #000000;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 1.5rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }   
+nav .container .left .menu .offcanvas .offcanvas-body a:nth-child(7) {
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+nav .container .left .menu .offcanvas .offcanvas-body a:nth-child(7):hover {
+    background-color: var(--main-color);
+}
 nav .container .left .menu .offcanvas .offcanvas-body a:hover {
-    color: rgb(205, 2, 2);
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    border-radius: 10px;
+    padding: 5px 30px;
 }
 nav .container .left .search .offcanvas .offcanvas-header h5 {
     font-size: 1.3rem;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
     font-weight: 700;
 }
 nav .container .left .search .offcanvas .offcanvas-body .search-product {
@@ -98,36 +111,36 @@ nav .container .left .search .offcanvas .offcanvas-body .search-product {
 nav .container .left .search .offcanvas .offcanvas-body .search-product input {
     width: 100%;
     padding: 10px 20px;
-    border: 1px solid#afafaf;
+    border: 1px solid var(--gray-color);
 
 }nav .container .left .search .offcanvas .offcanvas-body .search-product input::placeholder {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .left .search .offcanvas .offcanvas-body .search-product i {
     font-size: 1.3rem;
     position: absolute;
     right: 10px;
     top: 15px;
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .center p {
     font-size: 3.5rem;
     font-weight: 700;
 }
 nav .container .center p span {
-    color: rgb(205, 2, 2); 
+    color: var(--red-color); 
 }
 nav .container .right .dropdown button i,
 nav .container .right a,
 nav .container .right a button {
-    color: #000000;
+    color: var(--main-color);
     font-size: 1.3rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 nav .container .right .dropdown button i:hover,
 nav .container .right a:hover,
 nav .container .right .shop button:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .right .dropdown .dropdown-menu {
     width: 400px;
@@ -135,21 +148,21 @@ nav .container .right .dropdown .dropdown-menu {
 nav .container .right .dropdown .dropdown-menu ::placeholder {
     padding: 20px;
     font-size: .9rem;
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .right .dropdown .dropdown-menu .form-check button {
     text-transform: uppercase;
-    background-color: #000000;
+    background-color: var(--main-color);
     border: none;
-    color: #ffffff;
+    color: var(--white-colorF);
     padding: 10px;
     width: 50%;
     font-size: .9rem;
     font-weight: 700;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 nav .container .right .dropdown .dropdown-menu .form-check button:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
 }
 nav .container .right .dropdown .dropdown-menu .form-check .check label {
     font-size: .9rem;
@@ -159,10 +172,26 @@ nav .container .right .shop .offcanvas .offcanvas-body img {
     width: 200px;
 }
 nav .container .right .shop .offcanvas .offcanvas-body p {
-    color: #000000;
+    color: var(--main-color);
     font-weight: 700;
     font-size: 1.2rem;
 }
+@media (max-width: 425px) {
+    nav .container .right .dropdown .dropdown-menu ::placeholder {
+        padding: 5px 0;
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu .form-check button {
+        padding: 0 30px;
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu .form-check .check label {
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu {
+        width: 250px;
+    }
+    }
 @media (max-width: 576px) {
     nav .container {
         padding: 0;
@@ -187,10 +216,10 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     text-decoration: line-through;
 }
 .about .links a:nth-child(1):hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 .about .links a:nth-child(2) {
-    color: #000000;
+    color: var(--main-color);
 }
 /* About-Nooni */
 .about-nooni {
@@ -244,7 +273,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     letter-spacing: 1px;
 }
 .about .how-works .text p {
-    color: #afafaf;
+    color: var(--gray-color);
     letter-spacing: 1px;
 }
 /* team */
@@ -252,7 +281,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     margin-top: 60px;
 } 
 .team .team-item {
-    background-color: #ffffff;
+    background-color: var(--white-colorF);
     box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
     box-sizing: content-box;
     padding: 30px;
@@ -261,12 +290,11 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     display: flex;
     flex-direction: column;
     text-align: center;
-    transition: 0.3s;
+    transition: var(--main-transation);
 }
 .team .team-item .stars {
     margin-bottom: 15px;
 }
-
 .team .team-item .stars i {
     color: gold;
 }
@@ -304,7 +332,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     opacity: 1;
 }
 .team .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #000000;
+    background-color: var(--main-color);
 }
 .team .swiper-slide {
     opacity: 0.3;
@@ -360,7 +388,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     z-index: 3;
 }
 .contact-us h2 {
-    color: #ffffff;
+    color: var(--white-colorF);
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -369,24 +397,24 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 .contact-us p {
     font-size: .9rem;
     letter-spacing: 1px;
-    color: #ffffff;
+    color: var(--white-colorF);
     margin-bottom: 70px;
 }
 .contact-us a { 
     color: #000000;
-    background-color: #ffffff;
+    background-color: var(--white-colorF);
     text-decoration: none;
     padding: 18px;
     font-size: 1rem;
     font-weight: 700;
     letter-spacing: 1px;
-    border: 1px solid white;
+    border: 1px solid var(--white-colorF);
     transition: .3s;
 }
 .contact-us a:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
     color: #ffffff;
-    border: rgb(205, 2, 2);
+    border: var(--red-color);
 }
 /*  Brands */
 .about .brands {
@@ -394,10 +422,22 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 }
 .about .brands img {
     transition: .3s;
+    width: 150px;
 }
 .about .brands img:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+@media (max-width: 426px) {
+    .about .brands {
+        padding: 30px;
+    }
+    .about .brands {
+        text-align: center;
+    }
+    .about .brands .container {
+        gap: 20px;
+    }
 }
 @media (max-width: 992px){
     /* About-Nooni */
@@ -409,7 +449,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     }
     .about .about-nooni p {
         font-size: 1.1rem;
-        letter-spacing: 1px;
+        letter-spacing: var(--letter-spacing1);
         margin-bottom: 30px;
     }
     .about .about .about-nooni img {
@@ -445,7 +485,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     /* Contact us */
     .about .contact-us .content .text-center h2 {
         font-size: 1rem;
-        letter-spacing: 1px;
+        letter-spacing: var(--letter-spacing1);
     }
     .about .contact-us .content .text-center p{
         font-size: .8rem;
@@ -456,17 +496,9 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     .about .contact-us a { 
         padding: 10px;
         font-size: 1rem;
-        letter-spacing: 1px;
-    }
-    /* Brands */
-    .about .brands {
-        text-align: center;
-    }
-    .about .brands .container {
-        gap: 20px;
+        letter-spacing: var(--letter-spacing1);
     }
 }
-/* ------------ */
 @media (min-width: 992px ) and (max-width: 1286px) {
     /* How-Works */
     .about .how-works {
@@ -479,8 +511,10 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         gap: 20px;
         line-height: 20px;
     }
+    .about .brands {
+        padding: 50px;
+    }
 }
-
 /* footer */
 footer {
     padding-top: 70px;
@@ -494,20 +528,20 @@ footer .one img {
 footer h4 {
     font-size: 1.1rem;
     font-weight: 700;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
 }
 footer a {
-    color: #afafaf;
+    color: var(--gray-color);
     text-decoration: none;
     font-size: 1rem;
     transition: .4s ease;
 }
 footer p {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 footer .icons i {
     font-size: 1.5rem;
-    color: #afafaf;
+    color: var(--gray-color);
     transition: .4s ease;
 }
 footer .sub .input {
@@ -516,7 +550,7 @@ footer .sub .input {
     border: none;
 }
 footer input::placeholder {
-    color: #afafaf;
+    color: var(--gray-color);
     font-size: 1rem;
     letter-spacing: 1px;
 }
@@ -525,21 +559,21 @@ footer input:focus {
 }
 footer .sub button {
     padding: 12px 10px;
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--white-colorF);
+    background-color: var(--main-color);
     font-size: .9rem;
     font-weight: 700;
     letter-spacing: 1px;
     transition: .3s ease;
-    border: rgb(205, 2, 2);
+    border: var(--red-color);
 }
 footer a:hover,
 footer .icons i:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
     cursor: pointer;
 }
 footer .sub button:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
     border: none;
 }
 @media (max-width: 768px){

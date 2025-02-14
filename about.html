@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About us – Nooni</title>
+    <title>about - Nooni</title>
     <!-- Fontawesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -24,7 +24,7 @@
     <!-- <link rel="stylesheet" href="./assets/css/master.css"> -->
 </head>
 <body>
-    <!-- StartHeader -->
+
     <header>
         <div class="container d-flex justify-content-between align-items-center">
             <div class="left">
@@ -52,7 +52,7 @@
             </div>
         </div>
     </header>
-    <!--Nav-->
+
     <nav>
         <div class="container d-flex justify-content-between align-items-center">
             <div class="left d-flex gap-md-3 gap-lg-3">
@@ -71,7 +71,8 @@
                             <a href="./product.html">Product</a>
                             <a href="./blog.html">Blog</a>
                             <a href="./about.html">About us</a>
-                            <a href="./contact.html">Contact us</a>                      
+                            <a href="./contact.html">Contact us</a> 
+                            <a href="https://www.google.com/">Log Out</a>                     
                         </div>
                     </div>
                 </div>
@@ -103,17 +104,17 @@
                     </button>
                     <form class="dropdown-menu p-4">
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                            <input onclick="redirectToPage()" type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                            <input onclick="redirectToPage()" type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
                         </div>
                         <div class="mb-3">
-                            <div class="form-check d-flex align-items-center gap-5">
+                            <div class="form-check d-flex align-items-center gap-4 gap-lg-5">
                                 <button type="submit">Sign in</button>
                                 <div class="check">
                                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                    <label class="form-check-label" for="dropdownCheck2">
+                                    <label onclick="redirectToPage()" class="form-check-label" for="dropdownCheck2">
                                         Remember me
                                     </label>
                                 </div>   
@@ -137,20 +138,20 @@
             </div>
         </div>
     </nav>
-    <!-- About -->
+
     <div class="about d-flex flex-column justify-content-between align-items-center">
-        <!-- links -->
+
         <div class="links d-flex gap-2">
             <a href="index.html">Home /</a>
             <a href="./about.html">About</a>
         </div>
-        <!-- About-Nooni -->
+
         <div class="about-nooni d-flex flex-column justify-content-between align-items-center">
             <h1>About Noon'i</h1>
             <p>Noon’i was established in 1990, consectetur eleifend commodo at, consectetur<br> eu justo. Sed viverra consectetur risus nec ultricies.</p>
             <img src="./assets/images/about-parallax-1.jpg" alt="" >
         </div>
-        <!-- How-Works -->
+
         <div class="how-works">
             <div class="container d-grid d-md-grid d-lg-flex justify-content-between col-lg-12 gap-5">
                 <div class="image">
@@ -173,12 +174,11 @@
                 </div>
             </div>
         </div>
-        <!-- team -->
+
         <section class="team section light-background col-12">
-            <!-- Section Title -->
             <div class="container section-title" data-aos="fade-up">
                 <h2 class="text-center">Our Team</h2>
-            </div><!-- End Section Title -->
+            </div>
             <div class="container" data-aos="fade-up" data-aos-delay="100">
                 <div class="swiper init-swiper">
                     <script type="application/json" class="swiper-config">
@@ -287,7 +287,7 @@
                 </div>
             </div>
         </section>
-        <!-- contact-us -->
+
         <div class="contact-us">
             <img src="./assets/images/about-2.jpg" alt="">
             <div class="content row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
@@ -300,20 +300,22 @@
                 </div>
             </div>
         </div>
-        <!-- Brands -->
+
         <div class="brands col-lg-12">
-            <div class="container d-grid d-md-flex d-lg-flex flex-md-wrap justify-content-between">
-                <img src="./assets/images/brand-1.png" alt="">
-                <img src="./assets/images/brand-2.png" alt="">
-                <img src="./assets/images/brand-3.png" alt="">
-                <img src="./assets/images/brand-4.png" alt="">
-                <img src="./assets/images/brand-5.png" alt="">
-                <img src="./assets/images/brand-6.png" alt="">
+            <div class="container d-grid d-md-flex flex-wrap justify-content-between col-12">
+                <img src="./assets/images/brand-1.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-2.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-3.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-4.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-5.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-1.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-4.png" alt="" class="col-12 col-md-3">
+                <img src="./assets/images/brand-6.png" alt="" class="col-12 col-md-3">
             </div>
         </div>
     </div>
     <hr>
-    <!-- footer -->
+
     <footer>
         <div class="container d-flex flex-column justify-content-between">
             <div class="top d-flex flex-wrap justify-content-between">
@@ -383,7 +385,7 @@
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- js -->
-     <script src="./assets/js/about.js"></script>
+    <script src="./assets/js/about.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>

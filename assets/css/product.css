@@ -64,32 +64,45 @@ nav .container .left .menu .offcanvas .offcanvas-header p {
     font-weight: 700;
 }
 nav .container .left .menu .offcanvas .offcanvas-header p span {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .left .menu .offcanvas .offcanvas-header .btn-close,
 nav .container .left .search .offcanvas .offcanvas-header .btn-close {
     font-size: 1.3rem;
-    background-color: rgb(205, 2, 2);
-    transition: .3s ease all;
+    background-color: var(--red-color);
+    transition: var(--main-transation);
 }
 nav .container .left .menu .offcanvas .offcanvas-header .btn-close:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .left .menu .offcanvas .offcanvas-body {
     gap: 30px;
 }
 nav .container .left .menu .offcanvas .offcanvas-body a {
-    color: #000000;
+    color: var(--main-color);
     text-decoration: none;
     font-size: 1.5rem;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }   
+nav .container .left .menu .offcanvas .offcanvas-body a:nth-child(7) {
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px 30px;
+}
+nav .container .left .menu .offcanvas .offcanvas-body a:nth-child(7):hover {
+    background-color: var(--main-color);
+}
 nav .container .left .menu .offcanvas .offcanvas-body a:hover {
-    color: rgb(205, 2, 2);
+    background-color: var(--red-color);
+    color: var(--white-colorF);
+    border-radius: 10px;
+    padding: 5px 30px;
 }
 nav .container .left .search .offcanvas .offcanvas-header h5 {
     font-size: 1.3rem;
-    letter-spacing: 1px;
+    letter-spacing: var(--letter-spacing1);
     font-weight: 700;
 }
 nav .container .left .search .offcanvas .offcanvas-body .search-product {
@@ -98,17 +111,17 @@ nav .container .left .search .offcanvas .offcanvas-body .search-product {
 nav .container .left .search .offcanvas .offcanvas-body .search-product input {
     width: 100%;
     padding: 10px 20px;
-    border: 1px solid#afafaf;
+    border: 1px solid var(--gray-color);
 
 }nav .container .left .search .offcanvas .offcanvas-body .search-product input::placeholder {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .left .search .offcanvas .offcanvas-body .search-product i {
     font-size: 1.3rem;
     position: absolute;
     right: 10px;
     top: 15px;
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .center p {
     font-size: 3.5rem;
@@ -163,6 +176,22 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     font-weight: 700;
     font-size: 1.2rem;
 }
+@media (max-width: 425px) {
+    nav .container .right .dropdown .dropdown-menu ::placeholder {
+        padding: 5px 0;
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu .form-check button {
+        padding: 0 30px;
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu .form-check .check label {
+        font-size: .8rem;
+    }
+    nav .container .right .dropdown .dropdown-menu {
+        width: 250px;
+    }
+    }
 @media (max-width: 576px) {
     nav .container {
         padding: 0;
@@ -348,30 +377,26 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     background-color: #ececec;
     padding: 13px;
 }
-.product .bottom .right .add a {
-    background-color: #000000;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-    height: 50px;
-    font-size: 1rem;
+.product .bottom .right .add .add-b {
+    background-color: var(--main-color);
+    color: var(--white-colorF);
+    padding: 12px 15px;
+    width: 100%;
     font-weight: 700;
-    letter-spacing: 1.3px;
-    text-transform: uppercase;
-    transition: .3s ease all;
+    border: var(--main-color);
+    transition: var(--main-transation);
 }
-.product .bottom .right .add a:hover {
+.product .bottom .right .add-b:hover {
     background-color: rgb(205, 2, 2);
+    border: var(--red-color);
 }
 .product .bottom .right .buy {
-    background-color: #ffffff;
-    text-align: center;
-    padding: 10px;
-    color: #000000;
-    text-decoration: none;
+    background-color: var(--white-colorF);
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 10px;
     font-weight: 700;
-    border: 2px solid #000000;
-    transition: .3s ease all;
+    transition: var(--main-transation);
 }
 .product .bottom .right .buy:hover {
     background-color: rgb(205, 2, 2);
@@ -439,6 +464,11 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     .product .bottom .right .app .line-right {
         gap: 5px;
     }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+   .product .bottom .right {
+    padding-right: 20px;
+}
 }
 .review {
     padding: 50px;
@@ -667,8 +697,6 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 .related-products .carousel-inner .carousel-item .card-content .card .sale h6:nth-child(2) {
     background-color: #000000;
 }
-
-/* لي مش بتختفي */
 .related-products .carousel-inner .carousel-item .card-content .card .icons {
     position: absolute;
     right: .5rem;
@@ -687,7 +715,6 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     background-color: rgb(205, 2, 2);
     cursor: pointer;
 }
-/* اكيد مش هتتكتب كدا */
 .related-products .carousel-inner .carousel-item .card-content .card .icons i:hover p {
     display: block;
 }
@@ -698,8 +725,6 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     font-size: .8rem;
     display: none;
 }
-
-
 .related-products .carousel-inner .carousel-item .card-content .card .links {
     position: absolute;
     bottom: 4.5rem;
@@ -715,9 +740,6 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     letter-spacing: 1px;
     width: 325px;
 }
-/* .product .card-content .card .one {
-    transition: opacity 2s ease;
-} */
 .related-products .carousel-inner .carousel-item .card-content .card:hover .icon i {
     display: block;
 }
@@ -752,7 +774,6 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         padding: 0;
     }
 }
-
 /* footer */
 footer {
     padding-top: 70px;

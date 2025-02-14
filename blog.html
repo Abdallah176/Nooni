@@ -20,7 +20,6 @@
     <!-- <link rel="stylesheet" href="./assets/css/master.css"> -->
 </head>
 <body>
-    <!-- StartHeader -->
     <header>
         <div class="container d-flex justify-content-between align-items-center">
             <div class="left">
@@ -48,9 +47,7 @@
             </div>
         </div>
     </header>
-    <!-- EndHeader -->
     
-    <!-- StartNav-->
     <nav>
         <div class="container d-flex justify-content-between align-items-center">
             <div class="left d-flex gap-md-3 gap-lg-3">
@@ -69,7 +66,8 @@
                             <a href="./product.html">Product</a>
                             <a href="./blog.html">Blog</a>
                             <a href="./about.html">About us</a>
-                            <a href="./contact.html">Contact us</a>                      
+                            <a href="./contact.html">Contact us</a>
+                            <a href="https://www.google.com/">Log Out</a>                      
                         </div>
                     </div>
                 </div>
@@ -101,17 +99,17 @@
                     </button>
                     <form class="dropdown-menu p-4">
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
+                            <input onclick="redirectToPage()" type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="Username or email address *">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
+                            <input onclick="redirectToPage()" type="password" class="form-control" id="exampleDropdownFormPassword2" placeholder="Password *">
                         </div>
                         <div class="mb-3">
-                            <div class="form-check d-flex align-items-center gap-5">
+                            <div class="form-check d-flex align-items-center gap-4 gap-lg-5">
                                 <button type="submit">Sign in</button>
                                 <div class="check">
                                     <input type="checkbox" class="form-check-input" id="dropdownCheck2">
-                                    <label class="form-check-label" for="dropdownCheck2">
+                                    <label onclick="redirectToPage()" class="form-check-label" for="dropdownCheck2">
                                         Remember me
                                     </label>
                                 </div>   
@@ -135,9 +133,7 @@
             </div>
         </div>
     </nav>
-    <!-- EndNav-->
     
-    <!-- StartMianBlog -->
     <div class="blog d-flex flex-column justify-content-center align-items-center">
         <div class="container">
             <div class="link d-flex flex-column justify-content-between align-items-center gap-4">
@@ -205,12 +201,12 @@
                         <ul class="pagination">
                             <li class="page-item">
                             </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="./index.html">1</a></li>
+                            <li class="page-item"><a class="page-link" href="./product.html">2</a></li>
+                            <li class="page-item"><a class="page-link" href="./blog.html">3</a></li>
+                            <li class="page-item"><a class="page-link" href="./about.html">4</a></li>
                             <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
+                                <a class="page-link" href="./contact.html" aria-label="Next">
                                 <span aria-hidden="true">&raquo;</span>
                                 </a>
                             </li>
@@ -222,18 +218,18 @@
                         <input type="text" placeholder="Search for products...">
                         <i class="fa-solid fa-magnifying-glass"></i> 
                     </div>
-                    <div class="pop d-none d-md-block d-lg-block">
+                    <div class="pop d-none d-md-grid d-lg-grid gap-3">
                         <div class="popular-posts d-flex flex-column">
                             <h4>Popular Posts</h4>
-                            <div class="line d-flex align-items-center gap-4">
+                            <div class="line d-flex align-items-center gap-md-3 gap-lg-4">
                                 <img src="./assets/images/blog-1-1174x862.jpg" alt="">
                                 <a href="#">What’s in a Child’s<br> Bedroom Set?</a>
                             </div>
-                            <div class="line d-flex align-items-center gap-4">
+                            <div class="line d-flex align-items-center gap-md-3 gap-lg-4">
                                 <img src="./assets/images/blog-1-1174x862.jpg" alt="">
                                 <a href="#">The Secrets to a Living<br> Room that Draws You In</a>
                             </div>
-                            <div class="line d-flex align-items-center gap-4">
+                            <div class="line d-flex align-items-center gap-md-3 gap-lg-4">
                                 <img src="./assets/images/blog-1-1174x862.jpg" alt="">
                                 <a href="#">Customer Delight Makes<br> Furniture Shopping Easy</a>
                             </div>
@@ -361,9 +357,9 @@
             </div>
         </div>
     </div>
-    <!-- EndMainBlog -->
+
     <hr>
-    <!-- footer -->
+
     <footer>
         <div class="container d-flex flex-column justify-content-between">
             <div class="top d-flex flex-wrap justify-content-between">
@@ -423,12 +419,11 @@
                 </div>
         </div>
     </footer>
-    <!-- End Footer -->
     <!-- animation text -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- js -->
-    <script src="./assets/js/sript.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
