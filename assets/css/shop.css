@@ -530,7 +530,7 @@ to {
     letter-spacing: 1px;
     width: 325px;
 }
-@media (max-width: 426px) {
+@media (max-width: 768px) {
     .products .left {
         display: none;
     }
