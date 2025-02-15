@@ -5,30 +5,30 @@ body {
 }
 header {
     height: 38px;
-    background-color: #000000;
+    background-color: var(--main-color);
 }
 header .container .left p {
     font-size: .9rem;
-    color: #ffffff;
+    color: var(--white-colorF);
     letter-spacing: 1.3px;
     text-transform: uppercase;
 }
 header .container .left p a {
-    color: #ffffff;
+    color: var(--white-colorF);
     transition: .3s ease all;
 }
 header .container .left p a:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 header .container .right .btn-group button {
-    color: #ffffff;
+    color: var(--white-colorF);
     border: none;
     text-transform: uppercase;
     font-size: .9rem;
     transition: .3s ease all;
 }
 header .container .right .btn-group button:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 header .container .right .btn-group ul {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -44,7 +44,7 @@ header .container .right .btn-group ul li a {
 }
 header .container .right .btn-group ul li a:hover {
     background: none;
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 @media (max-width: 576px) {
     header .container .left p {
@@ -128,19 +128,19 @@ nav .container .center p {
     font-weight: 700;
 }
 nav .container .center p span {
-    color: rgb(205, 2, 2); 
+    color: var(--red-color); 
 }
 nav .container .right .dropdown button i,
 nav .container .right a,
 nav .container .right a button {
-    color: #000000;
+    color: var(--main-color);
     font-size: 1.3rem;
     transition: .3s ease all;
 }
 nav .container .right .dropdown button i:hover,
 nav .container .right a:hover,
 nav .container .right .shop button:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
 }
 nav .container .right .dropdown .dropdown-menu {
     width: 400px;
@@ -148,13 +148,13 @@ nav .container .right .dropdown .dropdown-menu {
 nav .container .right .dropdown .dropdown-menu ::placeholder {
     padding: 20px;
     font-size: .9rem;
-    color: #afafaf;
+    color: var(--gray-color);
 }
 nav .container .right .dropdown .dropdown-menu .form-check button {
     text-transform: uppercase;
-    background-color: #000000;
+    background-color: var(--main-color);
     border: none;
-    color: #ffffff;
+    color: var(--white-colorF);
     padding: 10px;
     width: 50%;
     font-size: .9rem;
@@ -162,7 +162,7 @@ nav .container .right .dropdown .dropdown-menu .form-check button {
     transition: .3s ease all;
 }
 nav .container .right .dropdown .dropdown-menu .form-check button:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
 }
 nav .container .right .dropdown .dropdown-menu .form-check .check label {
     font-size: .9rem;
@@ -172,7 +172,7 @@ nav .container .right .shop .offcanvas .offcanvas-body img {
     width: 200px;
 }
 nav .container .right .shop .offcanvas .offcanvas-body p {
-    color: #000000;
+    color: var(--main-color);
     font-weight: 700;
     font-size: 1.2rem;
 }
@@ -235,7 +235,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     margin-top: 150px;
 }
 .contact-us .content h2 {
-    color: #ffffff;
+    color: var(--white-colorF);
     font-size: 3rem;
     font-weight: 500;
     margin-bottom: 20px;
@@ -273,6 +273,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
     background-color: var(--white-colorF);
     height: 90vh; 
     padding: 4rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 /* left */
 .main-section .container .left h2,
@@ -322,10 +323,10 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 .main-section .container .right button:hover {
     background-color: var(--red-color);
 } 
-@media (max-width: 426px) {
+@media (max-width: 768px) {
     .main-section {
         margin: 10px 0;
-        height: 160vh;        
+        height: 160vh;       
     }
     .main-section .container {
         padding: 1rem;
@@ -345,33 +346,37 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
         text-align: center;
     }
 }
-@media (min-width: 426px) and (max-width: 768px) {
+/* @media (min-width: 600px) and (max-width: 768px) {
     .main-section {
         margin-top: 0;
-        height: 40vh;
+        height: 90vh;
     }
     .main-section .container {
         padding: 3rem;
-        height: 40vh;
+        height: 60vh;
         margin-top: -100px;
     }
-    /* left */
+   
     .main-section .container .left h2 {
         letter-spacing: 1.5px;
         font-size: 2rem;
     }
-    /* right */
+    
 
-}
+} */
 @media (min-width: 769px) and (max-width: 1024px) {
     .main-section {
         margin-top: 0;
-        height: 30vh;
+        height: 90vh;
     }
     .main-section .container {
         padding: 3rem;
-        height: 40vh;
-        margin-top: -400px;
+        height: 60vh;
+        margin-top: -100px;
+    }
+    .main-section .container .left h2 {
+        letter-spacing: 1.5px;
+        font-size: 2rem;
     }
 }
 /* map */
@@ -404,17 +409,17 @@ footer h4 {
     letter-spacing: 1px;
 }
 footer a {
-    color: #afafaf;
+    color: var(--gray-color);
     text-decoration: none;
     font-size: 1rem;
     transition: .4s ease;
 }
 footer p {
-    color: #afafaf;
+    color: var(--gray-color);
 }
 footer .icons i {
     font-size: 1.5rem;
-    color: #afafaf;
+    color: var(--gray-color);
     transition: .4s ease;
 }
 footer .sub .input {
@@ -423,7 +428,7 @@ footer .sub .input {
     border: none;
 }
 footer input::placeholder {
-    color: #afafaf;
+    color: var(--gray-color);
     font-size: 1rem;
     letter-spacing: 1px;
 }
@@ -432,21 +437,21 @@ footer input:focus {
 }
 footer .sub button {
     padding: 12px 10px;
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--white-colorF);
+    background-color: var(--main-color);
     font-size: .9rem;
     font-weight: 700;
     letter-spacing: 1px;
     transition: .3s ease;
-    border: rgb(205, 2, 2);
+    border: var(--red-color);
 }
 footer a:hover,
 footer .icons i:hover {
-    color: rgb(205, 2, 2);
+    color: var(--red-color);
     cursor: pointer;
 }
 footer .sub button:hover {
-    background-color: rgb(205, 2, 2);
+    background-color: var(--red-color);
     border: none;
 }
 @media (max-width: 768px){

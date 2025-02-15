@@ -413,7 +413,7 @@ nav .container .right .shop .offcanvas .offcanvas-body p {
 }
 .contact-us a:hover {
     background-color: var(--red-color);
-    color: #ffffff;
+    color: var(--white-colorF);
     border: var(--red-color);
 }
 /*  Brands */
